@@ -115,6 +115,11 @@ const NODE_MAPPERS: {
     // Vue 2 can only handle one root element
     const firstChild = json.children.filter(filterEmptyTextNodes)[0];
     if (firstChild) {
+      if (firstChild.name === 'For') {
+        throw new Error(
+          '`For` cannot be an immediate child of `Show`, as `v-if` and `v-for` cannot be applied to the same element. See https://gist.github.com/samijaber/e3c4c8b609ed461ad2638f3ffd117d02 for help.',
+        );
+      }
       firstChild.properties['v-if'] = ifValue;
       ifString = blockToVue(firstChild, options);
     }
