@@ -43,7 +43,8 @@
     "release:patch": "npm run build && npm version patch --no-git-tag-version && ALLOW_PUBLISH=true npm publish",
     "mitosis-save-artifacts": "node -r esbuild-register ../../scripts/mitosis-save-artifacts.ts",
     "start": "npm run build -- --watch",
-    "script": "ts-node -O '{\"module\": \"commonjs\"}'"
+    "script": "ts-node -O '{\"module\": \"commonjs\"}'",
+    "prepare": "cd ../../ && yarn"
   },
   "files": [
     "dist"

@@ -20,7 +20,8 @@
     "test": "jest",
     "build": "tsc",
     "start": "tsc -w",
-    "build:declaration": "tsc --project tsconfig.build.json"
+    "build:declaration": "tsc --project tsconfig.build.json",
+    "prepare": "cd ../../ && yarn"
   },
   "files": [
     "dist"
