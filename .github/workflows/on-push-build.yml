@@ -25,10 +25,10 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install --frozen-lockfile
 
       - name: Install dependencies core
-        run: cd packages/core; npm install
+        run: cd packages/core; yarn
 
       - name: build
         run: cd packages/core; npm run build
