@@ -39,10 +39,24 @@ const types = {
     emoji: '💍',
     value: 'test',
   },
+  merge: {
+    description: 'A merge commit',
+    emoji: '🔀',
+    value: 'merge',
+  },
 };
 
 // https://github.com/angular/angular/blob/master/CONTRIBUTING.md#type
-const list = ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'perf'];
+const list = [
+  'test',
+  'feat',
+  'fix',
+  'chore',
+  'docs',
+  'refactor',
+  'perf',
+  'merge',
+];
 
 // https://github.com/angular/angular/blob/master/CONTRIBUTING.md#scope
 const scopes = ['cli', 'core', 'eslint-plugin', 'examples', 'none'];
