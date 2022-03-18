@@ -53,10 +53,10 @@ export class File {
     return quote(this.qrlPrefix + this.module + '.js');
   }
 
-  exportConst(name: string, value?: any) {
+  exportConst(name: string, value?: any, locallyVisible = false) {
     if (this.exports.has(name)) return;
     this.exports.set(name, this.src.isModule ? name : 'exports.' + name);
-    this.src.const(name, value, true);
+    this.src.const(name, value, true, locallyVisible);
   }
 
   toString() {
@@ -119,7 +119,7 @@ export class SrcBuilder {
       );
     } else {
       symbols.forEach((symbol) => {
-        this.const(symbol, function(this: SrcBuilder) {
+        this.const(symbol, function (this: SrcBuilder) {
           this.emit(invoke('require', [quote(module)]), '.', symbol);
         });
       });
@@ -210,10 +210,10 @@ export class SrcBuilder {
   const(
     name: string,
     value?: any,
-    exprt: boolean = false,
+    export_: boolean = false,
     locallyVisible: boolean = false,
   ) {
-    if (exprt) {
+    if (export_) {
       this.emit(
         this.isModule
           ? 'export const '
@@ -414,7 +414,7 @@ export function invoke(
   args: any[],
   typeParameters?: string[],
 ) {
-  return function(this: SrcBuilder) {
+  return function (this: SrcBuilder) {
     this.emit(typeof symbol == 'string' ? symbol : symbol.name);
     this.typeParameters(typeParameters);
     this.emit('(', args, ')');
@@ -422,7 +422,7 @@ export function invoke(
 }
 
 export function arrowFnBlock(args: string[], statements: any[]) {
-  return function(this: SrcBuilder) {
+  return function (this: SrcBuilder) {
     this.emit('(', args, ')', WS, '=>', WS);
     this.emit('{', INDENT, NL)
       .emitList(statements, ';')
@@ -431,13 +431,13 @@ export function arrowFnBlock(args: string[], statements: any[]) {
 }
 
 export function arrowFnValue(args: string[], expression: any) {
-  return function(this: SrcBuilder) {
+  return function (this: SrcBuilder) {
     this.emit('(', args, ')', WS, '=>', WS, expression);
   };
 }
 
 export function iif(code: any) {
-  return function(this: SrcBuilder) {
+  return function (this: SrcBuilder) {
     code && this.emit('(()', WS, '=>', WS, '{', WS, NL, code, NL, '}', ')()');
   };
 }

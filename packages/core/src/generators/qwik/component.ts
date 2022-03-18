@@ -1,11 +1,8 @@
-import { stat } from 'fs';
-import { symbolName } from 'typescript';
 import {
   compileAwayBuilderComponentsFromTree,
   components as compileAwayComponents,
 } from '../../plugins/compile-away-builder-components';
 import { MitosisComponent } from '../../types/mitosis-component';
-import { minify } from '../minify';
 import { renderHandlers } from './handlers';
 import { renderJSXNodes } from './jsx';
 import {
@@ -14,7 +11,6 @@ import {
   EmitFn,
   File,
   iif,
-  INDENT,
   invoke,
   NL,
   quote,
@@ -73,9 +69,7 @@ export function createFileSet(options: QwikOptions = {}): FileSet {
   return fileSet;
 }
 
-function getCommonStyles(
-  fileSet: FileSet,
-): {
+function getCommonStyles(fileSet: FileSet): {
   styles: Map<string, CssStyles>;
   symbolName: string | null;
 } {
@@ -117,12 +111,7 @@ export function addComponent(
     if (_opts.isRoot) {
       const symbolName = componentName + '_styles';
       getCommonStyles(fileSet).symbolName = symbolName;
-      useStyles = generateStyles(
-        componentFile,
-        onRenderFile,
-        symbolName,
-        false,
-      );
+      useStyles = generateStyles(componentFile, fileSet.low, symbolName, false);
     }
   } else {
     if (styles.size) {
@@ -141,7 +130,7 @@ export function addComponent(
   componentFile.exportConst(
     componentName,
     invoke(
-      componentFile.import(componentFile.qwikModule, 'component'),
+      componentFile.import(componentFile.qwikModule, 'componentFromQrl'),
       [generateQrl(componentFile, componentName + '_onMount')],
       ['any', 'any'],
     ),
@@ -155,7 +144,7 @@ export function addComponent(
       [],
       [
         renderUseLexicalScope(onRenderFile),
-        function(this: SrcBuilder) {
+        function (this: SrcBuilder) {
           return this.emit(
             'return ',
             renderJSXNodes(
@@ -174,7 +163,7 @@ export function addComponent(
   );
   directives.forEach((code, name) => {
     fileSet.med.import(fileSet.med.qwikModule, 'h');
-    fileSet.med.exportConst(name, code);
+    fileSet.med.exportConst(name, code, true);
   });
 }
 
@@ -184,12 +173,12 @@ function generateStyles(
   symbol: string,
   scoped: boolean,
 ): EmitFn {
-  return function(this: SrcBuilder) {
+  return function (this: SrcBuilder) {
     this.emit(
       invoke(
         componentFile.import(
           componentFile.qwikModule,
-          scoped ? 'withScopedStyles' : 'useStyles',
+          scoped ? 'withScopedStylesFromQrl' : 'useStylesFromQrl',
         ),
         [generateQrl(styleFile, symbol)],
       ),
@@ -198,7 +187,7 @@ function generateStyles(
 }
 
 export function renderUseLexicalScope(file: File) {
-  return function(this: SrcBuilder) {
+  return function (this: SrcBuilder) {
     return this.emit(
       'const state',
       WS,
@@ -225,27 +214,28 @@ function addComponentOnMount(
   component: MitosisComponent,
   useStyles: EmitFn,
 ) {
-  componentFile.exportConst(componentName + '_onMount', function(
-    this: SrcBuilder,
-  ) {
-    this.emit(
-      arrowFnValue(['state'], () =>
-        this.emit(
-          '{',
-          iif(component.hooks.onMount?.code),
-          ';',
-          useStyles,
-          NL,
-          'return ',
-          generateQrl(onRenderFile, componentName + '_onRender', ['state']),
-          ';',
-          UNINDENT,
-          NL,
-          '}',
+  componentFile.exportConst(
+    componentName + '_onMount',
+    function (this: SrcBuilder) {
+      this.emit(
+        arrowFnValue(['state'], () =>
+          this.emit(
+            '{',
+            iif(component.hooks.onMount?.code),
+            ';',
+            useStyles,
+            NL,
+            'return ',
+            generateQrl(onRenderFile, componentName + '_onRender', ['state']),
+            ';',
+            UNINDENT,
+            NL,
+            '}',
+          ),
         ),
-      ),
-    );
-  });
+      );
+    },
+  );
 }
 
 function generateQrl(
