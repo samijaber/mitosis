@@ -85,9 +85,9 @@ find . -name '*lite.tsx' | entr make /_
 ```bash
 git clone git@github.com:BuilderIO/mitosis.git
 cd mitosis/packages/cli
-yarn
-yarn run build
-yarn link
+npm install
+npm run build
+npm link
 ```
 
 # License
