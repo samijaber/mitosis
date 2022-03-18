@@ -44,7 +44,7 @@
     "mitosis-save-artifacts": "node -r esbuild-register ../../scripts/mitosis-save-artifacts.ts",
     "start": "npm run build -- --watch",
     "script": "ts-node -O '{\"module\": \"commonjs\"}'",
-    "prepare": "cd ../../ && yarn"
+    "prepare": "cd ../../ && npm install"
   },
   "files": [
     "dist"

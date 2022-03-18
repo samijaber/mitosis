@@ -23,7 +23,7 @@
     "watch": "jest --watch",
     "snapupdate": "jest --updateSnapshot",
     "coverage": "jest --coverage",
-    "prepare": "cd ../../ && yarn"
+    "prepare": "cd ../../ && npm install"
   },
   "files": [
     "tsconfig.json",

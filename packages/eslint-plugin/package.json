@@ -21,7 +21,7 @@
     "build": "tsc",
     "start": "tsc -w",
     "build:declaration": "tsc --project tsconfig.build.json",
-    "prepare": "cd ../../ && yarn"
+    "prepare": "cd ../../ && npm install"
   },
   "files": [
     "dist"
