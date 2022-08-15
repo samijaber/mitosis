@@ -22,6 +22,7 @@ import {
   parseReactiveScript,
   reactiveScriptRe,
   componentToVue2,
+  Transpiler,
 } from '@builder.io/mitosis';
 import {
   Button,
@@ -40,7 +41,7 @@ import {
 } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
 import { useLocalObservable, useObserver } from 'mobx-react-lite';
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 
 import { adapt } from 'webcomponents-in-react';
@@ -89,6 +90,78 @@ const indexToRowAndColumn = (str: string, index: number): Position => {
     cursor++;
   }
   return { row, column };
+};
+
+const jsonGenerator: Transpiler = ({ component }) => JSON.stringify(component, null, 2);
+const builderGenerator: Transpiler = ({ component }) =>
+  JSON.stringify(componentToBuilder()({ component }), null, 2);
+
+const getGenerator = (
+  tab: string,
+  options: {
+    reactStyleType: any;
+    reactStateType: any;
+    svelteStateType: any;
+  },
+): Transpiler => {
+  switch (tab) {
+    case 'liquid':
+      return componentToLiquid({ plugins });
+    case 'html':
+      return componentToHtml({ plugins });
+    case 'webcomponents':
+      return componentToCustomElement({ plugins });
+    case 'react':
+      return componentToReact({
+        stylesType: options.reactStyleType,
+        stateType: options.reactStateType,
+        plugins,
+      });
+    case 'stencil':
+      return componentToStencil({
+        plugins,
+      });
+    case 'marko':
+      return componentToMarko({
+        plugins,
+      });
+    case 'swift':
+      return componentToSwift();
+    case 'reactNative':
+      return componentToReactNative({
+        stateType: options.reactStateType,
+        plugins,
+      });
+    case 'template':
+      return componentToTemplate({
+        plugins,
+      });
+    case 'solid':
+      return componentToSolid({ plugins });
+    case 'angular':
+      return componentToAngular({ plugins });
+    case 'svelte':
+      return componentToSvelte({
+        stateType: options.svelteStateType,
+        plugins,
+      });
+    // case 'qwik':
+    // TODO: add qwik support back again
+    // return (
+    //     await componentToQwik(json, {
+    //       plugins,
+    //     })
+    //   ).files.find((file) => file.path.endsWith('template.tsx'))!
+    //     return.contents
+    case 'mitosis':
+      return componentToMitosis();
+    case 'json':
+      return jsonGenerator;
+    case 'builder':
+      return builderGenerator;
+    default:
+      return componentToVue2({ plugins });
+  }
 };
 
 const rowColumnToIndex = (str: string, position: Position): number => {
@@ -150,6 +223,10 @@ const builderOptions = {
   hideAnimateTab: true,
 };
 
+/**
+ * This web-component is injected in the page via the `https://cdn.builder.io/js/editor` script tag
+ * in the index of this page.
+ */
 const BuilderEditor = adapt('builder-editor');
 
 const smallBreakpoint = breakpoints.mediaQueries.small;
@@ -328,62 +405,7 @@ export default function Fiddle() {
             : parseJsx(state.code);
 
         console.log('json', json);
-        state.output =
-          state.outputTab === 'liquid'
-            ? componentToLiquid({ plugins })({ component: json })
-            : state.outputTab === 'html'
-            ? componentToHtml({ plugins })({ component: json })
-            : state.outputTab === 'webcomponents'
-            ? componentToCustomElement({ plugins })({ component: json })
-            : state.outputTab === 'react'
-            ? componentToReact({
-                stylesType: state.options.reactStyleType,
-                stateType: state.options.reactStateType,
-                plugins,
-              })({ component: json })
-            : state.outputTab === 'stencil'
-            ? componentToStencil({
-                plugins,
-              })({ component: json })
-            : state.outputTab === 'marko'
-            ? componentToMarko({
-                plugins,
-              })({ component: json })
-            : state.outputTab === 'swift'
-            ? componentToSwift()({ component: json })
-            : state.outputTab === 'reactNative'
-            ? componentToReactNative({
-                stateType: state.options.reactStateType,
-                plugins,
-              })({ component: json })
-            : state.outputTab === 'template'
-            ? componentToTemplate({
-                plugins,
-              })({ component: json })
-            : state.outputTab === 'solid'
-            ? componentToSolid({ plugins })({ component: json })
-            : state.outputTab === 'angular'
-            ? componentToAngular({ plugins })({ component: json })
-            : state.outputTab === 'svelte'
-            ? componentToSvelte({
-                stateType: state.options.svelteStateType,
-                plugins,
-              })({ component: json })
-            : // TODO: add qwik support back again
-            // : state.outputTab === 'qwik'
-            // ? (
-            //     await componentToQwik(json, {
-            //       plugins,
-            //     })
-            //   ).files.find((file) => file.path.endsWith('template.tsx'))!
-            //     ?.contents
-            state.outputTab === 'mitosis'
-            ? componentToMitosis()({ component: json })
-            : state.outputTab === 'json'
-            ? JSON.stringify(json, null, 2)
-            : state.outputTab === 'builder'
-            ? JSON.stringify(componentToBuilder()({ component: json }), null, 2)
-            : componentToVue2({ plugins })({ component: json, path: '' });
+        state.output = getGenerator(state.outputTab, state.options)({ component: json });
 
         const newBuilderData = componentToBuilder()({ component: json });
         setBuilderData(newBuilderData);
@@ -1265,7 +1287,7 @@ export default function Fiddle() {
               pointer-events: ${state.isDraggingBuilderCodeBar ? 'none' : 'auto'}; 
             }`}
           </style>
-          <BuilderEditor
+          <builder-editor
             onChange={(e: CustomEvent) => {
               if (useSaveButton) {
                 // Only run this when the iframe is focused - aka is being actively used
