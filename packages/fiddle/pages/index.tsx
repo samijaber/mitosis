@@ -39,21 +39,12 @@ export default () => {
         <meta property="og:url" content="https://mitosis.builder.io" />
         <link rel="canonical" href="https://mitosis.builder.io" />
         <title>Mitosis Fiddle - compile to common frameworks, import from popular tools</title>
-
-        <Script>
-          {`
-          if (location.hostname === 'jsx-lite-fiddle.web.app') {
-            var url = new URL(location.href);
-            url.hostname = 'mitosis.builder.io';
-            location.href = url.href;
-          }
-          `}
-        </Script>
       </Head>
       <noscript>You need to enable JavaScript to run this app.</noscript>
       <App />
 
-      <Script async src="https://cdn.builder.io/js/editor@1.0.42-0"></Script>
+      {/* this script adds the web-component of the Builder Fiddle */}
+      <Script async src="https://cdn.builder.io/js/editor"></Script>
 
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LFJQTJMFD3"></Script>
