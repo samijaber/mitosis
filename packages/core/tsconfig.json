@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    "lib": ["es7", "dom", "esnext", "esnext.asynciterable"],
+    "lib": [
+      "es7",
+      "dom",
+      "esnext",
+      "esnext.asynciterable"
+    ],
     "composite": true,
     "outDir": "dist",
     "strict": true,
@@ -10,13 +15,22 @@
     "skipDefaultLibCheck": true,
     "exactOptionalPropertyTypes": false,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "target": "ES5",
     "baseUrl": ".",
     "paths": {
-      "@builder.io/mitosis": ["./src"]
+      "@builder.io/mitosis": [
+        "./src"
+      ]
     },
     "jsxImportSource": "@builder.io/mitosis"
   },
-  "include": ["./src", "./typings.d.ts", "./jsx-runtime.d.ts"],
-  "exclude": ["src/**/*.raw.tsx"]
+  "include": [
+    "./src",
+    "./typings.d.ts",
+    "./jsx-runtime.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.raw.tsx"
+  ]
 }

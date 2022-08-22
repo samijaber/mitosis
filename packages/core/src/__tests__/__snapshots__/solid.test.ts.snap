@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Solid AdvancedRef 1`] = `
+exports[`Solid > AdvancedRef 1`] = `
 "import { Show, on, createEffect, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -57,7 +57,7 @@ export default MyBasicRefComponent;
 "
 `;
 
-exports[`Solid AdvancedRef 2`] = `
+exports[`Solid > AdvancedRef 2`] = `
 "import { Show, on, createEffect, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -120,7 +120,7 @@ export default MyBasicRefComponent;
 "
 `;
 
-exports[`Solid Basic 1`] = `
+exports[`Solid > Basic 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -158,7 +158,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid Basic 2`] = `
+exports[`Solid > Basic 2`] = `
 "import { Show, For, createSignal } from \\"solid-js\\";
 
 function MyBasicForShowComponent(props) {
@@ -194,7 +194,7 @@ export default MyBasicForShowComponent;
 "
 `;
 
-exports[`Solid Basic 3`] = `
+exports[`Solid > Basic 3`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -232,7 +232,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid Basic 4`] = `
+exports[`Solid > Basic 4`] = `
 "import { Show, For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -272,7 +272,7 @@ export default MyBasicForShowComponent;
 "
 `;
 
-exports[`Solid Basic Context 1`] = `
+exports[`Solid > Basic Context 1`] = `
 "import { useContext, onMount, createSignal } from \\"solid-js\\";
 import { Dynamic } from \\"solid-js/web\\";
 
@@ -308,7 +308,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid Basic Context 2`] = `
+exports[`Solid > Basic Context 2`] = `
 "import { useContext, onMount, createSignal } from \\"solid-js\\";
 import { Dynamic } from \\"solid-js/web\\";
 
@@ -348,7 +348,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid Basic OnMount Update 1`] = `
+exports[`Solid > Basic OnMount Update 1`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 function MyBasicOnMountUpdateComponent(props) {
@@ -372,7 +372,7 @@ export default MyBasicOnMountUpdateComponent;
 "
 `;
 
-exports[`Solid Basic OnMount Update 2`] = `
+exports[`Solid > Basic OnMount Update 2`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -400,7 +400,7 @@ export default MyBasicOnMountUpdateComponent;
 "
 `;
 
-exports[`Solid Basic Outputs 1`] = `
+exports[`Solid > Basic Outputs 1`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 function MyBasicOutputsComponent(props) {
@@ -418,7 +418,7 @@ export default MyBasicOutputsComponent;
 "
 `;
 
-exports[`Solid Basic Outputs 2`] = `
+exports[`Solid > Basic Outputs 2`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -442,7 +442,7 @@ export default MyBasicOutputsComponent;
 "
 `;
 
-exports[`Solid Basic Outputs Meta 1`] = `
+exports[`Solid > Basic Outputs Meta 1`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 function MyBasicOutputsComponent(props) {
@@ -460,7 +460,7 @@ export default MyBasicOutputsComponent;
 "
 `;
 
-exports[`Solid Basic Outputs Meta 2`] = `
+exports[`Solid > Basic Outputs Meta 2`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -484,7 +484,7 @@ export default MyBasicOutputsComponent;
 "
 `;
 
-exports[`Solid BasicChildComponent 1`] = `
+exports[`Solid > BasicChildComponent 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import MyBasicComponent from \\"./basic.raw\\";
@@ -512,7 +512,7 @@ export default MyBasicChildComponent;
 "
 `;
 
-exports[`Solid BasicChildComponent 2`] = `
+exports[`Solid > BasicChildComponent 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -544,7 +544,7 @@ export default MyBasicChildComponent;
 "
 `;
 
-exports[`Solid BasicFor 1`] = `
+exports[`Solid > BasicFor 1`] = `
 "import { For, onMount, createSignal } from \\"solid-js\\";
 
 function MyBasicForComponent(props) {
@@ -584,7 +584,7 @@ export default MyBasicForComponent;
 "
 `;
 
-exports[`Solid BasicFor 2`] = `
+exports[`Solid > BasicFor 2`] = `
 "import { For, onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -628,7 +628,7 @@ export default MyBasicForComponent;
 "
 `;
 
-exports[`Solid BasicRef 1`] = `
+exports[`Solid > BasicRef 1`] = `
 "import { Show, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -680,7 +680,7 @@ export default MyBasicRefComponent;
 "
 `;
 
-exports[`Solid BasicRef 2`] = `
+exports[`Solid > BasicRef 2`] = `
 "import { Show, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -738,7 +738,7 @@ export default MyBasicRefComponent;
 "
 `;
 
-exports[`Solid BasicRefAssignment 1`] = `
+exports[`Solid > BasicRefAssignment 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 function MyBasicRefAssignmentComponent(props) {
@@ -759,7 +759,7 @@ export default MyBasicRefAssignmentComponent;
 "
 `;
 
-exports[`Solid BasicRefAssignment 2`] = `
+exports[`Solid > BasicRefAssignment 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -784,7 +784,7 @@ export default MyBasicRefAssignmentComponent;
 "
 `;
 
-exports[`Solid BasicRefPrevious 1`] = `
+exports[`Solid > BasicRefPrevious 1`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 export function usePrevious<T>(value: T) {
@@ -824,7 +824,7 @@ export default MyPreviousComponent;
 "
 `;
 
-exports[`Solid BasicRefPrevious 2`] = `
+exports[`Solid > BasicRefPrevious 2`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -868,7 +868,7 @@ export default MyPreviousComponent;
 "
 `;
 
-exports[`Solid Button 1`] = `
+exports[`Solid > Button 1`] = `
 "import { Show } from \\"solid-js\\";
 
 function Button(props) {
@@ -896,7 +896,7 @@ export default Button;
 "
 `;
 
-exports[`Solid Button 2`] = `
+exports[`Solid > Button 2`] = `
 "import { Show } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -928,7 +928,7 @@ export default Button;
 "
 `;
 
-exports[`Solid Columns 1`] = `
+exports[`Solid > Columns 1`] = `
 "import { For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -998,7 +998,7 @@ export default Column;
 "
 `;
 
-exports[`Solid Columns 2`] = `
+exports[`Solid > Columns 2`] = `
 "import { For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -1068,7 +1068,7 @@ export default Column;
 "
 `;
 
-exports[`Solid ContentSlotHtml 1`] = `
+exports[`Solid > ContentSlotHtml 1`] = `
 "function ContentSlotCode(props) {
   return (
     <div>
@@ -1087,7 +1087,7 @@ export default ContentSlotCode;
 "
 `;
 
-exports[`Solid ContentSlotHtml 2`] = `
+exports[`Solid > ContentSlotHtml 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function ContentSlotCode(props) {
@@ -1110,7 +1110,7 @@ export default ContentSlotCode;
 "
 `;
 
-exports[`Solid ContentSlotJSX 1`] = `
+exports[`Solid > ContentSlotJSX 1`] = `
 "function ContentSlotJsxCode(props) {
   return (
     <div>
@@ -1127,7 +1127,7 @@ export default ContentSlotJsxCode;
 "
 `;
 
-exports[`Solid ContentSlotJSX 2`] = `
+exports[`Solid > ContentSlotJSX 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function ContentSlotJsxCode(props) {
@@ -1148,7 +1148,7 @@ export default ContentSlotJsxCode;
 "
 `;
 
-exports[`Solid CustomCode 1`] = `
+exports[`Solid > CustomCode 1`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 function CustomCode(props) {
@@ -1219,7 +1219,7 @@ export default CustomCode;
 "
 `;
 
-exports[`Solid CustomCode 2`] = `
+exports[`Solid > CustomCode 2`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -1294,7 +1294,7 @@ export default CustomCode;
 "
 `;
 
-exports[`Solid Embed 1`] = `
+exports[`Solid > Embed 1`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 function CustomCode(props) {
@@ -1365,7 +1365,7 @@ export default CustomCode;
 "
 `;
 
-exports[`Solid Embed 2`] = `
+exports[`Solid > Embed 2`] = `
 "import { onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -1440,7 +1440,7 @@ export default CustomCode;
 "
 `;
 
-exports[`Solid Form 1`] = `
+exports[`Solid > Form 1`] = `
 "import { Show, For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -1742,7 +1742,7 @@ export default FormComponent;
 "
 `;
 
-exports[`Solid Form 2`] = `
+exports[`Solid > Form 2`] = `
 "import { Show, For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2044,7 +2044,7 @@ export default FormComponent;
 "
 `;
 
-exports[`Solid Image 1`] = `
+exports[`Solid > Image 1`] = `
 "import { Show, onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2133,7 +2133,7 @@ export default Image;
 "
 `;
 
-exports[`Solid Image 2`] = `
+exports[`Solid > Image 2`] = `
 "import { Show, onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2226,7 +2226,7 @@ export default Image;
 "
 `;
 
-exports[`Solid Image State 1`] = `
+exports[`Solid > Image State 1`] = `
 "import { For, createSignal } from \\"solid-js\\";
 
 function ImgStateComponent(props) {
@@ -2254,7 +2254,7 @@ export default ImgStateComponent;
 "
 `;
 
-exports[`Solid Image State 2`] = `
+exports[`Solid > Image State 2`] = `
 "import { For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2286,7 +2286,7 @@ export default ImgStateComponent;
 "
 `;
 
-exports[`Solid Img 1`] = `
+exports[`Solid > Img 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 function ImgComponent(props) {
@@ -2308,7 +2308,7 @@ export default ImgComponent;
 "
 `;
 
-exports[`Solid Img 2`] = `
+exports[`Solid > Img 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 import { Builder } from \\"@builder.io/sdk\\";
@@ -2334,7 +2334,7 @@ export default ImgComponent;
 "
 `;
 
-exports[`Solid Input 1`] = `
+exports[`Solid > Input 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 function FormInputComponent(props) {
@@ -2360,7 +2360,7 @@ export default FormInputComponent;
 "
 `;
 
-exports[`Solid Input 2`] = `
+exports[`Solid > Input 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 import { Builder } from \\"@builder.io/sdk\\";
@@ -2390,7 +2390,7 @@ export default FormInputComponent;
 "
 `;
 
-exports[`Solid RawText 1`] = `
+exports[`Solid > RawText 1`] = `
 "function RawText(props) {
   return (
     <span
@@ -2404,7 +2404,7 @@ export default RawText;
 "
 `;
 
-exports[`Solid RawText 2`] = `
+exports[`Solid > RawText 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function RawText(props) {
@@ -2422,7 +2422,7 @@ export default RawText;
 "
 `;
 
-exports[`Solid Remove Internal mitosis package 1`] = `
+exports[`Solid > Remove Internal mitosis package 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 function MyBasicComponent(props) {
@@ -2440,7 +2440,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid Remove Internal mitosis package 2`] = `
+exports[`Solid > Remove Internal mitosis package 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2462,7 +2462,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid Section 1`] = `
+exports[`Solid > Section 1`] = `
 "function SectionComponent(props) {
   return (
     <section
@@ -2484,7 +2484,7 @@ export default SectionComponent;
 "
 `;
 
-exports[`Solid Section 2`] = `
+exports[`Solid > Section 2`] = `
 "import { Show, For, createSignal } from \\"solid-js\\";
 
 function SectionStateComponent(props) {
@@ -2517,7 +2517,7 @@ export default SectionStateComponent;
 "
 `;
 
-exports[`Solid Section 3`] = `
+exports[`Solid > Section 3`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function SectionComponent(props) {
@@ -2543,7 +2543,7 @@ export default SectionComponent;
 "
 `;
 
-exports[`Solid Section 4`] = `
+exports[`Solid > Section 4`] = `
 "import { Show, For, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2580,7 +2580,7 @@ export default SectionStateComponent;
 "
 `;
 
-exports[`Solid Select 1`] = `
+exports[`Solid > Select 1`] = `
 "import { For } from \\"solid-js\\";
 
 import { Builder } from \\"@builder.io/sdk\\";
@@ -2616,7 +2616,7 @@ export default SelectComponent;
 "
 `;
 
-exports[`Solid Select 2`] = `
+exports[`Solid > Select 2`] = `
 "import { For } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2656,7 +2656,7 @@ export default SelectComponent;
 "
 `;
 
-exports[`Solid SlotHtml 1`] = `
+exports[`Solid > SlotHtml 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 function SlotCode(props) {
@@ -2673,7 +2673,7 @@ export default SlotCode;
 "
 `;
 
-exports[`Solid SlotHtml 2`] = `
+exports[`Solid > SlotHtml 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 import ContentSlotCode from \\"./content-slot-jsx.raw\\";
@@ -2694,7 +2694,7 @@ export default SlotCode;
 "
 `;
 
-exports[`Solid SlotJsx 1`] = `
+exports[`Solid > SlotJsx 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 function SlotCode(props) {
@@ -2709,7 +2709,7 @@ export default SlotCode;
 "
 `;
 
-exports[`Solid SlotJsx 2`] = `
+exports[`Solid > SlotJsx 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 import ContentSlotCode from \\"./content-slot-jsx.raw\\";
@@ -2728,7 +2728,7 @@ export default SlotCode;
 "
 `;
 
-exports[`Solid Stamped.io 1`] = `
+exports[`Solid > Stamped.io 1`] = `
 "import { Show, For, onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2837,7 +2837,7 @@ export default SmileReviews;
 "
 `;
 
-exports[`Solid Stamped.io 2`] = `
+exports[`Solid > Stamped.io 2`] = `
 "import { Show, For, onMount, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -2946,7 +2946,7 @@ export default SmileReviews;
 "
 `;
 
-exports[`Solid Submit 1`] = `
+exports[`Solid > Submit 1`] = `
 "function SubmitButton(props) {
   return (
     <button {...props.attributes} type=\\"submit\\">
@@ -2959,7 +2959,7 @@ export default SubmitButton;
 "
 `;
 
-exports[`Solid Submit 2`] = `
+exports[`Solid > Submit 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function SubmitButton(props) {
@@ -2976,7 +2976,7 @@ export default SubmitButton;
 "
 `;
 
-exports[`Solid Text 1`] = `
+exports[`Solid > Text 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { Builder } from \\"@builder.io/sdk\\";
@@ -3004,7 +3004,7 @@ export default Text;
 "
 `;
 
-exports[`Solid Text 2`] = `
+exports[`Solid > Text 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3036,7 +3036,7 @@ export default Text;
 "
 `;
 
-exports[`Solid Textarea 1`] = `
+exports[`Solid > Textarea 1`] = `
 "function Textarea(props) {
   return (
     <textarea
@@ -3053,7 +3053,7 @@ export default Textarea;
 "
 `;
 
-exports[`Solid Textarea 2`] = `
+exports[`Solid > Textarea 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function Textarea(props) {
@@ -3074,7 +3074,7 @@ export default Textarea;
 "
 `;
 
-exports[`Solid Video 1`] = `
+exports[`Solid > Video 1`] = `
 "function Video(props) {
   return (
     <video
@@ -3104,7 +3104,7 @@ export default Video;
 "
 `;
 
-exports[`Solid Video 2`] = `
+exports[`Solid > Video 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function Video(props) {
@@ -3138,7 +3138,7 @@ export default Video;
 "
 `;
 
-exports[`Solid basicOnUpdateReturn 1`] = `
+exports[`Solid > basicOnUpdateReturn 1`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 function MyBasicOnUpdateReturnComponent(props) {
@@ -3174,7 +3174,7 @@ export default MyBasicOnUpdateReturnComponent;
 "
 `;
 
-exports[`Solid basicOnUpdateReturn 2`] = `
+exports[`Solid > basicOnUpdateReturn 2`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3214,7 +3214,7 @@ export default MyBasicOnUpdateReturnComponent;
 "
 `;
 
-exports[`Solid class + ClassName + css 1`] = `
+exports[`Solid > class + ClassName + css 1`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -3236,7 +3236,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid class + ClassName + css 2`] = `
+exports[`Solid > class + ClassName + css 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -3258,7 +3258,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid class + css 1`] = `
+exports[`Solid > class + css 1`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -3280,7 +3280,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid class + css 2`] = `
+exports[`Solid > class + css 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -3302,7 +3302,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid className + css 1`] = `
+exports[`Solid > className + css 1`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -3324,7 +3324,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid className + css 2`] = `
+exports[`Solid > className + css 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -3346,7 +3346,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid className 1`] = `
+exports[`Solid > className 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 function ClassNameCode(props) {
@@ -3364,7 +3364,7 @@ export default ClassNameCode;
 "
 `;
 
-exports[`Solid className 2`] = `
+exports[`Solid > className 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3386,7 +3386,7 @@ export default ClassNameCode;
 "
 `;
 
-exports[`Solid classState 1`] = `
+exports[`Solid > classState 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3418,7 +3418,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid classState 2`] = `
+exports[`Solid > classState 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3448,7 +3448,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid defaultProps 1`] = `
+exports[`Solid > defaultProps 1`] = `
 "import { Show } from \\"solid-js\\";
 
 function Button(props) {
@@ -3476,7 +3476,7 @@ export default Button;
 "
 `;
 
-exports[`Solid defaultProps 2`] = `
+exports[`Solid > defaultProps 2`] = `
 "import { Show } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3508,7 +3508,7 @@ export default Button;
 "
 `;
 
-exports[`Solid defaultValsWithTypes 1`] = `
+exports[`Solid > defaultValsWithTypes 1`] = `
 "const DEFAULT_VALUES: Props = {
   name: \\"Sami\\",
 };
@@ -3526,7 +3526,7 @@ export default ComponentWithTypes;
 "
 `;
 
-exports[`Solid defaultValsWithTypes 2`] = `
+exports[`Solid > defaultValsWithTypes 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 const DEFAULT_VALUES: Props = {
@@ -3548,7 +3548,7 @@ export default ComponentWithTypes;
 "
 `;
 
-exports[`Solid multipleOnUpdate 1`] = `
+exports[`Solid > multipleOnUpdate 1`] = `
 "import { on, createEffect } from \\"solid-js\\";
 
 function MultipleOnUpdate(props) {
@@ -3559,7 +3559,7 @@ export default MultipleOnUpdate;
 "
 `;
 
-exports[`Solid multipleOnUpdate 2`] = `
+exports[`Solid > multipleOnUpdate 2`] = `
 "import { on, createEffect } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3576,7 +3576,7 @@ export default MultipleOnUpdate;
 "
 `;
 
-exports[`Solid multipleOnUpdateWithDeps 1`] = `
+exports[`Solid > multipleOnUpdateWithDeps 1`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 function MultipleOnUpdateWithDeps(props) {
@@ -3613,7 +3613,7 @@ export default MultipleOnUpdateWithDeps;
 "
 `;
 
-exports[`Solid multipleOnUpdateWithDeps 2`] = `
+exports[`Solid > multipleOnUpdateWithDeps 2`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3656,7 +3656,7 @@ export default MultipleOnUpdateWithDeps;
 "
 `;
 
-exports[`Solid nestedShow 1`] = `
+exports[`Solid > nestedShow 1`] = `
 "import { Show } from \\"solid-js\\";
 
 function NestedShow(props) {
@@ -3673,7 +3673,7 @@ export default NestedShow;
 "
 `;
 
-exports[`Solid nestedShow 2`] = `
+exports[`Solid > nestedShow 2`] = `
 "import { Show } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3694,7 +3694,7 @@ export default NestedShow;
 "
 `;
 
-exports[`Solid nestedStyles 1`] = `
+exports[`Solid > nestedStyles 1`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function NestedStyles(props) {
@@ -3723,7 +3723,7 @@ export default NestedStyles;
 "
 `;
 
-exports[`Solid nestedStyles 2`] = `
+exports[`Solid > nestedStyles 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function NestedStyles(props) {
@@ -3755,7 +3755,7 @@ export default NestedStyles;
 "
 `;
 
-exports[`Solid onInit & onMount 1`] = `
+exports[`Solid > onInit & onMount 1`] = `
 "import { onMount } from \\"solid-js\\";
 
 function OnInit(props) {
@@ -3770,7 +3770,7 @@ export default OnInit;
 "
 `;
 
-exports[`Solid onInit & onMount 2`] = `
+exports[`Solid > onInit & onMount 2`] = `
 "import { onMount } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3791,7 +3791,7 @@ export default OnInit;
 "
 `;
 
-exports[`Solid onInit 1`] = `
+exports[`Solid > onInit 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 export const defaultValues = {
@@ -3813,7 +3813,7 @@ export default OnInit;
 "
 `;
 
-exports[`Solid onInit 2`] = `
+exports[`Solid > onInit 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3839,7 +3839,7 @@ export default OnInit;
 "
 `;
 
-exports[`Solid onMount 1`] = `
+exports[`Solid > onMount 1`] = `
 "import { onMount } from \\"solid-js\\";
 
 function Comp(props) {
@@ -3854,7 +3854,7 @@ export default Comp;
 "
 `;
 
-exports[`Solid onMount 2`] = `
+exports[`Solid > onMount 2`] = `
 "import { onMount } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3875,7 +3875,7 @@ export default Comp;
 "
 `;
 
-exports[`Solid onUpdate 1`] = `
+exports[`Solid > onUpdate 1`] = `
 "import { on, createEffect } from \\"solid-js\\";
 
 function OnUpdate(props) {
@@ -3886,7 +3886,7 @@ export default OnUpdate;
 "
 `;
 
-exports[`Solid onUpdate 2`] = `
+exports[`Solid > onUpdate 2`] = `
 "import { on, createEffect } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3903,7 +3903,7 @@ export default OnUpdate;
 "
 `;
 
-exports[`Solid onUpdateWithDeps 1`] = `
+exports[`Solid > onUpdateWithDeps 1`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 function OnUpdateWithDeps(props) {
@@ -3923,7 +3923,7 @@ export default OnUpdateWithDeps;
 "
 `;
 
-exports[`Solid onUpdateWithDeps 2`] = `
+exports[`Solid > onUpdateWithDeps 2`] = `
 "import { on, createEffect, createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -3949,7 +3949,7 @@ export default OnUpdateWithDeps;
 "
 `;
 
-exports[`Solid preserveExportOrLocalStatement 1`] = `
+exports[`Solid > preserveExportOrLocalStatement 1`] = `
 "const b = 3;
 const foo = () => {};
 export const a = 3;
@@ -3964,7 +3964,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid preserveExportOrLocalStatement 2`] = `
+exports[`Solid > preserveExportOrLocalStatement 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 const b = 3;
@@ -3985,7 +3985,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid preserveTyping 1`] = `
+exports[`Solid > preserveTyping 1`] = `
 "function MyBasicComponent(props) {
   return (
     <div>
@@ -3999,7 +3999,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid preserveTyping 2`] = `
+exports[`Solid > preserveTyping 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -4017,7 +4017,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid propsDestructure 1`] = `
+exports[`Solid > propsDestructure 1`] = `
 "import { createSignal } from \\"solid-js\\";
 
 function MyBasicComponent(props) {
@@ -4036,7 +4036,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid propsDestructure 2`] = `
+exports[`Solid > propsDestructure 2`] = `
 "import { createSignal } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -4059,7 +4059,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid propsInterface 1`] = `
+exports[`Solid > propsInterface 1`] = `
 "function MyBasicComponent(props) {
   return (
     <div>
@@ -4073,7 +4073,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid propsInterface 2`] = `
+exports[`Solid > propsInterface 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -4091,7 +4091,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid propsType 1`] = `
+exports[`Solid > propsType 1`] = `
 "function MyBasicComponent(props) {
   return (
     <div>
@@ -4105,7 +4105,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid propsType 2`] = `
+exports[`Solid > propsType 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function MyBasicComponent(props) {
@@ -4123,7 +4123,7 @@ export default MyBasicComponent;
 "
 `;
 
-exports[`Solid rootShow 1`] = `
+exports[`Solid > rootShow 1`] = `
 "import { Show } from \\"solid-js\\";
 
 function RenderStyles(props) {
@@ -4138,7 +4138,7 @@ export default RenderStyles;
 "
 `;
 
-exports[`Solid rootShow 2`] = `
+exports[`Solid > rootShow 2`] = `
 "import { Show } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -4157,7 +4157,7 @@ export default RenderStyles;
 "
 `;
 
-exports[`Solid self-referencing component 1`] = `
+exports[`Solid > self-referencing component 1`] = `
 "import { Show } from \\"solid-js\\";
 
 function MyComponent(props) {
@@ -4175,7 +4175,7 @@ export default MyComponent;
 "
 `;
 
-exports[`Solid self-referencing component 2`] = `
+exports[`Solid > self-referencing component 2`] = `
 "import { Show } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -4197,7 +4197,7 @@ export default MyComponent;
 "
 `;
 
-exports[`Solid self-referencing component with children 1`] = `
+exports[`Solid > self-referencing component with children 1`] = `
 "import { Show } from \\"solid-js\\";
 
 function MyComponent(props) {
@@ -4218,7 +4218,7 @@ export default MyComponent;
 "
 `;
 
-exports[`Solid self-referencing component with children 2`] = `
+exports[`Solid > self-referencing component with children 2`] = `
 "import { Show } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -4243,7 +4243,7 @@ export default MyComponent;
 "
 `;
 
-exports[`Solid showWithFor 1`] = `
+exports[`Solid > showWithFor 1`] = `
 "import { Show, For } from \\"solid-js\\";
 
 function NestedShow(props) {
@@ -4263,7 +4263,7 @@ export default NestedShow;
 "
 `;
 
-exports[`Solid showWithFor 2`] = `
+exports[`Solid > showWithFor 2`] = `
 "import { Show, For } from \\"solid-js\\";
 
 import { css } from \\"solid-styled-components\\";
@@ -4287,7 +4287,7 @@ export default NestedShow;
 "
 `;
 
-exports[`Solid subComponent 1`] = `
+exports[`Solid > subComponent 1`] = `
 "import Foo from \\"./foo-sub-component.jsx\\";
 
 function SubComponent(props) {
@@ -4298,7 +4298,7 @@ export default SubComponent;
 "
 `;
 
-exports[`Solid subComponent 2`] = `
+exports[`Solid > subComponent 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 import Foo from \\"./foo-sub-component.jsx\\";
@@ -4315,7 +4315,7 @@ export default SubComponent;
 "
 `;
 
-exports[`Solid typeDependency 1`] = `
+exports[`Solid > typeDependency 1`] = `
 "function TypeDependency(props) {
   return <div>{props.foo}</div>;
 }
@@ -4324,7 +4324,7 @@ export default TypeDependency;
 "
 `;
 
-exports[`Solid typeDependency 2`] = `
+exports[`Solid > typeDependency 2`] = `
 "import { css } from \\"solid-styled-components\\";
 
 function TypeDependency(props) {

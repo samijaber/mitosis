@@ -14,8 +14,21 @@ import {
 } from '../symbols/symbol-processor';
 import { runTestsForTarget } from './shared';
 
-const todo = require('../../../../examples/todo/src/components/todo.lite');
-const todos = require('../../../../examples/todo/src/components/todos.lite');
+import todo from '../../../../examples/todo/src/components/todo.lite?raw';
+import todos from '../../../../examples/todo/src/components/todos.lite?raw';
+import helloWorld from './qwik.test.hello_world.json';
+import pageWithSymbol from './qwik.test.page-with-symbol.json';
+import button from './qwik.test.button.json';
+import svg from './qwik.test.svg.json';
+import image from './qwik.test.image.json';
+import accordion from './qwik.test.accordion.json';
+import forLoop from './qwik.test.for-loop.json';
+import content from './qwik.test.component-binding.json';
+import componentInputs from './qwik.test.component-inputs.json';
+import showHide from './qwik.test.show-hide.json';
+import bindings from './qwik.test.bindings.json';
+import forLoopBinding from './qwik.test.for-loop.binding.json';
+import mount from './qwik.test.mount.json';
 
 const debugFiles = true;
 
@@ -74,7 +87,7 @@ describe('qwik', () => {
 
   describe('hello_world', () => {
     test('stylesheet', async () => {
-      const component = builderContentToMitosisComponent(require('./qwik.test.hello_world.json'));
+      const component = builderContentToMitosisComponent(helloWorld);
       const fileSet = createFileSet({ output: 'mjs' });
 
       addComponent(fileSet, component);
@@ -84,9 +97,7 @@ describe('qwik', () => {
   });
 
   test('page-with-symbol', async () => {
-    const component = builderContentToMitosisComponent(
-      require('./qwik.test.page-with-symbol.json'),
-    );
+    const component = builderContentToMitosisComponent(pageWithSymbol);
     const fileSet = createFileSet({ output: 'mjs', jsx: false });
 
     addComponent(fileSet, component);
@@ -95,7 +106,7 @@ describe('qwik', () => {
   });
 
   test('button', async () => {
-    const component = builderContentToMitosisComponent(require('./qwik.test.button.json'));
+    const component = builderContentToMitosisComponent(button);
     const fileSet = createFileSet({ output: 'mjs', jsx: false });
 
     addComponent(fileSet, component);
@@ -104,7 +115,7 @@ describe('qwik', () => {
   });
 
   test('svg', async () => {
-    const component = builderContentToMitosisComponent(require('./qwik.test.svg.json'), {
+    const component = builderContentToMitosisComponent(svg, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -116,7 +127,7 @@ describe('qwik', () => {
   });
 
   test('Image', async () => {
-    const component = builderContentToMitosisComponent(require('./qwik.test.image.json'), {
+    const component = builderContentToMitosisComponent(image, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -128,7 +139,7 @@ describe('qwik', () => {
   });
 
   test('Image.slow', async () => {
-    const component = builderContentToMitosisComponent(require('./qwik.test.image.json'), {
+    const component = builderContentToMitosisComponent(image, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -140,7 +151,7 @@ describe('qwik', () => {
   });
 
   test('Accordion', async () => {
-    const component = builderContentToMitosisComponent(require('./qwik.test.accordion.json'), {
+    const component = builderContentToMitosisComponent(accordion, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -153,7 +164,7 @@ describe('qwik', () => {
   });
 
   test('For', async () => {
-    const component = builderContentToMitosisComponent(require('./qwik.test.for-loop.json'), {
+    const component = builderContentToMitosisComponent(forLoop, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -169,7 +180,6 @@ describe('qwik', () => {
     test('bindings', async () => {
       // https://builder.io/content/0937630137c94676ba24f95d9d12e426/edit
       // https://cdn.builder.io/api/v2/content/page/0937630137c94676ba24f95d9d12e426?apiKey=23dfd7cef1104af59f281d58ec525923&noTraverse=false&preserveAllFields=true&single=true&cachebust=true
-      const content = require('./qwik.test.component-binding.json');
       const state: Record<string, any> = {};
       const hierarchy = convertBuilderContentToSymbolHierarchy(content, {
         collectComponentState: state,
@@ -192,11 +202,10 @@ describe('qwik', () => {
       expect(toObj(fileSet)).toMatchSnapshot();
     });
     test('component inputs', async () => {
-      const content = require('./qwik.test.component-inputs.json');
       const state: Record<string, any> = {};
       expect(state).toMatchSnapshot();
       const fileSet = createFileSet({ output: 'cjs', jsx: true });
-      const component = builderContentToMitosisComponent(content, {
+      const component = builderContentToMitosisComponent(componentInputs, {
         includeBuilderExtras: true,
         preserveTextBlocks: true,
       });
@@ -208,11 +217,10 @@ describe('qwik', () => {
   });
 
   test('show-hide', async () => {
-    const content = require('./qwik.test.show-hide.json');
     const state: Record<string, any> = {};
     expect(state).toMatchSnapshot();
     const fileSet = createFileSet({ output: 'mjs', jsx: true });
-    const component = builderContentToMitosisComponent(content, {
+    const component = builderContentToMitosisComponent(showHide, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -225,9 +233,8 @@ describe('qwik', () => {
   test('bindings', async () => {
     // https://builder.io/content/5d5a2d612df542978577d83c0aefad1e
     // https://cdn.builder.io/api/v2/content/page/5d5a2d612df542978577d83c0aefad1e?apiKey=23dfd7cef1104af59f281d58ec525923
-    const content = require('./qwik.test.bindings.json');
     const fileSet = createFileSet({ output: 'cjs', jsx: false });
-    const component = builderContentToMitosisComponent(content, {
+    const component = builderContentToMitosisComponent(bindings, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });
@@ -239,18 +246,16 @@ describe('qwik', () => {
   });
 
   test('for-loop.bindings', async () => {
-    const component = require('./qwik.test.for-loop.binding.json');
     const fileSet = createFileSet({ output: 'cjs', jsx: false });
-    compileAwayBuilderComponentsFromTree(component, compileAwayComponents);
-    addComponent(fileSet, component);
+    compileAwayBuilderComponentsFromTree(forLoopBinding, compileAwayComponents);
+    addComponent(fileSet, forLoopBinding);
     await debugOutput(fileSet);
     expect(toObj(fileSet)).toMatchSnapshot();
   });
 
   test('mount', async () => {
-    const content = require('./qwik.test.mount.json');
     const fileSet = createFileSet({ output: 'cjs', jsx: false });
-    const component = builderContentToMitosisComponent(content, {
+    const component = builderContentToMitosisComponent(mount, {
       includeBuilderExtras: true,
       preserveTextBlocks: true,
     });

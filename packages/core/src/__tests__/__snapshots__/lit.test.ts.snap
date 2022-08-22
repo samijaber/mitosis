@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Lit AdvancedRef 1`] = `
+exports[`Lit > AdvancedRef 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -69,7 +69,7 @@ export default class MyBasicRefComponent extends LitElement {
 "
 `;
 
-exports[`Lit Basic 1`] = `
+exports[`Lit > Basic 1`] = `
 "export const DEFAULT_VALUES = {
   name: \\"Steve\\",
 };
@@ -112,7 +112,7 @@ padding: 10px;
 "
 `;
 
-exports[`Lit Basic 2`] = `
+exports[`Lit > Basic 2`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -148,7 +148,7 @@ export default class MyBasicForShowComponent extends LitElement {
 "
 `;
 
-exports[`Lit Basic Context 1`] = `
+exports[`Lit > Basic Context 1`] = `
 "import { Injector, createInjector, MyService } from \\"@dummy/injection-js\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -188,7 +188,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit Basic OnMount Update 1`] = `
+exports[`Lit > Basic OnMount Update 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -224,7 +224,7 @@ export default class MyBasicOnMountUpdateComponent extends LitElement {
 "
 `;
 
-exports[`Lit Basic Outputs 1`] = `
+exports[`Lit > Basic Outputs 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -256,7 +256,7 @@ export default class MyBasicOutputsComponent extends LitElement {
 "
 `;
 
-exports[`Lit Basic Outputs Meta 1`] = `
+exports[`Lit > Basic Outputs Meta 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -288,7 +288,7 @@ export default class MyBasicOutputsComponent extends LitElement {
 "
 `;
 
-exports[`Lit BasicChildComponent 1`] = `
+exports[`Lit > BasicChildComponent 1`] = `
 "import MyBasicComponent from \\"./basic.raw\\";
 import MyBasicOnMountUpdateComponent from \\"./basic-onMount-update.raw\\";
 
@@ -324,7 +324,7 @@ export default class MyBasicChildComponent extends LitElement {
 "
 `;
 
-exports[`Lit BasicFor 1`] = `
+exports[`Lit > BasicFor 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -361,7 +361,7 @@ export default class MyBasicForComponent extends LitElement {
 "
 `;
 
-exports[`Lit BasicRef 1`] = `
+exports[`Lit > BasicRef 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -426,7 +426,7 @@ export default class MyBasicRefComponent extends LitElement {
 "
 `;
 
-exports[`Lit BasicRefAssignment 1`] = `
+exports[`Lit > BasicRefAssignment 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -460,7 +460,7 @@ export default class MyBasicRefAssignmentComponent extends LitElement {
 "
 `;
 
-exports[`Lit BasicRefPrevious 1`] = `
+exports[`Lit > BasicRefPrevious 1`] = `
 "export function usePrevious<T>(value: T) {
   // The ref object is a generic container whose current property is mutable ...
   // ... and can hold any value, similar to an instance property on a class
@@ -516,7 +516,7 @@ export default class MyPreviousComponent extends LitElement {
 "
 `;
 
-exports[`Lit Button 1`] = `
+exports[`Lit > Button 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -581,7 +581,7 @@ export default class Button extends LitElement {
 "
 `;
 
-exports[`Lit Columns 1`] = `
+exports[`Lit > Columns 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -662,7 +662,7 @@ export default class Column extends LitElement {
 "
 `;
 
-exports[`Lit ContentSlotHtml 1`] = `
+exports[`Lit > ContentSlotHtml 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -700,7 +700,7 @@ export default class ContentSlotCode extends LitElement {
 "
 `;
 
-exports[`Lit ContentSlotJSX 1`] = `
+exports[`Lit > ContentSlotJSX 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -736,7 +736,7 @@ export default class ContentSlotJsxCode extends LitElement {
 "
 `;
 
-exports[`Lit CustomCode 1`] = `
+exports[`Lit > CustomCode 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -816,7 +816,7 @@ export default class CustomCode extends LitElement {
 "
 `;
 
-exports[`Lit Embed 1`] = `
+exports[`Lit > Embed 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -896,7 +896,7 @@ export default class CustomCode extends LitElement {
 "
 `;
 
-exports[`Lit Form 1`] = `
+exports[`Lit > Form 1`] = `
 "import { BuilderBlock as BuilderBlockComponent } from \\"@fake\\";
 import { Builder, builder } from \\"@builder.io/sdk\\";
 import { BuilderBlocks } from \\"@fake\\";
@@ -1256,7 +1256,7 @@ export default class FormComponent extends LitElement {
 "
 `;
 
-exports[`Lit Image 1`] = `
+exports[`Lit > Image 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1380,7 +1380,7 @@ export default class Image extends LitElement {
 "
 `;
 
-exports[`Lit Image State 1`] = `
+exports[`Lit > Image State 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1410,7 +1410,7 @@ export default class ImgStateComponent extends LitElement {
 "
 `;
 
-exports[`Lit Img 1`] = `
+exports[`Lit > Img 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -1471,7 +1471,7 @@ export default class ImgComponent extends LitElement {
 "
 `;
 
-exports[`Lit Input 1`] = `
+exports[`Lit > Input 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -1524,7 +1524,7 @@ export default class FormInputComponent extends LitElement {
 "
 `;
 
-exports[`Lit RawText 1`] = `
+exports[`Lit > RawText 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1554,7 +1554,7 @@ export default class RawText extends LitElement {
 "
 `;
 
-exports[`Lit Remove Internal mitosis package 1`] = `
+exports[`Lit > Remove Internal mitosis package 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1577,7 +1577,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit Section 1`] = `
+exports[`Lit > Section 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1625,7 +1625,7 @@ export default class SectionComponent extends LitElement {
 "
 `;
 
-exports[`Lit Section 2`] = `
+exports[`Lit > Section 2`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1678,7 +1678,7 @@ export default class SectionStateComponent extends LitElement {
 "
 `;
 
-exports[`Lit Select 1`] = `
+exports[`Lit > Select 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -1738,7 +1738,7 @@ export default class SelectComponent extends LitElement {
 "
 `;
 
-exports[`Lit SlotHtml 1`] = `
+exports[`Lit > SlotHtml 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -1772,7 +1772,7 @@ export default class SlotCode extends LitElement {
 "
 `;
 
-exports[`Lit SlotJsx 1`] = `
+exports[`Lit > SlotJsx 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -1804,7 +1804,7 @@ export default class SlotCode extends LitElement {
 "
 `;
 
-exports[`Lit Stamped.io 1`] = `
+exports[`Lit > Stamped.io 1`] = `
 "import { kebabCase } from \\"lodash\\";
 import { snakeCase } from \\"lodash\\";
 
@@ -1924,7 +1924,7 @@ export default class SmileReviews extends LitElement {
 "
 `;
 
-exports[`Lit Submit 1`] = `
+exports[`Lit > Submit 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -1961,7 +1961,7 @@ export default class SubmitButton extends LitElement {
 "
 `;
 
-exports[`Lit Text 1`] = `
+exports[`Lit > Text 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -2000,7 +2000,7 @@ export default class Text extends LitElement {
 "
 `;
 
-exports[`Lit Textarea 1`] = `
+exports[`Lit > Textarea 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2049,7 +2049,7 @@ export default class Textarea extends LitElement {
 "
 `;
 
-exports[`Lit Video 1`] = `
+exports[`Lit > Video 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2126,7 +2126,7 @@ export default class Video extends LitElement {
 "
 `;
 
-exports[`Lit basicForwardRef 1`] = `
+exports[`Lit > basicForwardRef 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2165,7 +2165,7 @@ color: red;
 "
 `;
 
-exports[`Lit basicForwardRefMetadata 1`] = `
+exports[`Lit > basicForwardRefMetadata 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2204,7 +2204,7 @@ color: red;
 "
 `;
 
-exports[`Lit basicOnUpdateReturn 1`] = `
+exports[`Lit > basicOnUpdateReturn 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2244,7 +2244,7 @@ export default class MyBasicOnUpdateReturnComponent extends LitElement {
 "
 `;
 
-exports[`Lit class + ClassName + css 1`] = `
+exports[`Lit > class + ClassName + css 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2268,7 +2268,7 @@ padding: 10px;
 "
 `;
 
-exports[`Lit class + css 1`] = `
+exports[`Lit > class + css 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2292,7 +2292,7 @@ padding: 10px;
 "
 `;
 
-exports[`Lit className + css 1`] = `
+exports[`Lit > className + css 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2316,7 +2316,7 @@ padding: 10px;
 "
 `;
 
-exports[`Lit className 1`] = `
+exports[`Lit > className 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2348,7 +2348,7 @@ export default class ClassNameCode extends LitElement {
 "
 `;
 
-exports[`Lit classState 1`] = `
+exports[`Lit > classState 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2376,7 +2376,7 @@ padding: 10px;
 "
 `;
 
-exports[`Lit defaultProps 1`] = `
+exports[`Lit > defaultProps 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2441,7 +2441,7 @@ export default class Button extends LitElement {
 "
 `;
 
-exports[`Lit defaultValsWithTypes 1`] = `
+exports[`Lit > defaultValsWithTypes 1`] = `
 "const DEFAULT_VALUES: Props = {
   name: \\"Sami\\",
 };
@@ -2472,7 +2472,7 @@ export default class ComponentWithTypes extends LitElement {
 "
 `;
 
-exports[`Lit multipleOnUpdate 1`] = `
+exports[`Lit > multipleOnUpdate 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2499,7 +2499,7 @@ export default class MultipleOnUpdate extends LitElement {
 "
 `;
 
-exports[`Lit multipleOnUpdateWithDeps 1`] = `
+exports[`Lit > multipleOnUpdateWithDeps 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2539,7 +2539,7 @@ export default class MultipleOnUpdateWithDeps extends LitElement {
 "
 `;
 
-exports[`Lit nestedShow 1`] = `
+exports[`Lit > nestedShow 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2582,7 +2582,7 @@ export default class NestedShow extends LitElement {
 "
 `;
 
-exports[`Lit nestedStyles 1`] = `
+exports[`Lit > nestedStyles 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2618,7 +2618,7 @@ display: grid;
 "
 `;
 
-exports[`Lit onInit & onMount 1`] = `
+exports[`Lit > onInit & onMount 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2643,7 +2643,7 @@ export default class OnInit extends LitElement {
 "
 `;
 
-exports[`Lit onInit 1`] = `
+exports[`Lit > onInit 1`] = `
 "export const defaultValues = {
   name: \\"PatrickJS\\",
 };
@@ -2676,7 +2676,7 @@ export default class OnInit extends LitElement {
 "
 `;
 
-exports[`Lit onMount 1`] = `
+exports[`Lit > onMount 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2704,7 +2704,7 @@ export default class Comp extends LitElement {
 "
 `;
 
-exports[`Lit onUpdate 1`] = `
+exports[`Lit > onUpdate 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2729,7 +2729,7 @@ export default class OnUpdate extends LitElement {
 "
 `;
 
-exports[`Lit onUpdateWithDeps 1`] = `
+exports[`Lit > onUpdateWithDeps 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2757,7 +2757,7 @@ export default class OnUpdateWithDeps extends LitElement {
 "
 `;
 
-exports[`Lit preserveExportOrLocalStatement 1`] = `
+exports[`Lit > preserveExportOrLocalStatement 1`] = `
 "const b = 3;
 const foo = () => {};
 export const a = 3;
@@ -2794,7 +2794,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit preserveTyping 1`] = `
+exports[`Lit > preserveTyping 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2830,7 +2830,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit propsDestructure 1`] = `
+exports[`Lit > propsDestructure 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2864,7 +2864,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit propsInterface 1`] = `
+exports[`Lit > propsInterface 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2892,7 +2892,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit propsType 1`] = `
+exports[`Lit > propsType 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2920,7 +2920,7 @@ export default class MyBasicComponent extends LitElement {
 "
 `;
 
-exports[`Lit rootShow 1`] = `
+exports[`Lit > rootShow 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2955,7 +2955,7 @@ export default class RenderStyles extends LitElement {
 "
 `;
 
-exports[`Lit self-referencing component 1`] = `
+exports[`Lit > self-referencing component 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -2987,7 +2987,7 @@ export default class MyComponent extends LitElement {
 "
 `;
 
-exports[`Lit self-referencing component with children 1`] = `
+exports[`Lit > self-referencing component with children 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -3021,7 +3021,7 @@ export default class MyComponent extends LitElement {
 "
 `;
 
-exports[`Lit showWithFor 1`] = `
+exports[`Lit > showWithFor 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 
@@ -3060,7 +3060,7 @@ export default class NestedShow extends LitElement {
 "
 `;
 
-exports[`Lit subComponent 1`] = `
+exports[`Lit > subComponent 1`] = `
 "import \\"./foo-sub-component.js\\";
 
 import { LitElement, html, css } from \\"lit\\";
@@ -3083,7 +3083,7 @@ export default class SubComponent extends LitElement {
 "
 `;
 
-exports[`Lit typeDependency 1`] = `
+exports[`Lit > typeDependency 1`] = `
 "import { LitElement, html, css } from \\"lit\\";
 import { customElement, property, state, query } from \\"lit/decorators.js\\";
 

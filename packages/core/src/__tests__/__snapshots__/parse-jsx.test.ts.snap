@@ -1,78 +1,78 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Parse JSX Image 1`] = `
-Object {
+exports[`Parse JSX > Image 1`] = `
+{
   "@type": "@builder.io/mitosis/component",
-  "children": Array [
-    Object {
+  "children": [
+    {
       "@type": "@builder.io/mitosis/node",
-      "bindings": Object {},
-      "children": Array [
-        Object {
+      "bindings": {},
+      "children": [
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
       ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "ref": Object {
+          "bindings": {
+            "ref": {
               "code": "pictureRef",
             },
           },
-          "children": Array [
-            Object {
+          "children": [
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
         ",
               },
-              "scope": Object {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {
-                "when": Object {
+              "bindings": {
+                "when": {
                   "code": "!state.useLazyLoading() || state.load",
                 },
               },
-              "children": Array [
-                Object {
+              "children": [
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
           ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {
-                    "alt": Object {
+                  "bindings": {
+                    "alt": {
                       "code": "props.altText",
                     },
-                    "aria-role": Object {
+                    "aria-role": {
                       "code": "props.altText ? 'presentation' : undefined",
                     },
-                    "class": Object {
+                    "class": {
                       "code": "'builder-image' + (props._class ? ' ' + props._class : '')",
                     },
-                    "css": Object {
+                    "css": {
                       "code": "{
   opacity: '1',
   transition: 'opacity 0.2s ease-in-out',
@@ -80,137 +80,137 @@ Object {
   objectPosition: 'center'
 }",
                     },
-                    "onLoad": Object {
+                    "onLoad": {
                       "code": "state.setLoaded()",
                     },
-                    "sizes": Object {
+                    "sizes": {
                       "code": "props.sizes",
                     },
-                    "src": Object {
+                    "src": {
                       "code": "props.image",
                     },
-                    "srcset": Object {
+                    "srcset": {
                       "code": "props.srcset",
                     },
                   },
-                  "children": Array [],
-                  "meta": Object {},
+                  "children": [],
+                  "meta": {},
                   "name": "img",
-                  "properties": Object {},
-                  "scope": Object {},
+                  "properties": {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
         ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
               ],
-              "meta": Object {},
+              "meta": {},
               "name": "Show",
-              "properties": Object {},
-              "scope": Object {},
+              "properties": {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
         ",
               },
-              "scope": Object {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {
-                "srcset": Object {
+              "bindings": {
+                "srcset": {
                   "code": "props.srcset",
                 },
               },
-              "children": Array [],
-              "meta": Object {},
+              "children": [],
+              "meta": {},
               "name": "source",
-              "properties": Object {},
-              "scope": Object {},
+              "properties": {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
       ",
               },
-              "scope": Object {},
+              "scope": {},
             },
           ],
-          "meta": Object {},
+          "meta": {},
           "name": "picture",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
       ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "_text": Object {
+          "bindings": {
+            "_text": {
               "code": "props.children",
             },
           },
-          "children": Array [],
-          "meta": Object {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
     ",
           },
-          "scope": Object {},
+          "scope": {},
         },
       ],
-      "meta": Object {},
+      "meta": {},
       "name": "Fragment",
-      "properties": Object {},
-      "scope": Object {},
+      "properties": {},
+      "scope": {},
     },
   ],
-  "context": Object {
-    "get": Object {},
-    "set": Object {},
+  "context": {
+    "get": {},
+    "set": {},
   },
-  "exports": Object {},
-  "hooks": Object {
-    "onMount": Object {
+  "exports": {},
+  "hooks": {
+    "onMount": {
       "code": "
   if (state.useLazyLoading()) {
     // throttled scroll capture listener
@@ -236,7 +236,7 @@ Object {
   }
 ",
     },
-    "onUnMount": Object {
+    "onUnMount": {
       "code": "
   if (state.scrollListener) {
     window.removeEventListener('scroll', state.scrollListener);
@@ -244,43 +244,43 @@ Object {
 ",
     },
   },
-  "imports": Array [],
-  "inputs": Array [],
-  "meta": Object {},
+  "imports": [],
+  "inputs": [],
+  "meta": {},
   "name": "Image",
   "propsTypeRef": "ImageProps",
-  "refs": Object {
-    "pictureRef": Object {
+  "refs": {
+    "pictureRef": {
       "argument": "",
       "typeParameter": "HTMLElement",
     },
   },
-  "state": Object {
-    "imageLoaded": Object {
+  "state": {
+    "imageLoaded": {
       "code": false,
       "type": "property",
     },
-    "isBrowser": Object {
+    "isBrowser": {
       "code": "@builder.io/mitosis/function:function isBrowser() {
   return typeof window !== 'undefined' && window.navigator.product != 'ReactNative';
 }",
       "type": "function",
     },
-    "load": Object {
+    "load": {
       "code": false,
       "type": "property",
     },
-    "scrollListener": Object {
+    "scrollListener": {
       "code": null,
       "type": "property",
     },
-    "setLoaded": Object {
+    "setLoaded": {
       "code": "@builder.io/mitosis/method:setLoaded() {
   state.imageLoaded = true;
 }",
       "type": "method",
     },
-    "useLazyLoading": Object {
+    "useLazyLoading": {
       "code": "@builder.io/mitosis/method:useLazyLoading() {
   // TODO: Add more checks here, like testing for real web browsers
   return !!props.lazy && isBrowser();
@@ -288,8 +288,8 @@ Object {
       "type": "method",
     },
   },
-  "subComponents": Array [],
-  "types": Array [
+  "subComponents": [],
+  "types": [
     "// TODO: AMP Support?
 export interface ImageProps {
   _class?: string;
@@ -312,335 +312,335 @@ export interface ImageProps {
 }
 `;
 
-exports[`Parse JSX custom mitosis package 1`] = `
-Object {
+exports[`Parse JSX > custom mitosis package 1`] = `
+{
   "@type": "@builder.io/mitosis/component",
-  "children": Array [
-    Object {
+  "children": [
+    {
       "@type": "@builder.io/mitosis/node",
-      "bindings": Object {},
-      "children": Array [
-        Object {
+      "bindings": {},
+      "children": [
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "Hello ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "_text": Object {
+          "bindings": {
+            "_text": {
               "code": "state.name",
             },
           },
-          "children": Array [],
-          "meta": Object {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "! I can run in React, Qwik, Vue, Solid, or Liquid!",
           },
-          "scope": Object {},
+          "scope": {},
         },
       ],
-      "meta": Object {},
+      "meta": {},
       "name": "div",
-      "properties": Object {},
-      "scope": Object {},
+      "properties": {},
+      "scope": {},
     },
   ],
-  "context": Object {
-    "get": Object {},
-    "set": Object {},
+  "context": {
+    "get": {},
+    "set": {},
   },
-  "exports": Object {},
-  "hooks": Object {},
-  "imports": Array [],
-  "inputs": Array [],
-  "meta": Object {},
+  "exports": {},
+  "hooks": {},
+  "imports": [],
+  "inputs": [],
+  "meta": {},
   "name": "MyBasicComponent",
-  "refs": Object {},
-  "state": Object {
-    "name": Object {
+  "refs": {},
+  "state": {
+    "name": {
       "code": "PatrickJS",
       "type": "property",
     },
   },
-  "subComponents": Array [],
+  "subComponents": [],
 }
 `;
 
-exports[`Parse JSX metadata 1`] = `
-Object {
+exports[`Parse JSX > metadata 1`] = `
+{
   "@type": "@builder.io/mitosis/component",
-  "children": Array [
-    Object {
+  "children": [
+    {
       "@type": "@builder.io/mitosis/node",
-      "bindings": Object {},
-      "children": Array [
-        Object {
+      "bindings": {},
+      "children": [
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
       ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "when": Object {
+          "bindings": {
+            "when": {
               "code": "props.link",
             },
           },
-          "children": Array [
-            Object {
+          "children": [
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
         ",
               },
-              "scope": Object {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {
-                "_spread": Object {
+              "bindings": {
+                "_spread": {
                   "code": "props.attributes",
                 },
-                "href": Object {
+                "href": {
                   "code": "props.link",
                 },
-                "target": Object {
+                "target": {
                   "code": "props.openLinkInNewTab ? '_blank' : undefined",
                 },
               },
-              "children": Array [
-                Object {
+              "children": [
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
           ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {
-                    "_text": Object {
+                  "bindings": {
+                    "_text": {
                       "code": "props.text",
                     },
                   },
-                  "children": Array [],
-                  "meta": Object {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {},
-                  "scope": Object {},
+                  "properties": {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
         ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
               ],
-              "meta": Object {},
+              "meta": {},
               "name": "a",
-              "properties": Object {},
-              "scope": Object {},
+              "properties": {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
       ",
               },
-              "scope": Object {},
+              "scope": {},
             },
           ],
-          "meta": Object {},
+          "meta": {},
           "name": "Show",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
       ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "when": Object {
+          "bindings": {
+            "when": {
               "code": "!props.link",
             },
           },
-          "children": Array [
-            Object {
+          "children": [
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
         ",
               },
-              "scope": Object {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {
-                "_spread": Object {
+              "bindings": {
+                "_spread": {
                   "code": "props.attributes",
                 },
               },
-              "children": Array [
-                Object {
+              "children": [
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
           ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {
-                    "_text": Object {
+                  "bindings": {
+                    "_text": {
                       "code": "props.text",
                     },
                   },
-                  "children": Array [],
-                  "meta": Object {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {},
-                  "scope": Object {},
+                  "properties": {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
         ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
               ],
-              "meta": Object {},
+              "meta": {},
               "name": "button",
-              "properties": Object {
+              "properties": {
                 "type": "button",
               },
-              "scope": Object {},
+              "scope": {},
             },
-            Object {
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [],
-              "meta": Object {},
+              "bindings": {},
+              "children": [],
+              "meta": {},
               "name": "div",
-              "properties": Object {
+              "properties": {
                 "_text": "
       ",
               },
-              "scope": Object {},
+              "scope": {},
             },
           ],
-          "meta": Object {},
+          "meta": {},
           "name": "Show",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
     ",
           },
-          "scope": Object {},
+          "scope": {},
         },
       ],
-      "meta": Object {},
+      "meta": {},
       "name": "Fragment",
-      "properties": Object {},
-      "scope": Object {},
+      "properties": {},
+      "scope": {},
     },
   ],
-  "context": Object {
-    "get": Object {},
-    "set": Object {},
+  "context": {
+    "get": {},
+    "set": {},
   },
-  "exports": Object {},
-  "hooks": Object {},
-  "imports": Array [],
-  "inputs": Array [],
-  "meta": Object {
-    "useMetadata": Object {
-      "foo": Object {
+  "exports": {},
+  "hooks": {},
+  "imports": [],
+  "inputs": [],
+  "meta": {
+    "useMetadata": {
+      "foo": {
         "bar": "baz",
       },
     },
   },
   "name": "Button",
   "propsTypeRef": "ButtonProps",
-  "refs": Object {},
-  "state": Object {},
-  "subComponents": Array [],
-  "types": Array [
+  "refs": {},
+  "state": {},
+  "subComponents": [],
+  "types": [
     "export interface ButtonProps {
   attributes?: any;
   text?: string;
@@ -651,53 +651,53 @@ Object {
 }
 `;
 
-exports[`Parse JSX onUpdate return 1`] = `
-Object {
+exports[`Parse JSX > onUpdate return 1`] = `
+{
   "@type": "@builder.io/mitosis/component",
-  "children": Array [
-    Object {
+  "children": [
+    {
       "@type": "@builder.io/mitosis/node",
-      "bindings": Object {},
-      "children": Array [
-        Object {
+      "bindings": {},
+      "children": [
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "Hello! ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "_text": Object {
+          "bindings": {
+            "_text": {
               "code": "state.name",
             },
           },
-          "children": Array [],
-          "meta": Object {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
       ],
-      "meta": Object {},
+      "meta": {},
       "name": "div",
-      "properties": Object {},
-      "scope": Object {},
+      "properties": {},
+      "scope": {},
     },
   ],
-  "context": Object {
-    "get": Object {},
-    "set": Object {},
+  "context": {
+    "get": {},
+    "set": {},
   },
-  "exports": Object {},
-  "hooks": Object {
-    "onUpdate": Array [
-      Object {
+  "exports": {},
+  "hooks": {
+    "onUpdate": [
+      {
         "code": "
   const controller = new AbortController();
   const signal = controller.signal;
@@ -716,24 +716,24 @@ Object {
       },
     ],
   },
-  "imports": Array [],
-  "inputs": Array [],
-  "meta": Object {},
+  "imports": [],
+  "inputs": [],
+  "meta": {},
   "name": "MyBasicOnUpdateReturnComponent",
-  "refs": Object {},
-  "state": Object {
-    "name": Object {
+  "refs": {},
+  "state": {
+    "name": {
       "code": "PatrickJS",
       "type": "property",
     },
   },
-  "subComponents": Array [],
+  "subComponents": [],
 }
 `;
 
-exports[`Parse JSX parseStateObject 1`] = `
-Object {
-  "allRegisteredComponents": Object {
+exports[`Parse JSX > parseStateObject 1`] = `
+{
+  "allRegisteredComponents": {
     "code": "@builder.io/mitosis/method:get allRegisteredComponents() {
   const allComponentsArray = [...getDefaultRegisteredComponents(), // While this \`components\` object is deprecated, we must maintain support for it.
   // Since users are able to override our default components, we need to make sure that we do not break such
@@ -748,13 +748,13 @@ Object {
 }",
     "type": "getter",
   },
-  "canTrackToUse": Object {
+  "canTrackToUse": {
     "code": "@builder.io/mitosis/method:get canTrackToUse() {
   return props.canTrack || true;
 }",
     "type": "getter",
   },
-  "contentState": Object {
+  "contentState": {
     "code": "@builder.io/mitosis/method:get contentState() {
   return { ...props.content?.data?.state,
     ...props.data,
@@ -763,13 +763,13 @@ Object {
 }",
     "type": "getter",
   },
-  "contextContext": Object {
+  "contextContext": {
     "code": "@builder.io/mitosis/method:get contextContext() {
   return props.context || {};
 }",
     "type": "getter",
   },
-  "emitStateUpdate": Object {
+  "emitStateUpdate": {
     "code": "@builder.io/mitosis/method:emitStateUpdate() {
   if (isEditing()) {
     window.dispatchEvent(new CustomEvent<BuilderComponentStateChange>('builder:component:stateChange', {
@@ -784,7 +784,7 @@ Object {
 }",
     "type": "method",
   },
-  "evalExpression": Object {
+  "evalExpression": {
     "code": "@builder.io/mitosis/method:evalExpression(expression: string) {
   return expression.replace(/{{([^}]+)}}/g, (_match, group) => evaluate({
     code: group,
@@ -794,7 +794,7 @@ Object {
 }",
     "type": "method",
   },
-  "evaluateJsCode": Object {
+  "evaluateJsCode": {
     "code": "@builder.io/mitosis/method:evaluateJsCode() {
   // run any dynamic JS code attached to content
   const jsCode = state.useContent?.data?.jsCode;
@@ -809,11 +809,11 @@ Object {
 }",
     "type": "method",
   },
-  "forceReRenderCount": Object {
+  "forceReRenderCount": {
     "code": 0,
     "type": "property",
   },
-  "handleRequest": Object {
+  "handleRequest": {
     "code": "@builder.io/mitosis/method:handleRequest({
   url,
   key
@@ -835,13 +835,13 @@ Object {
 }",
     "type": "method",
   },
-  "httpReqsData": Object {
+  "httpReqsData": {
     "code": "@builder.io/mitosis/method:get httpReqsData() {
   return {};
 }",
     "type": "getter",
   },
-  "onClick": Object {
+  "onClick": {
     "code": "@builder.io/mitosis/method:onClick(_event: MouseEvent) {
   if (state.useContent) {
     track({
@@ -854,15 +854,15 @@ Object {
 }",
     "type": "method",
   },
-  "overrideContent": Object {
+  "overrideContent": {
     "code": null,
     "type": "property",
   },
-  "overrideState": Object {
-    "code": Object {},
+  "overrideState": {
+    "code": {},
     "type": "property",
   },
-  "processMessage": Object {
+  "processMessage": {
     "code": "@builder.io/mitosis/method:processMessage(event: MessageEvent) {
   const {
     data
@@ -893,7 +893,7 @@ Object {
 }",
     "type": "method",
   },
-  "runHttpRequests": Object {
+  "runHttpRequests": {
     "code": "@builder.io/mitosis/method:runHttpRequests() {
   const requests = state.useContent?.data?.httpRequests ?? {};
   Object.entries(requests).forEach(([key, url]) => {
@@ -908,17 +908,17 @@ Object {
 }",
     "type": "method",
   },
-  "shouldRenderContentStyles": Object {
+  "shouldRenderContentStyles": {
     "code": "@builder.io/mitosis/method:get shouldRenderContentStyles() {
   return Boolean((state.useContent?.data?.cssCode || state.useContent?.data?.customFonts?.length) && TARGET !== 'reactNative');
 }",
     "type": "getter",
   },
-  "update": Object {
+  "update": {
     "code": 0,
     "type": "property",
   },
-  "useContent": Object {
+  "useContent": {
     "code": "@builder.io/mitosis/method:get useContent() {
   const mergedContent: BuilderContent = { ...props.content,
     ...state.overrideContent,
@@ -934,335 +934,335 @@ Object {
 }
 `;
 
-exports[`Parse JSX useRef 1`] = `
-Object {
+exports[`Parse JSX > useRef 1`] = `
+{
   "@type": "@builder.io/mitosis/component",
-  "children": Array [
-    Object {
+  "children": [
+    {
       "@type": "@builder.io/mitosis/node",
-      "bindings": Object {},
-      "children": Array [
-        Object {
+      "bindings": {},
+      "children": [
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
       ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "when": Object {
+          "bindings": {
+            "when": {
               "code": "props.showInput",
             },
           },
-          "children": Array [
-            Object {
+          "children": [
+            {
               "@type": "@builder.io/mitosis/node",
-              "bindings": Object {},
-              "children": Array [
-                Object {
+              "bindings": {},
+              "children": [
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
           ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {
-                    "css": Object {
+                  "bindings": {
+                    "css": {
                       "code": "{
   color: 'red'
 }",
                     },
-                    "onBlur": Object {
-                      "arguments": Array [
+                    "onBlur": {
+                      "arguments": [
                         "event",
                       ],
                       "code": "state.onBlur()",
                     },
-                    "onChange": Object {
-                      "arguments": Array [
+                    "onChange": {
+                      "arguments": [
                         "event",
                       ],
                       "code": "state.name = event.target.value",
                     },
-                    "ref": Object {
+                    "ref": {
                       "code": "inputRef",
                     },
-                    "value": Object {
+                    "value": {
                       "code": "state.name",
                     },
                   },
-                  "children": Array [],
-                  "meta": Object {},
+                  "children": [],
+                  "meta": {},
                   "name": "input",
-                  "properties": Object {},
-                  "scope": Object {},
+                  "properties": {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
 
           ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {
-                    "ref": Object {
+                  "bindings": {
+                    "ref": {
                       "code": "inputNoArgRef",
                     },
                   },
-                  "children": Array [
-                    Object {
+                  "children": [
+                    {
                       "@type": "@builder.io/mitosis/node",
-                      "bindings": Object {},
-                      "children": Array [],
-                      "meta": Object {},
+                      "bindings": {},
+                      "children": [],
+                      "meta": {},
                       "name": "div",
-                      "properties": Object {
+                      "properties": {
                         "_text": "
             Choose a car:
           ",
                       },
-                      "scope": Object {},
+                      "scope": {},
                     },
                   ],
-                  "meta": Object {},
+                  "meta": {},
                   "name": "label",
-                  "properties": Object {
+                  "properties": {
                     "for": "cars",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
 
           ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [
-                    Object {
+                  "bindings": {},
+                  "children": [
+                    {
                       "@type": "@builder.io/mitosis/node",
-                      "bindings": Object {},
-                      "children": Array [],
-                      "meta": Object {},
+                      "bindings": {},
+                      "children": [],
+                      "meta": {},
                       "name": "div",
-                      "properties": Object {
+                      "properties": {
                         "_text": "
             ",
                       },
-                      "scope": Object {},
+                      "scope": {},
                     },
-                    Object {
+                    {
                       "@type": "@builder.io/mitosis/node",
-                      "bindings": Object {},
-                      "children": Array [
-                        Object {
+                      "bindings": {},
+                      "children": [
+                        {
                           "@type": "@builder.io/mitosis/node",
-                          "bindings": Object {},
-                          "children": Array [],
-                          "meta": Object {},
+                          "bindings": {},
+                          "children": [],
+                          "meta": {},
                           "name": "div",
-                          "properties": Object {
+                          "properties": {
                             "_text": "GR Supra",
                           },
-                          "scope": Object {},
+                          "scope": {},
                         },
                       ],
-                      "meta": Object {},
+                      "meta": {},
                       "name": "option",
-                      "properties": Object {
+                      "properties": {
                         "value": "supra",
                       },
-                      "scope": Object {},
+                      "scope": {},
                     },
-                    Object {
+                    {
                       "@type": "@builder.io/mitosis/node",
-                      "bindings": Object {},
-                      "children": Array [],
-                      "meta": Object {},
+                      "bindings": {},
+                      "children": [],
+                      "meta": {},
                       "name": "div",
-                      "properties": Object {
+                      "properties": {
                         "_text": "
             ",
                       },
-                      "scope": Object {},
+                      "scope": {},
                     },
-                    Object {
+                    {
                       "@type": "@builder.io/mitosis/node",
-                      "bindings": Object {},
-                      "children": Array [
-                        Object {
+                      "bindings": {},
+                      "children": [
+                        {
                           "@type": "@builder.io/mitosis/node",
-                          "bindings": Object {},
-                          "children": Array [],
-                          "meta": Object {},
+                          "bindings": {},
+                          "children": [],
+                          "meta": {},
                           "name": "div",
-                          "properties": Object {
+                          "properties": {
                             "_text": "GR 86",
                           },
-                          "scope": Object {},
+                          "scope": {},
                         },
                       ],
-                      "meta": Object {},
+                      "meta": {},
                       "name": "option",
-                      "properties": Object {
+                      "properties": {
                         "value": "86",
                       },
-                      "scope": Object {},
+                      "scope": {},
                     },
-                    Object {
+                    {
                       "@type": "@builder.io/mitosis/node",
-                      "bindings": Object {},
-                      "children": Array [],
-                      "meta": Object {},
+                      "bindings": {},
+                      "children": [],
+                      "meta": {},
                       "name": "div",
-                      "properties": Object {
+                      "properties": {
                         "_text": "
           ",
                       },
-                      "scope": Object {},
+                      "scope": {},
                     },
                   ],
-                  "meta": Object {},
+                  "meta": {},
                   "name": "select",
-                  "properties": Object {
+                  "properties": {
                     "id": "cars",
                     "name": "cars",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
-                Object {
+                {
                   "@type": "@builder.io/mitosis/node",
-                  "bindings": Object {},
-                  "children": Array [],
-                  "meta": Object {},
+                  "bindings": {},
+                  "children": [],
+                  "meta": {},
                   "name": "div",
-                  "properties": Object {
+                  "properties": {
                     "_text": "
         ",
                   },
-                  "scope": Object {},
+                  "scope": {},
                 },
               ],
-              "meta": Object {},
+              "meta": {},
               "name": "Fragment",
-              "properties": Object {},
-              "scope": Object {},
+              "properties": {},
+              "scope": {},
             },
           ],
-          "meta": Object {},
+          "meta": {},
           "name": "Show",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "
       Hello
       ",
           },
-          "scope": Object {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {
-            "_text": Object {
+          "bindings": {
+            "_text": {
               "code": "state.lowerCaseName()",
             },
           },
-          "children": Array [],
-          "meta": Object {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {},
-          "scope": Object {},
+          "properties": {},
+          "scope": {},
         },
-        Object {
+        {
           "@type": "@builder.io/mitosis/node",
-          "bindings": Object {},
-          "children": Array [],
-          "meta": Object {},
+          "bindings": {},
+          "children": [],
+          "meta": {},
           "name": "div",
-          "properties": Object {
+          "properties": {
             "_text": "! I can run in React, Qwik, Vue, Solid, or Web Component!
     ",
           },
-          "scope": Object {},
+          "scope": {},
         },
       ],
-      "meta": Object {},
+      "meta": {},
       "name": "div",
-      "properties": Object {},
-      "scope": Object {},
+      "properties": {},
+      "scope": {},
     },
   ],
-  "context": Object {
-    "get": Object {},
-    "set": Object {},
+  "context": {
+    "get": {},
+    "set": {},
   },
-  "exports": Object {},
-  "hooks": Object {},
-  "imports": Array [],
-  "inputs": Array [],
-  "meta": Object {},
+  "exports": {},
+  "hooks": {},
+  "imports": [],
+  "inputs": [],
+  "meta": {},
   "name": "MyBasicRefComponent",
   "propsTypeRef": "Props",
-  "refs": Object {
-    "inputNoArgRef": Object {
+  "refs": {
+    "inputNoArgRef": {
       "argument": "null",
       "typeParameter": "HTMLLabelElement",
     },
-    "inputRef": Object {
+    "inputRef": {
       "argument": "null",
       "typeParameter": "HTMLInputElement",
     },
   },
-  "state": Object {
-    "lowerCaseName": Object {
+  "state": {
+    "lowerCaseName": {
       "code": "@builder.io/mitosis/function:function lowerCaseName() {
   return state.name.toLowerCase();
 }",
       "type": "function",
     },
-    "name": Object {
+    "name": {
       "code": "PatrickJS",
       "type": "property",
     },
-    "onBlur": Object {
+    "onBlur": {
       "code": "@builder.io/mitosis/function:function onBlur() {
   // Maintain focus
   inputRef.focus();
@@ -1270,8 +1270,8 @@ Object {
       "type": "function",
     },
   },
-  "subComponents": Array [],
-  "types": Array [
+  "subComponents": [],
+  "types": [
     "export interface Props {
   showInput: boolean;
 }",

@@ -2,13 +2,13 @@ import { parseStateObjectToMitosisState } from '../parsers/jsx/state';
 import { parseJsx } from '../parsers/jsx';
 import { SPEC } from './data/jsx-json.spec';
 
-const buttonWithMetadata = require('./data/blocks/button-with-metadata.raw');
-const image = require('./data/blocks/image.raw');
-const basicOnUpdateReturn = require('./data/basic-onUpdate-return.raw');
-const basicMitosis = require('./data/basic-custom-mitosis-package.raw');
-const basicRef = require('./data/basic-ref.raw');
-const basicPropsRaw = require('./data/basic-props.raw');
-const basicPropsDestructureRaw = require('./data/basic-props-destructure.raw');
+import buttonWithMetadata from './data/blocks/button-with-metadata.raw?raw';
+import image from './data/blocks/image.raw?raw';
+import basicOnUpdateReturn from './data/basic-onUpdate-return.raw?raw';
+import basicMitosis from './data/basic-custom-mitosis-package.raw?raw';
+import basicRef from './data/basic-ref.raw?raw';
+import basicPropsRaw from './data/basic-props.raw?raw';
+import basicPropsDestructureRaw from './data/basic-props-destructure.raw?raw';
 
 describe('Parse JSX', () => {
   test('parseStateObject', () => {

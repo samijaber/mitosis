@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Svelte AdvancedRef 1`] = `
+exports[`Svelte > AdvancedRef 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     showInput: boolean;
@@ -61,7 +61,7 @@ exports[`Svelte AdvancedRef 1`] = `
 "
 `;
 
-exports[`Svelte Basic 1`] = `
+exports[`Svelte > Basic 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface MyBasicComponentProps {
     id: string;
@@ -98,7 +98,7 @@ exports[`Svelte Basic 1`] = `
 "
 `;
 
-exports[`Svelte Basic 2`] = `
+exports[`Svelte > Basic 2`] = `
 "<script lang=\\"ts\\">
   let name = \\"PatrickJS\\";
   let names = [\\"Steve\\", \\"PatrickJS\\"];
@@ -123,7 +123,7 @@ exports[`Svelte Basic 2`] = `
 "
 `;
 
-exports[`Svelte Basic Context 1`] = `
+exports[`Svelte > Basic Context 1`] = `
 "<script lang=\\"ts\\">
   import { onMount } from \\"svelte\\";
 
@@ -159,7 +159,7 @@ exports[`Svelte Basic Context 1`] = `
 "
 `;
 
-exports[`Svelte Basic OnMount Update 1`] = `
+exports[`Svelte > Basic OnMount Update 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     hi: string;
@@ -185,7 +185,7 @@ exports[`Svelte Basic OnMount Update 1`] = `
 "
 `;
 
-exports[`Svelte Basic Outputs 1`] = `
+exports[`Svelte > Basic Outputs 1`] = `
 "<script lang=\\"ts\\">
   import { onMount } from \\"svelte\\";
 
@@ -205,7 +205,7 @@ exports[`Svelte Basic Outputs 1`] = `
 "
 `;
 
-exports[`Svelte Basic Outputs Meta 1`] = `
+exports[`Svelte > Basic Outputs Meta 1`] = `
 "<script lang=\\"ts\\">
   import { onMount } from \\"svelte\\";
 
@@ -225,7 +225,7 @@ exports[`Svelte Basic Outputs Meta 1`] = `
 "
 `;
 
-exports[`Svelte BasicChildComponent 1`] = `
+exports[`Svelte > BasicChildComponent 1`] = `
 "<script lang=\\"ts\\">
   import MyBasicComponent from \\"./basic.raw\\";
   import MyBasicOnMountUpdateComponent from \\"./basic-onMount-update.raw\\";
@@ -243,7 +243,7 @@ exports[`Svelte BasicChildComponent 1`] = `
 "
 `;
 
-exports[`Svelte BasicFor 1`] = `
+exports[`Svelte > BasicFor 1`] = `
 "<script lang=\\"ts\\">
   import { onMount } from \\"svelte\\";
 
@@ -272,7 +272,7 @@ exports[`Svelte BasicFor 1`] = `
 "
 `;
 
-exports[`Svelte BasicRef 1`] = `
+exports[`Svelte > BasicRef 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     showInput: boolean;
@@ -326,7 +326,7 @@ exports[`Svelte BasicRef 1`] = `
 "
 `;
 
-exports[`Svelte BasicRefAssignment 1`] = `
+exports[`Svelte > BasicRefAssignment 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     showInput: boolean;
@@ -351,7 +351,7 @@ exports[`Svelte BasicRefAssignment 1`] = `
 "
 `;
 
-exports[`Svelte BasicRefPrevious 1`] = `
+exports[`Svelte > BasicRefPrevious 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     showInput: boolean;
@@ -395,7 +395,7 @@ exports[`Svelte BasicRefPrevious 1`] = `
 "
 `;
 
-exports[`Svelte Button 1`] = `
+exports[`Svelte > Button 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface ButtonProps {
     attributes?: any;
@@ -430,7 +430,7 @@ exports[`Svelte Button 1`] = `
 "
 `;
 
-exports[`Svelte Columns 1`] = `
+exports[`Svelte > Columns 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Column = {
     content: any; // TODO: Implement this when support for dynamic CSS lands
@@ -507,7 +507,7 @@ exports[`Svelte Columns 1`] = `
 "
 `;
 
-exports[`Svelte CustomCode 1`] = `
+exports[`Svelte > CustomCode 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface CustomCodeProps {
     code: string;
@@ -581,7 +581,7 @@ exports[`Svelte CustomCode 1`] = `
 "
 `;
 
-exports[`Svelte Embed 1`] = `
+exports[`Svelte > Embed 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface CustomCodeProps {
     code: string;
@@ -655,7 +655,7 @@ exports[`Svelte Embed 1`] = `
 "
 `;
 
-exports[`Svelte Form 1`] = `
+exports[`Svelte > Form 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface FormProps {
     attributes?: any;
@@ -978,7 +978,7 @@ exports[`Svelte Form 1`] = `
 "
 `;
 
-exports[`Svelte Image 1`] = `
+exports[`Svelte > Image 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   // TODO: AMP Support?
   export interface ImageProps {
@@ -1094,7 +1094,7 @@ exports[`Svelte Image 1`] = `
 "
 `;
 
-exports[`Svelte Image State 1`] = `
+exports[`Svelte > Image State 1`] = `
 "<script lang=\\"ts\\">
   let canShow = true;
   let images = [\\"http://example.com/qwik.png\\"];
@@ -1108,7 +1108,7 @@ exports[`Svelte Image State 1`] = `
 "
 `;
 
-exports[`Svelte Img 1`] = `
+exports[`Svelte > Img 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface ImgProps {
     attributes?: any;
@@ -1157,7 +1157,7 @@ exports[`Svelte Img 1`] = `
 "
 `;
 
-exports[`Svelte Input 1`] = `
+exports[`Svelte > Input 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface FormInputProps {
     type?: string;
@@ -1195,7 +1195,7 @@ exports[`Svelte Input 1`] = `
 "
 `;
 
-exports[`Svelte RawText 1`] = `
+exports[`Svelte > RawText 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface RawTextProps {
     attributes?: any;
@@ -1214,7 +1214,7 @@ exports[`Svelte RawText 1`] = `
 "
 `;
 
-exports[`Svelte Remove Internal mitosis package 1`] = `
+exports[`Svelte > Remove Internal mitosis package 1`] = `
 "<script lang=\\"ts\\">
   let name = \\"PatrickJS\\";
 </script>
@@ -1223,7 +1223,7 @@ exports[`Svelte Remove Internal mitosis package 1`] = `
 "
 `;
 
-exports[`Svelte Section 1`] = `
+exports[`Svelte > Section 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface SectionProps {
     maxWidth?: number;
@@ -1256,7 +1256,7 @@ exports[`Svelte Section 1`] = `
 "
 `;
 
-exports[`Svelte Section 2`] = `
+exports[`Svelte > Section 2`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface SectionProps {
     maxWidth?: number;
@@ -1293,7 +1293,7 @@ exports[`Svelte Section 2`] = `
 "
 `;
 
-exports[`Svelte Select 1`] = `
+exports[`Svelte > Select 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface FormSelectProps {
     options?: {
@@ -1333,7 +1333,7 @@ exports[`Svelte Select 1`] = `
 "
 `;
 
-exports[`Svelte Stamped.io 1`] = `
+exports[`Svelte > Stamped.io 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type SmileReviewsProps = {
     productId: string;
@@ -1439,7 +1439,7 @@ exports[`Svelte Stamped.io 1`] = `
 "
 `;
 
-exports[`Svelte Submit 1`] = `
+exports[`Svelte > Submit 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface ButtonProps {
     attributes?: any;
@@ -1458,7 +1458,7 @@ exports[`Svelte Submit 1`] = `
 "
 `;
 
-exports[`Svelte Text 1`] = `
+exports[`Svelte > Text 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface TextProps {
     attributes?: any;
@@ -1489,7 +1489,7 @@ exports[`Svelte Text 1`] = `
 "
 `;
 
-exports[`Svelte Textarea 1`] = `
+exports[`Svelte > Textarea 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface TextareaProps {
     attributes?: any;
@@ -1512,7 +1512,7 @@ exports[`Svelte Textarea 1`] = `
 "
 `;
 
-exports[`Svelte Video 1`] = `
+exports[`Svelte > Video 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface VideoProps {
     attributes?: any;
@@ -1582,7 +1582,7 @@ exports[`Svelte Video 1`] = `
 "
 `;
 
-exports[`Svelte basicForwardRef 1`] = `
+exports[`Svelte > basicForwardRef 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     showInput: boolean;
@@ -1608,7 +1608,7 @@ exports[`Svelte basicForwardRef 1`] = `
 "
 `;
 
-exports[`Svelte basicForwardRefMetadata 1`] = `
+exports[`Svelte > basicForwardRefMetadata 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface Props {
     showInput: boolean;
@@ -1634,7 +1634,7 @@ exports[`Svelte basicForwardRefMetadata 1`] = `
 "
 `;
 
-exports[`Svelte basicOnUpdateReturn 1`] = `
+exports[`Svelte > basicOnUpdateReturn 1`] = `
 "<script lang=\\"ts\\">
   import { afterUpdate } from \\"svelte\\";
 
@@ -1663,7 +1663,7 @@ exports[`Svelte basicOnUpdateReturn 1`] = `
 "
 `;
 
-exports[`Svelte class + ClassName + css 1`] = `
+exports[`Svelte > class + ClassName + css 1`] = `
 "<script lang=\\"ts\\">
 </script>
 
@@ -1679,7 +1679,7 @@ exports[`Svelte class + ClassName + css 1`] = `
 "
 `;
 
-exports[`Svelte class + css 1`] = `
+exports[`Svelte > class + css 1`] = `
 "<script lang=\\"ts\\">
 </script>
 
@@ -1693,7 +1693,7 @@ exports[`Svelte class + css 1`] = `
 "
 `;
 
-exports[`Svelte className + css 1`] = `
+exports[`Svelte > className + css 1`] = `
 "<script lang=\\"ts\\">
 </script>
 
@@ -1707,7 +1707,7 @@ exports[`Svelte className + css 1`] = `
 "
 `;
 
-exports[`Svelte className 1`] = `
+exports[`Svelte > className 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Props = {
     [key: string]: string | JSX.Element;
@@ -1727,7 +1727,7 @@ exports[`Svelte className 1`] = `
 "
 `;
 
-exports[`Svelte defaultProps 1`] = `
+exports[`Svelte > defaultProps 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface ButtonProps {
     attributes?: any;
@@ -1762,7 +1762,7 @@ exports[`Svelte defaultProps 1`] = `
 "
 `;
 
-exports[`Svelte defaultValsWithTypes 1`] = `
+exports[`Svelte > defaultValsWithTypes 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Props = {
     name: string;
@@ -1781,7 +1781,7 @@ exports[`Svelte defaultValsWithTypes 1`] = `
 "
 `;
 
-exports[`Svelte multipleOnUpdate 1`] = `
+exports[`Svelte > multipleOnUpdate 1`] = `
 "<script lang=\\"ts\\">
   import { afterUpdate } from \\"svelte\\";
 
@@ -1797,7 +1797,7 @@ exports[`Svelte multipleOnUpdate 1`] = `
 "
 `;
 
-exports[`Svelte multipleOnUpdateWithDeps 1`] = `
+exports[`Svelte > multipleOnUpdateWithDeps 1`] = `
 "<script lang=\\"ts\\">
   import { afterUpdate } from \\"svelte\\";
 
@@ -1828,7 +1828,7 @@ exports[`Svelte multipleOnUpdateWithDeps 1`] = `
 "
 `;
 
-exports[`Svelte nestedShow 1`] = `
+exports[`Svelte > nestedShow 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   interface Props {
     conditionA: boolean;
@@ -1853,7 +1853,7 @@ exports[`Svelte nestedShow 1`] = `
 "
 `;
 
-exports[`Svelte nestedStyles 1`] = `
+exports[`Svelte > nestedStyles 1`] = `
 "<script lang=\\"ts\\">
 </script>
 
@@ -1879,7 +1879,7 @@ exports[`Svelte nestedStyles 1`] = `
 "
 `;
 
-exports[`Svelte onInit & onMount 1`] = `
+exports[`Svelte > onInit & onMount 1`] = `
 "<script lang=\\"ts\\">
   import { onMount } from \\"svelte\\";
 
@@ -1892,7 +1892,7 @@ exports[`Svelte onInit & onMount 1`] = `
 "
 `;
 
-exports[`Svelte onInit 1`] = `
+exports[`Svelte > onInit 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Props = {
     name: string;
@@ -1913,7 +1913,7 @@ exports[`Svelte onInit 1`] = `
 "
 `;
 
-exports[`Svelte onMount 1`] = `
+exports[`Svelte > onMount 1`] = `
 "<script lang=\\"ts\\">
   import { onMount } from \\"svelte\\";
 
@@ -1932,7 +1932,7 @@ exports[`Svelte onMount 1`] = `
 "
 `;
 
-exports[`Svelte onUpdate 1`] = `
+exports[`Svelte > onUpdate 1`] = `
 "<script lang=\\"ts\\">
   import { afterUpdate } from \\"svelte\\";
 
@@ -1945,7 +1945,7 @@ exports[`Svelte onUpdate 1`] = `
 "
 `;
 
-exports[`Svelte onUpdateWithDeps 1`] = `
+exports[`Svelte > onUpdateWithDeps 1`] = `
 "<script lang=\\"ts\\">
   import { afterUpdate } from \\"svelte\\";
 
@@ -1962,7 +1962,7 @@ exports[`Svelte onUpdateWithDeps 1`] = `
 "
 `;
 
-exports[`Svelte preserveExportOrLocalStatement 1`] = `
+exports[`Svelte > preserveExportOrLocalStatement 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Types = {
     s: any[];
@@ -1989,7 +1989,7 @@ exports[`Svelte preserveExportOrLocalStatement 1`] = `
 "
 `;
 
-exports[`Svelte preserveTyping 1`] = `
+exports[`Svelte > preserveTyping 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export type A = \\"test\\";
 
@@ -2017,7 +2017,7 @@ exports[`Svelte preserveTyping 1`] = `
 "
 `;
 
-exports[`Svelte propsDestructure 1`] = `
+exports[`Svelte > propsDestructure 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Props = {
     children: any;
@@ -2039,7 +2039,7 @@ exports[`Svelte propsDestructure 1`] = `
 "
 `;
 
-exports[`Svelte propsInterface 1`] = `
+exports[`Svelte > propsInterface 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   interface Person {
     name: string;
@@ -2055,7 +2055,7 @@ exports[`Svelte propsInterface 1`] = `
 "
 `;
 
-exports[`Svelte propsType 1`] = `
+exports[`Svelte > propsType 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   type Person = {
     name: string;
@@ -2071,7 +2071,7 @@ exports[`Svelte propsType 1`] = `
 "
 `;
 
-exports[`Svelte rootShow 1`] = `
+exports[`Svelte > rootShow 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   export interface RenderStylesProps {
     foo: string;
@@ -2090,7 +2090,7 @@ exports[`Svelte rootShow 1`] = `
 "
 `;
 
-exports[`Svelte self-referencing component 1`] = `
+exports[`Svelte > self-referencing component 1`] = `
 "<script lang=\\"ts\\">
   export let name;
 </script>
@@ -2105,7 +2105,7 @@ exports[`Svelte self-referencing component 1`] = `
 "
 `;
 
-exports[`Svelte self-referencing component with children 1`] = `
+exports[`Svelte > self-referencing component with children 1`] = `
 "<script lang=\\"ts\\">
   export let name;
 </script>
@@ -2123,7 +2123,7 @@ exports[`Svelte self-referencing component with children 1`] = `
 "
 `;
 
-exports[`Svelte showWithFor 1`] = `
+exports[`Svelte > showWithFor 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   interface Props {
     conditionA: boolean;
@@ -2146,7 +2146,7 @@ exports[`Svelte showWithFor 1`] = `
 "
 `;
 
-exports[`Svelte subComponent 1`] = `
+exports[`Svelte > subComponent 1`] = `
 "<script lang=\\"ts\\">
   import Foo from \\"./foo-sub-component.svelte\\";
 </script>
@@ -2155,7 +2155,7 @@ exports[`Svelte subComponent 1`] = `
 "
 `;
 
-exports[`Svelte typeDependency 1`] = `
+exports[`Svelte > typeDependency 1`] = `
 "<script context=\\"module\\" lang=\\"ts\\">
   import type { Foo } from \\"./foo-type\\";
 

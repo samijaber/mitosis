@@ -4,9 +4,9 @@ import { parseContext } from '../parsers/context';
 import { componentToReact } from '../generators/react';
 import { componentToReactNative } from '../generators/react-native';
 
-const simpleExample = require('./data/context/simple.context.lite');
-const componentWithContext = require('./data/context/component-with-context.lite');
-const renderBlock = require('./data/blocks/builder-render-block.raw');
+import simpleExample from './data/context/simple.context.lite?raw';
+import componentWithContext from './data/context/component-with-context.lite?raw';
+import renderBlock from './data/blocks/builder-render-block.raw?raw';
 
 describe('Context', () => {
   test('Parse context', () => {

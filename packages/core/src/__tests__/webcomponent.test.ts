@@ -2,7 +2,7 @@ import { parseJsx } from '..';
 import { componentToCustomElement } from '../generators/html';
 import { runTestsForTarget } from './shared';
 
-const shadowDom = require('./data/blocks/shadow-dom.raw');
+import shadowDom from './data/blocks/shadow-dom.raw?raw';
 
 describe('webcomponent', () => {
   const generator = componentToCustomElement();

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Vue AdvancedRef 1`] = `
+exports[`Vue > AdvancedRef 1`] = `
 "<template>
   <div>
     <input
@@ -82,7 +82,7 @@ return this.name.toLowerCase();
 "
 `;
 
-exports[`Vue Basic 1`] = `
+exports[`Vue > Basic 1`] = `
 "<template>
   <div class=\\"test div\\">
     <input
@@ -138,7 +138,7 @@ return 'bar';
 "
 `;
 
-exports[`Vue Basic 2`] = `
+exports[`Vue > Basic 2`] = `
 "<template>
   <div>
     <input
@@ -181,7 +181,7 @@ export default {
 "
 `;
 
-exports[`Vue Basic Context 1`] = `
+exports[`Vue > Basic Context 1`] = `
 "<template>
   <div>
     {{ myService.method(\\"hello\\") + name }}
@@ -237,7 +237,7 @@ console.log(change);
 "
 `;
 
-exports[`Vue Basic OnMount Update 1`] = `
+exports[`Vue > Basic OnMount Update 1`] = `
 "<template>
   <div>Hello {{ name }}</div>
 </template>
@@ -279,7 +279,7 @@ bye: string;
 "
 `;
 
-exports[`Vue Basic Outputs 1`] = `
+exports[`Vue > Basic Outputs 1`] = `
 "<template>
   <div></div>
 </template>
@@ -319,7 +319,7 @@ this.onEvent(this.message)
 "
 `;
 
-exports[`Vue Basic Outputs Meta 1`] = `
+exports[`Vue > Basic Outputs Meta 1`] = `
 "<template>
   <div></div>
 </template>
@@ -359,7 +359,7 @@ this.onEvent(this.message)
 "
 `;
 
-exports[`Vue BasicChildComponent 1`] = `
+exports[`Vue > BasicChildComponent 1`] = `
 "<template>
   <div>
     <my-basic-component :id=\\"dev\\"></my-basic-component>
@@ -405,7 +405,7 @@ import MyBasicOnMountUpdateComponent from './basic-onMount-update.raw';
 "
 `;
 
-exports[`Vue BasicFor 1`] = `
+exports[`Vue > BasicFor 1`] = `
 "<template>
   <div>
     <input
@@ -453,7 +453,7 @@ export default {
 "
 `;
 
-exports[`Vue BasicRef 1`] = `
+exports[`Vue > BasicRef 1`] = `
 "<template>
   <div>
     <input
@@ -523,7 +523,7 @@ return this.name.toLowerCase();
 "
 `;
 
-exports[`Vue BasicRefAssignment 1`] = `
+exports[`Vue > BasicRefAssignment 1`] = `
 "<template>
   <div>
     <button @click=\\"handlerClick($event)\\">Click</button>
@@ -568,7 +568,7 @@ this.$refs.holdValueRef = this.$refs.holdValueRef + 'JS';
 "
 `;
 
-exports[`Vue BasicRefPrevious 1`] = `
+exports[`Vue > BasicRefPrevious 1`] = `
 "<template>
   <div>
     <h1>Now: {{ count }}, before: {{ this.$refs.prevCount }}</h1>
@@ -632,7 +632,7 @@ return {
 "
 `;
 
-exports[`Vue Button 1`] = `
+exports[`Vue > Button 1`] = `
 "<template>
   <a
     v-bind=\\"attributes\\"
@@ -683,7 +683,7 @@ openLinkInNewTab?: boolean;
 "
 `;
 
-exports[`Vue Columns 1`] = `
+exports[`Vue > Columns 1`] = `
 "<template>
   <div class=\\"builder-columns div\\">
     <div
@@ -774,7 +774,7 @@ return \`calc(\${this.getWidth(index)}% - \${subtractWidth}px)\`;
 "
 `;
 
-exports[`Vue ContentSlotHtml 1`] = `
+exports[`Vue > ContentSlotHtml 1`] = `
 "<template>
   <div>
     <slot :name=\\"slotTesting\\"></slot>
@@ -820,7 +820,7 @@ slotTesting: JSX.Element;
 "
 `;
 
-exports[`Vue ContentSlotJSX 1`] = `
+exports[`Vue > ContentSlotJSX 1`] = `
 "<template>
   <div>
     <slot name=\\"testing\\" />
@@ -863,7 +863,7 @@ exports[`Vue ContentSlotJSX 1`] = `
 "
 `;
 
-exports[`Vue CustomCode 1`] = `
+exports[`Vue > CustomCode 1`] = `
 "<template>
   <div
     ref=\\"elem\\"
@@ -956,7 +956,7 @@ if (this.$refs.elem && typeof window !== 'undefined') {
 "
 `;
 
-exports[`Vue Embed 1`] = `
+exports[`Vue > Embed 1`] = `
 "<template>
   <div
     ref=\\"elem\\"
@@ -1049,7 +1049,7 @@ if (this.$refs.elem && typeof window !== 'undefined') {
 "
 `;
 
-exports[`Vue Form 1`] = `
+exports[`Vue > Form 1`] = `
 "<template>
   <form
     v-bind=\\"attributes\\"
@@ -1368,7 +1368,7 @@ if (this.sendSubmissionsTo === 'zapier') {
 "
 `;
 
-exports[`Vue Image 1`] = `
+exports[`Vue > Image 1`] = `
 "<template>
   <picture ref=\\"pictureRef\\">
     <img
@@ -1493,7 +1493,7 @@ return typeof window !== 'undefined' && window.navigator.product != 'ReactNative
 "
 `;
 
-exports[`Vue Image State 1`] = `
+exports[`Vue > Image State 1`] = `
 "<template>
   <div>
     <img class=\\"custom-class\\" :src=\\"item\\" :key=\\"itemIndex\\" />
@@ -1532,7 +1532,7 @@ export default {
 "
 `;
 
-exports[`Vue Img 1`] = `
+exports[`Vue > Img 1`] = `
 "<template>
   <img
     v-bind=\\"attributes\\"
@@ -1582,7 +1582,7 @@ backgroundPosition?: 'center' | 'top' | 'left' | 'right' | 'bottom' | 'top left'
 "
 `;
 
-exports[`Vue Input 1`] = `
+exports[`Vue > Input 1`] = `
 "<template>
   <input
     v-bind=\\"attributes\\"
@@ -1634,7 +1634,7 @@ required?: boolean;
 "
 `;
 
-exports[`Vue RawText 1`] = `
+exports[`Vue > RawText 1`] = `
 "<template>
   <span
     :class=\\"_classStringToObject(attributes?.class || attributes?.className)\\"
@@ -1686,7 +1686,7 @@ text?: string; // builderBlock?: any;
 "
 `;
 
-exports[`Vue Remove Internal mitosis package 1`] = `
+exports[`Vue > Remove Internal mitosis package 1`] = `
 "<template>
   <div>Hello {{ name }}! I can run in React, Qwik, Vue, Solid, or Liquid!</div>
 </template>
@@ -1723,7 +1723,7 @@ export default {
 "
 `;
 
-exports[`Vue Section 1`] = `
+exports[`Vue > Section 1`] = `
 "<template>
   <section
     v-bind=\\"attributes\\"
@@ -1773,7 +1773,7 @@ children?: any;
 "
 `;
 
-exports[`Vue Section 2`] = `
+exports[`Vue > Section 2`] = `
 "<template>
   <section
     v-bind=\\"attributes\\"
@@ -1824,7 +1824,7 @@ children?: any;
 "
 `;
 
-exports[`Vue Select 1`] = `
+exports[`Vue > Select 1`] = `
 "<template>
   <select
     v-bind=\\"attributes\\"
@@ -1883,7 +1883,7 @@ defaultValue?: string;
 "
 `;
 
-exports[`Vue SlotHtml 1`] = `
+exports[`Vue > SlotHtml 1`] = `
 "<template>
   <div>
     <content-slot-code>
@@ -1924,7 +1924,7 @@ exports[`Vue SlotHtml 1`] = `
 "
 `;
 
-exports[`Vue SlotJsx 1`] = `
+exports[`Vue > SlotJsx 1`] = `
 "<template>
   <div>
     <content-slot-code :slotTesting=\\"<div>Hello</div>\\"></content-slot-code>
@@ -1963,7 +1963,7 @@ exports[`Vue SlotJsx 1`] = `
 "
 `;
 
-exports[`Vue Stamped.io 1`] = `
+exports[`Vue > Stamped.io 1`] = `
 "<template>
   <div :data-user=\\"name\\">
     <button @click=\\"showReviewPrompt = true\\">Write a review</button>
@@ -2063,7 +2063,7 @@ return snakeCase('testThis');
 "
 `;
 
-exports[`Vue Submit 1`] = `
+exports[`Vue > Submit 1`] = `
 "<template>
   <button v-bind=\\"attributes\\" type=\\"submit\\">
     {{ text }}
@@ -2103,7 +2103,7 @@ text?: string;
 "
 `;
 
-exports[`Vue Text 1`] = `
+exports[`Vue > Text 1`] = `
 "<template>
   <div
     :contentEditable=\\"allowEditingText || undefined\\"
@@ -2152,7 +2152,7 @@ builderBlock?: any;
 "
 `;
 
-exports[`Vue Textarea 1`] = `
+exports[`Vue > Textarea 1`] = `
 "<template>
   <textarea
     v-bind=\\"attributes\\"
@@ -2199,7 +2199,7 @@ placeholder?: string;
 "
 `;
 
-exports[`Vue Video 1`] = `
+exports[`Vue > Video 1`] = `
 "<template>
   <video
     v-bind=\\"attributes\\"
@@ -2268,7 +2268,7 @@ lazyLoad?: boolean;
 "
 `;
 
-exports[`Vue basicForwardRef 1`] = `
+exports[`Vue > basicForwardRef 1`] = `
 "<template>
   <div>
     <input
@@ -2320,7 +2320,7 @@ inputRef: HTMLInputElement;
 "
 `;
 
-exports[`Vue basicForwardRefMetadata 1`] = `
+exports[`Vue > basicForwardRefMetadata 1`] = `
 "<template>
   <div>
     <input
@@ -2372,7 +2372,7 @@ inputRef: HTMLInputElement;
 "
 `;
 
-exports[`Vue basicOnUpdateReturn 1`] = `
+exports[`Vue > basicOnUpdateReturn 1`] = `
 "<template>
   <div>Hello! {{ name }}</div>
 </template>
@@ -2431,7 +2431,7 @@ return {
 "
 `;
 
-exports[`Vue class + ClassName + css 1`] = `
+exports[`Vue > class + ClassName + css 1`] = `
 "<template>
   <div class=\\"test2 test div\\">
     Hello! I can run in React, Vue, Solid, or Liquid!
@@ -2473,7 +2473,7 @@ export default {
 "
 `;
 
-exports[`Vue class + css 1`] = `
+exports[`Vue > class + css 1`] = `
 "<template>
   <div class=\\"test div\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 </template>
@@ -2513,7 +2513,7 @@ export default {
 "
 `;
 
-exports[`Vue className + css 1`] = `
+exports[`Vue > className + css 1`] = `
 "<template>
   <div class=\\"test div\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 </template>
@@ -2553,7 +2553,7 @@ export default {
 "
 `;
 
-exports[`Vue className 1`] = `
+exports[`Vue > className 1`] = `
 "<template>
   <div>
     <div class=\\"no binding\\">Without Binding</div>
@@ -2607,7 +2607,7 @@ slotTesting: JSX.Element;
 "
 `;
 
-exports[`Vue classState 1`] = `
+exports[`Vue > classState 1`] = `
 "<template>
   <div :class=\\"_classStringToObject(classState + ' div')\\" :style=\\"styleState\\">
     Hello! I can run in React, Vue, Solid, or Liquid!
@@ -2661,7 +2661,7 @@ export default {
 "
 `;
 
-exports[`Vue defaultProps 1`] = `
+exports[`Vue > defaultProps 1`] = `
 "<template>
   <a
     v-bind=\\"attributes\\"
@@ -2712,7 +2712,7 @@ openLinkInNewTab?: boolean;
 "
 `;
 
-exports[`Vue defaultValsWithTypes 1`] = `
+exports[`Vue > defaultValsWithTypes 1`] = `
 "<template>
   <div>Hello {{ name || DEFAULT_VALUES.name }}</div>
 </template>
@@ -2753,7 +2753,7 @@ name: string;
 "
 `;
 
-exports[`Vue multipleOnUpdate 1`] = `
+exports[`Vue > multipleOnUpdate 1`] = `
 "<template>
   <div></div>
 </template>
@@ -2791,7 +2791,7 @@ console.log('Runs on every update/rerender as well')
 "
 `;
 
-exports[`Vue multipleOnUpdateWithDeps 1`] = `
+exports[`Vue > multipleOnUpdateWithDeps 1`] = `
 "<template>
   <div></div>
 </template>
@@ -2856,7 +2856,7 @@ return {
 "
 `;
 
-exports[`Vue nestedShow 1`] = `
+exports[`Vue > nestedShow 1`] = `
 "<template>
   <div v-if=\\"!Boolean(conditionA)\\">else-condition-A</div>
 
@@ -2898,7 +2898,7 @@ conditionB: boolean;
 "
 `;
 
-exports[`Vue nestedStyles 1`] = `
+exports[`Vue > nestedStyles 1`] = `
 "<template>
   <div class=\\"div\\">Hello world</div>
 </template>
@@ -2950,7 +2950,7 @@ export default {
 "
 `;
 
-exports[`Vue onInit & onMount 1`] = `
+exports[`Vue > onInit & onMount 1`] = `
 "<template>
   <div></div>
 </template>
@@ -2987,7 +2987,7 @@ export default {
 "
 `;
 
-exports[`Vue onInit 1`] = `
+exports[`Vue > onInit 1`] = `
 "<template>
   <div>Default name defined by parent {{ name }}</div>
 </template>
@@ -3028,7 +3028,7 @@ name: string;
 "
 `;
 
-exports[`Vue onMount 1`] = `
+exports[`Vue > onMount 1`] = `
 "<template>
   <div></div>
 </template>
@@ -3067,7 +3067,7 @@ export default {
 "
 `;
 
-exports[`Vue onUpdate 1`] = `
+exports[`Vue > onUpdate 1`] = `
 "<template>
   <div></div>
 </template>
@@ -3104,7 +3104,7 @@ export default {
 "
 `;
 
-exports[`Vue onUpdateWithDeps 1`] = `
+exports[`Vue > onUpdateWithDeps 1`] = `
 "<template>
   <div></div>
 </template>
@@ -3153,7 +3153,7 @@ return {
 "
 `;
 
-exports[`Vue preserveExportOrLocalStatement 1`] = `
+exports[`Vue > preserveExportOrLocalStatement 1`] = `
 "<template>
   <div></div>
 </template>
@@ -3200,7 +3200,7 @@ id: string
 "
 `;
 
-exports[`Vue preserveTyping 1`] = `
+exports[`Vue > preserveTyping 1`] = `
 "<template>
   <div>Hello! I can run in React, Vue, Solid, or Liquid! {{ name }}</div>
 </template>
@@ -3246,7 +3246,7 @@ age?: number
 "
 `;
 
-exports[`Vue propsDestructure 1`] = `
+exports[`Vue > propsDestructure 1`] = `
 "<template>
   <div>
     <slot /> {{ type }}
@@ -3289,7 +3289,7 @@ type: string;
 "
 `;
 
-exports[`Vue propsInterface 1`] = `
+exports[`Vue > propsInterface 1`] = `
 "<template>
   <div>Hello! I can run in React, Vue, Solid, or Liquid! {{ name }}</div>
 </template>
@@ -3327,7 +3327,7 @@ age?: number;
 "
 `;
 
-exports[`Vue propsType 1`] = `
+exports[`Vue > propsType 1`] = `
 "<template>
   <div>Hello! I can run in React, Vue, Solid, or Liquid! {{ name }}</div>
 </template>
@@ -3365,7 +3365,7 @@ age?: number;
 "
 `;
 
-exports[`Vue rootShow 1`] = `
+exports[`Vue > rootShow 1`] = `
 "<template>
   <div v-if=\\"foo === 'bar'\\">Bar</div>
   <div v-else>Foo</div>
@@ -3403,7 +3403,7 @@ foo: string
 "
 `;
 
-exports[`Vue self-referencing component 1`] = `
+exports[`Vue > self-referencing component 1`] = `
 "<template>
   <div>
     {{ name }}
@@ -3442,7 +3442,7 @@ export default {
 "
 `;
 
-exports[`Vue self-referencing component with children 1`] = `
+exports[`Vue > self-referencing component with children 1`] = `
 "<template>
   <div>
     {{ name }}
@@ -3484,7 +3484,7 @@ export default {
 "
 `;
 
-exports[`Vue showWithFor 1`] = `
+exports[`Vue > showWithFor 1`] = `
 "<template>
   <div v-for=\\"(item, index) in items\\" v-if=\\"conditionA\\" :key=\\"idx\\">
     {{ item }}
@@ -3525,7 +3525,7 @@ items: string[];
 "
 `;
 
-exports[`Vue subComponent 1`] = `
+exports[`Vue > subComponent 1`] = `
 "<template>
   <foo></foo>
 </template>
@@ -3560,7 +3560,7 @@ import Foo from './foo-sub-component.vue';
 "
 `;
 
-exports[`Vue typeDependency 1`] = `
+exports[`Vue > typeDependency 1`] = `
 "<template>
   <div>{{ foo }}</div>
 </template>

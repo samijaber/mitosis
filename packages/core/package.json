@@ -41,6 +41,8 @@
   },
   "scripts": {
     "test": "jest",
+    "test2": "vitest",
+    "coverage": "vitest run --coverage",
     "snapupdate": "jest --updateSnapshot",
     "tsc": "tsc --build tsconfig.build.json",
     "rmrf": "rm -rf ./dist",
@@ -116,7 +118,8 @@
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
     "typescript": "^4",
-    "universalify": "^2.0.0"
+    "universalify": "^2.0.0",
+    "vitest": "^0.22.1"
   },
   "stableVersion": "0.0.56-101"
 }

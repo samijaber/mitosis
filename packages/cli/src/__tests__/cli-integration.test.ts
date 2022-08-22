@@ -1,7 +1,7 @@
 import * as path from 'path';
 import { filesystem, system } from 'gluegun';
 
-const { version } = require('../../package.json');
+import { version } from '../../package.json?raw';
 
 const root = filesystem.path(__dirname, '..', '..');
 const script = filesystem.path(root, 'bin', 'mitosis');

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Liquid AdvancedRef 1`] = `
+exports[`Liquid > AdvancedRef 1`] = `
 "<div>
   {% if showInput %}
   <div>
@@ -24,7 +24,7 @@ exports[`Liquid AdvancedRef 1`] = `
 "
 `;
 
-exports[`Liquid Basic 1`] = `
+exports[`Liquid > Basic 1`] = `
 "<div class=\\"test div\\">
   <input />
 
@@ -38,7 +38,7 @@ exports[`Liquid Basic 1`] = `
 "
 `;
 
-exports[`Liquid Basic Context 1`] = `
+exports[`Liquid > Basic Context 1`] = `
 "<div>
   Hello! I can run in React, Vue, Solid, or Liquid!
 
@@ -47,22 +47,22 @@ exports[`Liquid Basic Context 1`] = `
 "
 `;
 
-exports[`Liquid Basic OnMount Update 1`] = `
+exports[`Liquid > Basic OnMount Update 1`] = `
 "<div>Hello {{name}}</div>
 "
 `;
 
-exports[`Liquid Basic Outputs 1`] = `
+exports[`Liquid > Basic Outputs 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid Basic Outputs Meta 1`] = `
+exports[`Liquid > Basic Outputs Meta 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid BasicChildComponent 1`] = `
+exports[`Liquid > BasicChildComponent 1`] = `
 "<div>
   <MyBasicComponent id=\\"{{dev}}\\"></MyBasicComponent>
 
@@ -76,7 +76,7 @@ exports[`Liquid BasicChildComponent 1`] = `
 "
 `;
 
-exports[`Liquid BasicFor 1`] = `
+exports[`Liquid > BasicFor 1`] = `
 "<div>
   {% for person in names %}
   <div>
@@ -90,7 +90,7 @@ exports[`Liquid BasicFor 1`] = `
 "
 `;
 
-exports[`Liquid BasicRef 1`] = `
+exports[`Liquid > BasicRef 1`] = `
 "<div>
   {% if showInput %}
   <div>
@@ -114,14 +114,14 @@ exports[`Liquid BasicRef 1`] = `
 "
 `;
 
-exports[`Liquid BasicRefAssignment 1`] = `
+exports[`Liquid > BasicRefAssignment 1`] = `
 "<div>
   <button>Click</button>
 </div>
 "
 `;
 
-exports[`Liquid BasicRefPrevious 1`] = `
+exports[`Liquid > BasicRefPrevious 1`] = `
 "<div>
   <h1>Now: {{count}} , before: {{prevCount}}</h1>
 
@@ -130,7 +130,7 @@ exports[`Liquid BasicRefPrevious 1`] = `
 "
 `;
 
-exports[`Liquid Button 1`] = `
+exports[`Liquid > Button 1`] = `
 "<div>
   {% if link %}
 
@@ -141,7 +141,7 @@ exports[`Liquid Button 1`] = `
 "
 `;
 
-exports[`Liquid Columns 1`] = `
+exports[`Liquid > Columns 1`] = `
 "<div class=\\"builder-columns div\\">
   {% for column in columns %}
   <div class=\\"builder-column div-2\\">{{column.content}} {{index}}</div>
@@ -171,7 +171,7 @@ exports[`Liquid Columns 1`] = `
 "
 `;
 
-exports[`Liquid ContentSlotHtml 1`] = `
+exports[`Liquid > ContentSlotHtml 1`] = `
 "<div>
   <slot name=\\"{{slotTesting}}\\"></slot>
 
@@ -186,7 +186,7 @@ exports[`Liquid ContentSlotHtml 1`] = `
 "
 `;
 
-exports[`Liquid ContentSlotJSX 1`] = `
+exports[`Liquid > ContentSlotJSX 1`] = `
 "<div>
   {{slotTesting}}
 
@@ -199,17 +199,17 @@ exports[`Liquid ContentSlotJSX 1`] = `
 "
 `;
 
-exports[`Liquid CustomCode 1`] = `
+exports[`Liquid > CustomCode 1`] = `
 "<div innerHTML=\\"{{code}}\\"></div>
 "
 `;
 
-exports[`Liquid Embed 1`] = `
+exports[`Liquid > Embed 1`] = `
 "<div innerHTML=\\"{{code}}\\"></div>
 "
 `;
 
-exports[`Liquid Form 1`] = `
+exports[`Liquid > Form 1`] = `
 "<form validate=\\"{{validate}}\\" method=\\"{{method}}\\" name=\\"{{name}}\\"></form>
 <style>
   .pre {
@@ -221,7 +221,7 @@ exports[`Liquid Form 1`] = `
 "
 `;
 
-exports[`Liquid Image 1`] = `
+exports[`Liquid > Image 1`] = `
 "<div>
   <picture>
     <source srcset=\\"{{srcset}}\\" />
@@ -240,7 +240,7 @@ exports[`Liquid Image 1`] = `
 "
 `;
 
-exports[`Liquid Image State 1`] = `
+exports[`Liquid > Image State 1`] = `
 "<div>
   {% for item in images %}
   <div>
@@ -251,12 +251,12 @@ exports[`Liquid Image State 1`] = `
 "
 `;
 
-exports[`Liquid Img 1`] = `
+exports[`Liquid > Img 1`] = `
 "<img alt=\\"{{altText}}\\" src=\\"{{imgSrc}}\\" />
 "
 `;
 
-exports[`Liquid Input 1`] = `
+exports[`Liquid > Input 1`] = `
 "<input
   placeholder=\\"{{placeholder}}\\"
   type=\\"{{type}}\\"
@@ -268,22 +268,22 @@ exports[`Liquid Input 1`] = `
 "
 `;
 
-exports[`Liquid RawText 1`] = `
+exports[`Liquid > RawText 1`] = `
 "<span></span>
 "
 `;
 
-exports[`Liquid Remove Internal mitosis package 1`] = `
+exports[`Liquid > Remove Internal mitosis package 1`] = `
 "<div>Hello {{name}} ! I can run in React, Qwik, Vue, Solid, or Liquid!</div>
 "
 `;
 
-exports[`Liquid Section 1`] = `
+exports[`Liquid > Section 1`] = `
 "<section>{{children}}</section>
 "
 `;
 
-exports[`Liquid Select 1`] = `
+exports[`Liquid > Select 1`] = `
 "<select value=\\"{{value}}\\" defaultValue=\\"{{defaultValue}}\\" name=\\"{{name}}\\">
   {% for option in options %}
   <option value=\\"{{option.value}}\\" data-index=\\"{{index}}\\"></option>
@@ -292,7 +292,7 @@ exports[`Liquid Select 1`] = `
 "
 `;
 
-exports[`Liquid SlotHtml 1`] = `
+exports[`Liquid > SlotHtml 1`] = `
 "<div>
   <ContentSlotCode>
     <slot></slot>
@@ -301,14 +301,14 @@ exports[`Liquid SlotHtml 1`] = `
 "
 `;
 
-exports[`Liquid SlotJsx 1`] = `
+exports[`Liquid > SlotJsx 1`] = `
 "<div>
   <ContentSlotCode></ContentSlotCode>
 </div>
 "
 `;
 
-exports[`Liquid Stamped.io 1`] = `
+exports[`Liquid > Stamped.io 1`] = `
 "<div data-user=\\"{{name}}\\">
   <button>Write a review</button>
 
@@ -363,17 +363,17 @@ exports[`Liquid Stamped.io 1`] = `
 "
 `;
 
-exports[`Liquid Submit 1`] = `
+exports[`Liquid > Submit 1`] = `
 "<button type=\\"submit\\">{{text}}</button>
 "
 `;
 
-exports[`Liquid Text 1`] = `
+exports[`Liquid > Text 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid Textarea 1`] = `
+exports[`Liquid > Textarea 1`] = `
 "<textarea
   placeholder=\\"{{placeholder}}\\"
   name=\\"{{name}}\\"
@@ -383,7 +383,7 @@ exports[`Liquid Textarea 1`] = `
 "
 `;
 
-exports[`Liquid Video 1`] = `
+exports[`Liquid > Video 1`] = `
 "<video
   preload=\\"none\\"
   poster=\\"{{posterImage}}\\"
@@ -395,7 +395,7 @@ exports[`Liquid Video 1`] = `
 "
 `;
 
-exports[`Liquid basicForwardRef 1`] = `
+exports[`Liquid > basicForwardRef 1`] = `
 "<div>
   <input class=\\"input\\" value=\\"{{name}}\\" />
 </div>
@@ -407,7 +407,7 @@ exports[`Liquid basicForwardRef 1`] = `
 "
 `;
 
-exports[`Liquid basicForwardRefMetadata 1`] = `
+exports[`Liquid > basicForwardRefMetadata 1`] = `
 "<div>
   <input class=\\"input\\" value=\\"{{name}}\\" />
 </div>
@@ -419,12 +419,12 @@ exports[`Liquid basicForwardRefMetadata 1`] = `
 "
 `;
 
-exports[`Liquid basicOnUpdateReturn 1`] = `
+exports[`Liquid > basicOnUpdateReturn 1`] = `
 "<div>Hello! {{name}}</div>
 "
 `;
 
-exports[`Liquid class + ClassName + css 1`] = `
+exports[`Liquid > class + ClassName + css 1`] = `
 "<div class=\\"test2 test div\\">
   Hello! I can run in React, Vue, Solid, or Liquid!
 </div>
@@ -436,7 +436,7 @@ exports[`Liquid class + ClassName + css 1`] = `
 "
 `;
 
-exports[`Liquid class + css 1`] = `
+exports[`Liquid > class + css 1`] = `
 "<div class=\\"test div\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 <style>
   .div {
@@ -446,7 +446,7 @@ exports[`Liquid class + css 1`] = `
 "
 `;
 
-exports[`Liquid className + css 1`] = `
+exports[`Liquid > className + css 1`] = `
 "<div class=\\"test div\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 <style>
   .div {
@@ -456,7 +456,7 @@ exports[`Liquid className + css 1`] = `
 "
 `;
 
-exports[`Liquid className 1`] = `
+exports[`Liquid > className 1`] = `
 "<div>
   <div class=\\"no binding\\">Without Binding</div>
 
@@ -465,7 +465,7 @@ exports[`Liquid className 1`] = `
 "
 `;
 
-exports[`Liquid classState 1`] = `
+exports[`Liquid > classState 1`] = `
 "<div style=\\"{{styleState}}\\">
   Hello! I can run in React, Vue, Solid, or Liquid!
 </div>
@@ -477,7 +477,7 @@ exports[`Liquid classState 1`] = `
 "
 `;
 
-exports[`Liquid defaultProps 1`] = `
+exports[`Liquid > defaultProps 1`] = `
 "<div>
   {% if link %}
 
@@ -488,27 +488,27 @@ exports[`Liquid defaultProps 1`] = `
 "
 `;
 
-exports[`Liquid defaultValsWithTypes 1`] = `
+exports[`Liquid > defaultValsWithTypes 1`] = `
 "<div>Hello</div>
 "
 `;
 
-exports[`Liquid multipleOnUpdate 1`] = `
+exports[`Liquid > multipleOnUpdate 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid multipleOnUpdateWithDeps 1`] = `
+exports[`Liquid > multipleOnUpdateWithDeps 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid nestedShow 1`] = `
+exports[`Liquid > nestedShow 1`] = `
 "{% if conditionA %} {% endif %}
 "
 `;
 
-exports[`Liquid nestedStyles 1`] = `
+exports[`Liquid > nestedStyles 1`] = `
 "<div class=\\"div\\">Hello world</div>
 <style>
   .div {
@@ -530,83 +530,83 @@ exports[`Liquid nestedStyles 1`] = `
 "
 `;
 
-exports[`Liquid onInit & onMount 1`] = `
+exports[`Liquid > onInit & onMount 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid onInit 1`] = `
+exports[`Liquid > onInit 1`] = `
 "<div>Default name defined by parent {{name}}</div>
 "
 `;
 
-exports[`Liquid onMount 1`] = `
+exports[`Liquid > onMount 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid onUpdate 1`] = `
+exports[`Liquid > onUpdate 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid onUpdateWithDeps 1`] = `
+exports[`Liquid > onUpdateWithDeps 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid preserveExportOrLocalStatement 1`] = `
+exports[`Liquid > preserveExportOrLocalStatement 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Liquid preserveTyping 1`] = `
+exports[`Liquid > preserveTyping 1`] = `
 "<div>Hello! I can run in React, Vue, Solid, or Liquid! {{name}}</div>
 "
 `;
 
-exports[`Liquid propsDestructure 1`] = `
+exports[`Liquid > propsDestructure 1`] = `
 "<div>
   {{children}} {{type}} Hello! I can run in React, Vue, Solid, or Liquid!
 </div>
 "
 `;
 
-exports[`Liquid propsInterface 1`] = `
+exports[`Liquid > propsInterface 1`] = `
 "<div>Hello! I can run in React, Vue, Solid, or Liquid! {{name}}</div>
 "
 `;
 
-exports[`Liquid propsType 1`] = `
+exports[`Liquid > propsType 1`] = `
 "<div>Hello! I can run in React, Vue, Solid, or Liquid! {{name}}</div>
 "
 `;
 
-exports[`Liquid rootShow 1`] = `""`;
+exports[`Liquid > rootShow 1`] = `""`;
 
-exports[`Liquid self-referencing component 1`] = `
+exports[`Liquid > self-referencing component 1`] = `
 "<div>{{name}}</div>
 "
 `;
 
-exports[`Liquid self-referencing component with children 1`] = `
+exports[`Liquid > self-referencing component with children 1`] = `
 "<div>{{name}} {{children}}</div>
 "
 `;
 
-exports[`Liquid showWithFor 1`] = `
+exports[`Liquid > showWithFor 1`] = `
 "{% if conditionA %} {% for item in items %}
 <div key=\\"{{idx}}\\">{{item}}</div>
 {% endfor %} {% endif %}
 "
 `;
 
-exports[`Liquid subComponent 1`] = `
+exports[`Liquid > subComponent 1`] = `
 "<Foo></Foo>
 "
 `;
 
-exports[`Liquid typeDependency 1`] = `
+exports[`Liquid > typeDependency 1`] = `
 "<div>{{foo}}</div>
 "
 `;

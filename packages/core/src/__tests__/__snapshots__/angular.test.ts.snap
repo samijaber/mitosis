@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Angular AdvancedRef 1`] = `
+exports[`Angular > AdvancedRef 1`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 
 export interface Props {
@@ -65,7 +65,7 @@ export default class MyBasicRefComponent {
 "
 `;
 
-exports[`Angular AdvancedRef 2`] = `
+exports[`Angular > AdvancedRef 2`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -134,7 +134,7 @@ export default class MyBasicRefComponent {
 "
 `;
 
-exports[`Angular Basic 1`] = `
+exports[`Angular > Basic 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 export interface MyBasicComponentProps {
@@ -176,7 +176,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular Basic 2`] = `
+exports[`Angular > Basic 2`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -206,7 +206,7 @@ export default class MyBasicForShowComponent {
 "
 `;
 
-exports[`Angular Basic 3`] = `
+exports[`Angular > Basic 3`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -252,7 +252,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular Basic 4`] = `
+exports[`Angular > Basic 4`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -286,7 +286,7 @@ export default class MyBasicForShowComponent {
 "
 `;
 
-exports[`Angular Basic Context 1`] = `
+exports[`Angular > Basic Context 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 import { Injector, createInjector, MyService } from \\"@dummy/injection-js\\";
@@ -322,7 +322,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular Basic Context 2`] = `
+exports[`Angular > Basic Context 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -362,7 +362,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular Basic OnMount Update 1`] = `
+exports[`Angular > Basic OnMount Update 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface Props {
@@ -394,7 +394,7 @@ export default class MyBasicOnMountUpdateComponent {
 "
 `;
 
-exports[`Angular Basic OnMount Update 2`] = `
+exports[`Angular > Basic OnMount Update 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -430,7 +430,7 @@ export default class MyBasicOnMountUpdateComponent {
 "
 `;
 
-exports[`Angular Basic Outputs 1`] = `
+exports[`Angular > Basic Outputs 1`] = `
 "import { Output, EventEmitter, Component, Input } from \\"@angular/core\\";
 
 @Component({
@@ -455,61 +455,7 @@ export default class MyBasicOutputsComponent {
 "
 `;
 
-exports[`Angular Basic Outputs 2`] = `
-"import { Output, EventEmitter, Component, Input } from \\"@angular/core\\";
-import { CommonModule } from \\"@angular/common\\";
-
-@Component({
-  standalone: true,
-  imports: [CommonModule],
-
-  selector: \\"my-basic-outputs-component\\",
-  template: \`
-    <div></div>
-  \`,
-})
-export default class MyBasicOutputsComponent {
-  @Input() message: any;
-
-  @Output() onMessage = new EventEmitter();
-  @Output() onEvent = new EventEmitter();
-
-  name = \\"PatrickJS\\";
-
-  ngOnInit() {
-    this.onMessage.emit(this.name);
-    this.onEvent.emit(this.message);
-  }
-}
-"
-`;
-
-exports[`Angular Basic Outputs Meta 1`] = `
-"import { Output, EventEmitter, Component, Input } from \\"@angular/core\\";
-
-@Component({
-  selector: \\"my-basic-outputs-component\\",
-  template: \`
-    <div></div>
-  \`,
-})
-export default class MyBasicOutputsComponent {
-  @Input() message: any;
-
-  @Output() onMessage = new EventEmitter();
-  @Output() onEvent = new EventEmitter();
-
-  name = \\"PatrickJS\\";
-
-  ngOnInit() {
-    this.onMessage.emit(this.name);
-    this.onEvent.emit(this.message);
-  }
-}
-"
-`;
-
-exports[`Angular Basic Outputs Meta 2`] = `
+exports[`Angular > Basic Outputs 2`] = `
 "import { Output, EventEmitter, Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -538,7 +484,61 @@ export default class MyBasicOutputsComponent {
 "
 `;
 
-exports[`Angular BasicChildComponent 1`] = `
+exports[`Angular > Basic Outputs Meta 1`] = `
+"import { Output, EventEmitter, Component, Input } from \\"@angular/core\\";
+
+@Component({
+  selector: \\"my-basic-outputs-component\\",
+  template: \`
+    <div></div>
+  \`,
+})
+export default class MyBasicOutputsComponent {
+  @Input() message: any;
+
+  @Output() onMessage = new EventEmitter();
+  @Output() onEvent = new EventEmitter();
+
+  name = \\"PatrickJS\\";
+
+  ngOnInit() {
+    this.onMessage.emit(this.name);
+    this.onEvent.emit(this.message);
+  }
+}
+"
+`;
+
+exports[`Angular > Basic Outputs Meta 2`] = `
+"import { Output, EventEmitter, Component, Input } from \\"@angular/core\\";
+import { CommonModule } from \\"@angular/common\\";
+
+@Component({
+  standalone: true,
+  imports: [CommonModule],
+
+  selector: \\"my-basic-outputs-component\\",
+  template: \`
+    <div></div>
+  \`,
+})
+export default class MyBasicOutputsComponent {
+  @Input() message: any;
+
+  @Output() onMessage = new EventEmitter();
+  @Output() onEvent = new EventEmitter();
+
+  name = \\"PatrickJS\\";
+
+  ngOnInit() {
+    this.onMessage.emit(this.name);
+    this.onEvent.emit(this.message);
+  }
+}
+"
+`;
+
+exports[`Angular > BasicChildComponent 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 import MyBasicComponent from \\"./basic.raw\\";
@@ -566,7 +566,7 @@ export default class MyBasicChildComponent {
 "
 `;
 
-exports[`Angular BasicChildComponent 2`] = `
+exports[`Angular > BasicChildComponent 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -598,7 +598,7 @@ export default class MyBasicChildComponent {
 "
 `;
 
-exports[`Angular BasicFor 1`] = `
+exports[`Angular > BasicFor 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -632,7 +632,7 @@ export default class MyBasicForComponent {
 "
 `;
 
-exports[`Angular BasicFor 2`] = `
+exports[`Angular > BasicFor 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -670,7 +670,7 @@ export default class MyBasicForComponent {
 "
 `;
 
-exports[`Angular BasicRef 1`] = `
+exports[`Angular > BasicRef 1`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 
 export interface Props {
@@ -731,7 +731,7 @@ export default class MyBasicRefComponent {
 "
 `;
 
-exports[`Angular BasicRef 2`] = `
+exports[`Angular > BasicRef 2`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -796,7 +796,7 @@ export default class MyBasicRefComponent {
 "
 `;
 
-exports[`Angular BasicRefAssignment 1`] = `
+exports[`Angular > BasicRefAssignment 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 export interface Props {
@@ -823,7 +823,7 @@ export default class MyBasicRefAssignmentComponent {
 "
 `;
 
-exports[`Angular BasicRefAssignment 2`] = `
+exports[`Angular > BasicRefAssignment 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -854,7 +854,7 @@ export default class MyBasicRefAssignmentComponent {
 "
 `;
 
-exports[`Angular BasicRefPrevious 1`] = `
+exports[`Angular > BasicRefPrevious 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 export interface Props {
@@ -896,7 +896,7 @@ export default class MyPreviousComponent {
 "
 `;
 
-exports[`Angular BasicRefPrevious 2`] = `
+exports[`Angular > BasicRefPrevious 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -942,7 +942,7 @@ export default class MyPreviousComponent {
 "
 `;
 
-exports[`Angular Button 1`] = `
+exports[`Angular > Button 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface ButtonProps {
@@ -977,7 +977,7 @@ export default class Button {
 "
 `;
 
-exports[`Angular Button 2`] = `
+exports[`Angular > Button 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -1016,7 +1016,7 @@ export default class Button {
 "
 `;
 
-exports[`Angular Columns 1`] = `
+exports[`Angular > Columns 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Column = {
@@ -1091,7 +1091,7 @@ export default class Column {
 "
 `;
 
-exports[`Angular Columns 2`] = `
+exports[`Angular > Columns 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -1170,7 +1170,7 @@ export default class Column {
 "
 `;
 
-exports[`Angular ContentSlotHtml 1`] = `
+exports[`Angular > ContentSlotHtml 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Props = {
@@ -1198,7 +1198,7 @@ export default class ContentSlotCode {}
 "
 `;
 
-exports[`Angular ContentSlotHtml 2`] = `
+exports[`Angular > ContentSlotHtml 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -1230,7 +1230,7 @@ export default class ContentSlotCode {}
 "
 `;
 
-exports[`Angular ContentSlotJSX 1`] = `
+exports[`Angular > ContentSlotJSX 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Props = {
@@ -1255,7 +1255,7 @@ export default class ContentSlotJsxCode {}
 "
 `;
 
-exports[`Angular ContentSlotJSX 2`] = `
+exports[`Angular > ContentSlotJSX 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -1284,7 +1284,7 @@ export default class ContentSlotJsxCode {}
 "
 `;
 
-exports[`Angular CustomCode 1`] = `
+exports[`Angular > CustomCode 1`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 
 export interface CustomCodeProps {
@@ -1359,161 +1359,7 @@ export default class CustomCode {
 "
 `;
 
-exports[`Angular CustomCode 2`] = `
-"import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
-import { CommonModule } from \\"@angular/common\\";
-
-export interface CustomCodeProps {
-  code: string;
-  replaceNodes?: boolean;
-}
-
-@Component({
-  standalone: true,
-  imports: [CommonModule],
-
-  selector: \\"custom-code\\",
-  template: \`
-    <div
-      #elem
-      [class]=\\"'builder-custom-code' + (replaceNodes ? ' replace-nodes' : '')\\"
-      [innerHTML]=\\"code\\"
-    ></div>
-  \`,
-})
-export default class CustomCode {
-  @Input() replaceNodes: CustomCodeProps[\\"replaceNodes\\"];
-  @Input() code: CustomCodeProps[\\"code\\"];
-
-  @ViewChild(\\"elem\\") elem: ElementRef;
-
-  scriptsInserted = [];
-  scriptsRun = [];
-  findAndRunScripts() {
-    // TODO: Move this function to standalone one in '@builder.io/utils'
-    if (this.elem.nativeElement && typeof window !== \\"undefined\\") {
-      /** @type {HTMLScriptElement[]} */
-      const scripts = this.elem.nativeElement.getElementsByTagName(\\"script\\");
-
-      for (let i = 0; i < scripts.length; i++) {
-        const script = scripts[i];
-
-        if (script.src) {
-          if (this.scriptsInserted.includes(script.src)) {
-            continue;
-          }
-
-          this.scriptsInserted.push(script.src);
-          const newScript = document.createElement(\\"script\\");
-          newScript.async = true;
-          newScript.src = script.src;
-          document.head.appendChild(newScript);
-        } else if (
-          !script.type ||
-          [
-            \\"text/javascript\\",
-            \\"application/javascript\\",
-            \\"application/ecmascript\\",
-          ].includes(script.type)
-        ) {
-          if (this.scriptsRun.includes(script.innerText)) {
-            continue;
-          }
-
-          try {
-            this.scriptsRun.push(script.innerText);
-            new Function(script.innerText)();
-          } catch (error) {
-            console.warn(\\"\`CustomCode\`: Error running script:\\", error);
-          }
-        }
-      }
-    }
-  }
-
-  ngOnInit() {
-    this.findAndRunScripts();
-  }
-}
-"
-`;
-
-exports[`Angular Embed 1`] = `
-"import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
-
-export interface CustomCodeProps {
-  code: string;
-  replaceNodes?: boolean;
-}
-
-@Component({
-  selector: \\"custom-code\\",
-  template: \`
-    <div
-      #elem
-      [class]=\\"'builder-custom-code' + (replaceNodes ? ' replace-nodes' : '')\\"
-      [innerHTML]=\\"code\\"
-    ></div>
-  \`,
-})
-export default class CustomCode {
-  @Input() replaceNodes: CustomCodeProps[\\"replaceNodes\\"];
-  @Input() code: CustomCodeProps[\\"code\\"];
-
-  @ViewChild(\\"elem\\") elem: ElementRef;
-
-  scriptsInserted = [];
-  scriptsRun = [];
-  findAndRunScripts() {
-    // TODO: Move this function to standalone one in '@builder.io/utils'
-    if (this.elem.nativeElement && typeof window !== \\"undefined\\") {
-      /** @type {HTMLScriptElement[]} */
-      const scripts = this.elem.nativeElement.getElementsByTagName(\\"script\\");
-
-      for (let i = 0; i < scripts.length; i++) {
-        const script = scripts[i];
-
-        if (script.src) {
-          if (this.scriptsInserted.includes(script.src)) {
-            continue;
-          }
-
-          this.scriptsInserted.push(script.src);
-          const newScript = document.createElement(\\"script\\");
-          newScript.async = true;
-          newScript.src = script.src;
-          document.head.appendChild(newScript);
-        } else if (
-          !script.type ||
-          [
-            \\"text/javascript\\",
-            \\"application/javascript\\",
-            \\"application/ecmascript\\",
-          ].includes(script.type)
-        ) {
-          if (this.scriptsRun.includes(script.innerText)) {
-            continue;
-          }
-
-          try {
-            this.scriptsRun.push(script.innerText);
-            new Function(script.innerText)();
-          } catch (error) {
-            console.warn(\\"\`CustomCode\`: Error running script:\\", error);
-          }
-        }
-      }
-    }
-  }
-
-  ngOnInit() {
-    this.findAndRunScripts();
-  }
-}
-"
-`;
-
-exports[`Angular Embed 2`] = `
+exports[`Angular > CustomCode 2`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -1592,7 +1438,161 @@ export default class CustomCode {
 "
 `;
 
-exports[`Angular Form 1`] = `
+exports[`Angular > Embed 1`] = `
+"import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
+
+export interface CustomCodeProps {
+  code: string;
+  replaceNodes?: boolean;
+}
+
+@Component({
+  selector: \\"custom-code\\",
+  template: \`
+    <div
+      #elem
+      [class]=\\"'builder-custom-code' + (replaceNodes ? ' replace-nodes' : '')\\"
+      [innerHTML]=\\"code\\"
+    ></div>
+  \`,
+})
+export default class CustomCode {
+  @Input() replaceNodes: CustomCodeProps[\\"replaceNodes\\"];
+  @Input() code: CustomCodeProps[\\"code\\"];
+
+  @ViewChild(\\"elem\\") elem: ElementRef;
+
+  scriptsInserted = [];
+  scriptsRun = [];
+  findAndRunScripts() {
+    // TODO: Move this function to standalone one in '@builder.io/utils'
+    if (this.elem.nativeElement && typeof window !== \\"undefined\\") {
+      /** @type {HTMLScriptElement[]} */
+      const scripts = this.elem.nativeElement.getElementsByTagName(\\"script\\");
+
+      for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+          if (this.scriptsInserted.includes(script.src)) {
+            continue;
+          }
+
+          this.scriptsInserted.push(script.src);
+          const newScript = document.createElement(\\"script\\");
+          newScript.async = true;
+          newScript.src = script.src;
+          document.head.appendChild(newScript);
+        } else if (
+          !script.type ||
+          [
+            \\"text/javascript\\",
+            \\"application/javascript\\",
+            \\"application/ecmascript\\",
+          ].includes(script.type)
+        ) {
+          if (this.scriptsRun.includes(script.innerText)) {
+            continue;
+          }
+
+          try {
+            this.scriptsRun.push(script.innerText);
+            new Function(script.innerText)();
+          } catch (error) {
+            console.warn(\\"\`CustomCode\`: Error running script:\\", error);
+          }
+        }
+      }
+    }
+  }
+
+  ngOnInit() {
+    this.findAndRunScripts();
+  }
+}
+"
+`;
+
+exports[`Angular > Embed 2`] = `
+"import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
+import { CommonModule } from \\"@angular/common\\";
+
+export interface CustomCodeProps {
+  code: string;
+  replaceNodes?: boolean;
+}
+
+@Component({
+  standalone: true,
+  imports: [CommonModule],
+
+  selector: \\"custom-code\\",
+  template: \`
+    <div
+      #elem
+      [class]=\\"'builder-custom-code' + (replaceNodes ? ' replace-nodes' : '')\\"
+      [innerHTML]=\\"code\\"
+    ></div>
+  \`,
+})
+export default class CustomCode {
+  @Input() replaceNodes: CustomCodeProps[\\"replaceNodes\\"];
+  @Input() code: CustomCodeProps[\\"code\\"];
+
+  @ViewChild(\\"elem\\") elem: ElementRef;
+
+  scriptsInserted = [];
+  scriptsRun = [];
+  findAndRunScripts() {
+    // TODO: Move this function to standalone one in '@builder.io/utils'
+    if (this.elem.nativeElement && typeof window !== \\"undefined\\") {
+      /** @type {HTMLScriptElement[]} */
+      const scripts = this.elem.nativeElement.getElementsByTagName(\\"script\\");
+
+      for (let i = 0; i < scripts.length; i++) {
+        const script = scripts[i];
+
+        if (script.src) {
+          if (this.scriptsInserted.includes(script.src)) {
+            continue;
+          }
+
+          this.scriptsInserted.push(script.src);
+          const newScript = document.createElement(\\"script\\");
+          newScript.async = true;
+          newScript.src = script.src;
+          document.head.appendChild(newScript);
+        } else if (
+          !script.type ||
+          [
+            \\"text/javascript\\",
+            \\"application/javascript\\",
+            \\"application/ecmascript\\",
+          ].includes(script.type)
+        ) {
+          if (this.scriptsRun.includes(script.innerText)) {
+            continue;
+          }
+
+          try {
+            this.scriptsRun.push(script.innerText);
+            new Function(script.innerText)();
+          } catch (error) {
+            console.warn(\\"\`CustomCode\`: Error running script:\\", error);
+          }
+        }
+      }
+    }
+  }
+
+  ngOnInit() {
+    this.findAndRunScripts();
+  }
+}
+"
+`;
+
+exports[`Angular > Form 1`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 
 export interface FormProps {
@@ -1936,7 +1936,7 @@ export default class FormComponent {
 "
 `;
 
-exports[`Angular Form 2`] = `
+exports[`Angular > Form 2`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2284,7 +2284,7 @@ export default class FormComponent {
 "
 `;
 
-exports[`Angular Image 1`] = `
+exports[`Angular > Image 1`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 
 // TODO: AMP Support?
@@ -2400,7 +2400,7 @@ export default class Image {
 "
 `;
 
-exports[`Angular Image 2`] = `
+exports[`Angular > Image 2`] = `
 "import { Component, ViewChild, ElementRef, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2520,7 +2520,7 @@ export default class Image {
 "
 `;
 
-exports[`Angular Image State 1`] = `
+exports[`Angular > Image State 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -2542,7 +2542,7 @@ export default class ImgStateComponent {
 "
 `;
 
-exports[`Angular Image State 2`] = `
+exports[`Angular > Image State 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2568,7 +2568,7 @@ export default class ImgStateComponent {
 "
 `;
 
-exports[`Angular Img 1`] = `
+exports[`Angular > Img 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface ImgProps {
@@ -2614,7 +2614,7 @@ export default class ImgComponent {
 "
 `;
 
-exports[`Angular Img 2`] = `
+exports[`Angular > Img 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2664,7 +2664,7 @@ export default class ImgComponent {
 "
 `;
 
-exports[`Angular Input 1`] = `
+exports[`Angular > Input 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface FormInputProps {
@@ -2705,7 +2705,7 @@ export default class FormInputComponent {
 "
 `;
 
-exports[`Angular Input 2`] = `
+exports[`Angular > Input 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2750,7 +2750,7 @@ export default class FormInputComponent {
 "
 `;
 
-exports[`Angular RawText 1`] = `
+exports[`Angular > RawText 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface RawTextProps {
@@ -2774,7 +2774,7 @@ export default class RawText {
 "
 `;
 
-exports[`Angular RawText 2`] = `
+exports[`Angular > RawText 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2802,7 +2802,7 @@ export default class RawText {
 "
 `;
 
-exports[`Angular Remove Internal mitosis package 1`] = `
+exports[`Angular > Remove Internal mitosis package 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -2817,7 +2817,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular Remove Internal mitosis package 2`] = `
+exports[`Angular > Remove Internal mitosis package 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2836,7 +2836,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular Section 1`] = `
+exports[`Angular > Section 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface SectionProps {
@@ -2864,7 +2864,7 @@ export default class SectionComponent {
 "
 `;
 
-exports[`Angular Section 2`] = `
+exports[`Angular > Section 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface SectionProps {
@@ -2898,7 +2898,7 @@ export default class SectionStateComponent {
 "
 `;
 
-exports[`Angular Section 3`] = `
+exports[`Angular > Section 3`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2930,7 +2930,7 @@ export default class SectionComponent {
 "
 `;
 
-exports[`Angular Section 4`] = `
+exports[`Angular > Section 4`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -2968,7 +2968,7 @@ export default class SectionStateComponent {
 "
 `;
 
-exports[`Angular Select 1`] = `
+exports[`Angular > Select 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface FormSelectProps {
@@ -3011,7 +3011,7 @@ export default class SelectComponent {
 "
 `;
 
-exports[`Angular Select 2`] = `
+exports[`Angular > Select 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3058,7 +3058,7 @@ export default class SelectComponent {
 "
 `;
 
-exports[`Angular SlotHtml 1`] = `
+exports[`Angular > SlotHtml 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 type Props = {
@@ -3085,7 +3085,7 @@ export default class SlotCode {}
 "
 `;
 
-exports[`Angular SlotHtml 2`] = `
+exports[`Angular > SlotHtml 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3116,7 +3116,7 @@ export default class SlotCode {}
 "
 `;
 
-exports[`Angular SlotJsx 1`] = `
+exports[`Angular > SlotJsx 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 type Props = {
@@ -3137,7 +3137,7 @@ export default class SlotCode {}
 "
 `;
 
-exports[`Angular SlotJsx 2`] = `
+exports[`Angular > SlotJsx 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3162,7 +3162,7 @@ export default class SlotCode {}
 "
 `;
 
-exports[`Angular Stamped.io 1`] = `
+exports[`Angular > Stamped.io 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type SmileReviewsProps = {
@@ -3271,7 +3271,7 @@ export default class SmileReviews {
 "
 `;
 
-exports[`Angular Stamped.io 2`] = `
+exports[`Angular > Stamped.io 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3384,7 +3384,7 @@ export default class SmileReviews {
 "
 `;
 
-exports[`Angular Submit 1`] = `
+exports[`Angular > Submit 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface ButtonProps {
@@ -3405,7 +3405,7 @@ export default class SubmitButton {
 "
 `;
 
-exports[`Angular Submit 2`] = `
+exports[`Angular > Submit 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3430,7 +3430,7 @@ export default class SubmitButton {
 "
 `;
 
-exports[`Angular Text 1`] = `
+exports[`Angular > Text 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface TextProps {
@@ -3464,7 +3464,7 @@ export default class Text {
 "
 `;
 
-exports[`Angular Text 2`] = `
+exports[`Angular > Text 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3502,7 +3502,7 @@ export default class Text {
 "
 `;
 
-exports[`Angular Textarea 1`] = `
+exports[`Angular > Textarea 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface TextareaProps {
@@ -3534,7 +3534,7 @@ export default class Textarea {
 "
 `;
 
-exports[`Angular Textarea 2`] = `
+exports[`Angular > Textarea 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3570,7 +3570,7 @@ export default class Textarea {
 "
 `;
 
-exports[`Angular Video 1`] = `
+exports[`Angular > Video 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface VideoProps {
@@ -3637,7 +3637,7 @@ export default class Video {
 "
 `;
 
-exports[`Angular Video 2`] = `
+exports[`Angular > Video 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3708,7 +3708,7 @@ export default class Video {
 "
 `;
 
-exports[`Angular basicForwardRef 1`] = `
+exports[`Angular > basicForwardRef 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 export interface Props {
@@ -3741,77 +3741,7 @@ export default class MyBasicForwardRefComponent {
 "
 `;
 
-exports[`Angular basicForwardRef 2`] = `
-"import { Component } from \\"@angular/core\\";
-import { CommonModule } from \\"@angular/common\\";
-
-export interface Props {
-  showInput: boolean;
-  inputRef: HTMLInputElement;
-}
-
-@Component({
-  standalone: true,
-  imports: [CommonModule],
-
-  selector: \\"my-basic-forward-ref-component\\",
-  template: \`
-    <div>
-      <input
-        class=\\"input\\"
-        [value]=\\"name\\"
-        (input)=\\"name = $event.target.value\\"
-      />
-    </div>
-  \`,
-  styles: [
-    \`
-      .input {
-        color: red;
-      }
-    \`,
-  ],
-})
-export default class MyBasicForwardRefComponent {
-  name = \\"PatrickJS\\";
-}
-"
-`;
-
-exports[`Angular basicForwardRefMetadata 1`] = `
-"import { Component } from \\"@angular/core\\";
-
-export interface Props {
-  showInput: boolean;
-  inputRef: HTMLInputElement;
-}
-
-@Component({
-  selector: \\"my-basic-forward-ref-component\\",
-  template: \`
-    <div>
-      <input
-        class=\\"input\\"
-        [value]=\\"name\\"
-        (input)=\\"name = $event.target.value\\"
-      />
-    </div>
-  \`,
-  styles: [
-    \`
-      .input {
-        color: red;
-      }
-    \`,
-  ],
-})
-export default class MyBasicForwardRefComponent {
-  name = \\"PatrickJS\\";
-}
-"
-`;
-
-exports[`Angular basicForwardRefMetadata 2`] = `
+exports[`Angular > basicForwardRef 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3848,7 +3778,77 @@ export default class MyBasicForwardRefComponent {
 "
 `;
 
-exports[`Angular basicOnUpdateReturn 1`] = `
+exports[`Angular > basicForwardRefMetadata 1`] = `
+"import { Component } from \\"@angular/core\\";
+
+export interface Props {
+  showInput: boolean;
+  inputRef: HTMLInputElement;
+}
+
+@Component({
+  selector: \\"my-basic-forward-ref-component\\",
+  template: \`
+    <div>
+      <input
+        class=\\"input\\"
+        [value]=\\"name\\"
+        (input)=\\"name = $event.target.value\\"
+      />
+    </div>
+  \`,
+  styles: [
+    \`
+      .input {
+        color: red;
+      }
+    \`,
+  ],
+})
+export default class MyBasicForwardRefComponent {
+  name = \\"PatrickJS\\";
+}
+"
+`;
+
+exports[`Angular > basicForwardRefMetadata 2`] = `
+"import { Component } from \\"@angular/core\\";
+import { CommonModule } from \\"@angular/common\\";
+
+export interface Props {
+  showInput: boolean;
+  inputRef: HTMLInputElement;
+}
+
+@Component({
+  standalone: true,
+  imports: [CommonModule],
+
+  selector: \\"my-basic-forward-ref-component\\",
+  template: \`
+    <div>
+      <input
+        class=\\"input\\"
+        [value]=\\"name\\"
+        (input)=\\"name = $event.target.value\\"
+      />
+    </div>
+  \`,
+  styles: [
+    \`
+      .input {
+        color: red;
+      }
+    \`,
+  ],
+})
+export default class MyBasicForwardRefComponent {
+  name = \\"PatrickJS\\";
+}
+"
+`;
+
+exports[`Angular > basicOnUpdateReturn 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -3880,7 +3880,7 @@ export default class MyBasicOnUpdateReturnComponent {
 "
 `;
 
-exports[`Angular basicOnUpdateReturn 2`] = `
+exports[`Angular > basicOnUpdateReturn 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3916,7 +3916,7 @@ export default class MyBasicOnUpdateReturnComponent {
 "
 `;
 
-exports[`Angular class + ClassName + css 1`] = `
+exports[`Angular > class + ClassName + css 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -3938,7 +3938,7 @@ export default class MyBasicComponent {}
 "
 `;
 
-exports[`Angular class + ClassName + css 2`] = `
+exports[`Angular > class + ClassName + css 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -3964,7 +3964,7 @@ export default class MyBasicComponent {}
 "
 `;
 
-exports[`Angular class + css 1`] = `
+exports[`Angular > class + css 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -3986,55 +3986,7 @@ export default class MyBasicComponent {}
 "
 `;
 
-exports[`Angular class + css 2`] = `
-"import { Component } from \\"@angular/core\\";
-import { CommonModule } from \\"@angular/common\\";
-
-@Component({
-  standalone: true,
-  imports: [CommonModule],
-
-  selector: \\"my-basic-component\\",
-  template: \`
-    <div class=\\"test div\\">
-      Hello! I can run in React, Vue, Solid, or Liquid!
-    </div>
-  \`,
-  styles: [
-    \`
-      .div {
-        padding: 10px;
-      }
-    \`,
-  ],
-})
-export default class MyBasicComponent {}
-"
-`;
-
-exports[`Angular className + css 1`] = `
-"import { Component } from \\"@angular/core\\";
-
-@Component({
-  selector: \\"my-basic-component\\",
-  template: \`
-    <div class=\\"test div\\">
-      Hello! I can run in React, Vue, Solid, or Liquid!
-    </div>
-  \`,
-  styles: [
-    \`
-      .div {
-        padding: 10px;
-      }
-    \`,
-  ],
-})
-export default class MyBasicComponent {}
-"
-`;
-
-exports[`Angular className + css 2`] = `
+exports[`Angular > class + css 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4060,7 +4012,55 @@ export default class MyBasicComponent {}
 "
 `;
 
-exports[`Angular className 1`] = `
+exports[`Angular > className + css 1`] = `
+"import { Component } from \\"@angular/core\\";
+
+@Component({
+  selector: \\"my-basic-component\\",
+  template: \`
+    <div class=\\"test div\\">
+      Hello! I can run in React, Vue, Solid, or Liquid!
+    </div>
+  \`,
+  styles: [
+    \`
+      .div {
+        padding: 10px;
+      }
+    \`,
+  ],
+})
+export default class MyBasicComponent {}
+"
+`;
+
+exports[`Angular > className + css 2`] = `
+"import { Component } from \\"@angular/core\\";
+import { CommonModule } from \\"@angular/common\\";
+
+@Component({
+  standalone: true,
+  imports: [CommonModule],
+
+  selector: \\"my-basic-component\\",
+  template: \`
+    <div class=\\"test div\\">
+      Hello! I can run in React, Vue, Solid, or Liquid!
+    </div>
+  \`,
+  styles: [
+    \`
+      .div {
+        padding: 10px;
+      }
+    \`,
+  ],
+})
+export default class MyBasicComponent {}
+"
+`;
+
+exports[`Angular > className 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 type Props = {
@@ -4084,7 +4084,7 @@ export default class ClassNameCode {
 "
 `;
 
-exports[`Angular className 2`] = `
+exports[`Angular > className 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4112,7 +4112,7 @@ export default class ClassNameCode {
 "
 `;
 
-exports[`Angular classState 1`] = `
+exports[`Angular > classState 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4137,7 +4137,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular classState 2`] = `
+exports[`Angular > classState 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4166,7 +4166,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular defaultProps 1`] = `
+exports[`Angular > defaultProps 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface ButtonProps {
@@ -4207,7 +4207,7 @@ export default class Button {
 "
 `;
 
-exports[`Angular defaultProps 2`] = `
+exports[`Angular > defaultProps 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4252,7 +4252,7 @@ export default class Button {
 "
 `;
 
-exports[`Angular defaultValsWithTypes 1`] = `
+exports[`Angular > defaultValsWithTypes 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Props = {
@@ -4277,7 +4277,7 @@ export default class ComponentWithTypes {
 "
 `;
 
-exports[`Angular defaultValsWithTypes 2`] = `
+exports[`Angular > defaultValsWithTypes 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4306,7 +4306,7 @@ export default class ComponentWithTypes {
 "
 `;
 
-exports[`Angular multipleOnUpdate 1`] = `
+exports[`Angular > multipleOnUpdate 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4324,7 +4324,7 @@ export default class MultipleOnUpdate {
 "
 `;
 
-exports[`Angular multipleOnUpdate 2`] = `
+exports[`Angular > multipleOnUpdate 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4346,7 +4346,7 @@ export default class MultipleOnUpdate {
 "
 `;
 
-exports[`Angular multipleOnUpdateWithDeps 1`] = `
+exports[`Angular > multipleOnUpdateWithDeps 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4377,7 +4377,7 @@ export default class MultipleOnUpdateWithDeps {
 "
 `;
 
-exports[`Angular multipleOnUpdateWithDeps 2`] = `
+exports[`Angular > multipleOnUpdateWithDeps 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4412,7 +4412,7 @@ export default class MultipleOnUpdateWithDeps {
 "
 `;
 
-exports[`Angular nestedShow 1`] = `
+exports[`Angular > nestedShow 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 interface Props {
@@ -4437,7 +4437,7 @@ export default class NestedShow {
 "
 `;
 
-exports[`Angular nestedShow 2`] = `
+exports[`Angular > nestedShow 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4466,7 +4466,7 @@ export default class NestedShow {
 "
 `;
 
-exports[`Angular nestedStyles 1`] = `
+exports[`Angular > nestedStyles 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4498,7 +4498,7 @@ export default class NestedStyles {}
 "
 `;
 
-exports[`Angular nestedStyles 2`] = `
+exports[`Angular > nestedStyles 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4534,7 +4534,7 @@ export default class NestedStyles {}
 "
 `;
 
-exports[`Angular onInit & onMount 1`] = `
+exports[`Angular > onInit & onMount 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4555,7 +4555,7 @@ export default class OnInit {
 "
 `;
 
-exports[`Angular onInit & onMount 2`] = `
+exports[`Angular > onInit & onMount 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4580,7 +4580,7 @@ export default class OnInit {
 "
 `;
 
-exports[`Angular onInit 1`] = `
+exports[`Angular > onInit 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Props = {
@@ -4610,7 +4610,7 @@ export default class OnInit {
 "
 `;
 
-exports[`Angular onInit 2`] = `
+exports[`Angular > onInit 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4644,7 +4644,7 @@ export default class OnInit {
 "
 `;
 
-exports[`Angular onMount 1`] = `
+exports[`Angular > onMount 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4665,7 +4665,7 @@ export default class Comp {
 "
 `;
 
-exports[`Angular onMount 2`] = `
+exports[`Angular > onMount 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4690,7 +4690,7 @@ export default class Comp {
 "
 `;
 
-exports[`Angular onUpdate 1`] = `
+exports[`Angular > onUpdate 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4707,7 +4707,7 @@ export default class OnUpdate {
 "
 `;
 
-exports[`Angular onUpdate 2`] = `
+exports[`Angular > onUpdate 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4728,7 +4728,7 @@ export default class OnUpdate {
 "
 `;
 
-exports[`Angular onUpdateWithDeps 1`] = `
+exports[`Angular > onUpdateWithDeps 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -4748,7 +4748,7 @@ export default class OnUpdateWithDeps {
 "
 `;
 
-exports[`Angular onUpdateWithDeps 2`] = `
+exports[`Angular > onUpdateWithDeps 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4772,7 +4772,7 @@ export default class OnUpdateWithDeps {
 "
 `;
 
-exports[`Angular preserveExportOrLocalStatement 1`] = `
+exports[`Angular > preserveExportOrLocalStatement 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 type Types = {
@@ -4801,7 +4801,7 @@ export default class MyBasicComponent {}
 "
 `;
 
-exports[`Angular preserveExportOrLocalStatement 2`] = `
+exports[`Angular > preserveExportOrLocalStatement 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4834,7 +4834,7 @@ export default class MyBasicComponent {}
 "
 `;
 
-exports[`Angular preserveTyping 1`] = `
+exports[`Angular > preserveTyping 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export type A = \\"test\\";
@@ -4862,7 +4862,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular preserveTyping 2`] = `
+exports[`Angular > preserveTyping 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4894,7 +4894,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular propsDestructure 1`] = `
+exports[`Angular > propsDestructure 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Props = {
@@ -4920,7 +4920,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular propsDestructure 2`] = `
+exports[`Angular > propsDestructure 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4950,7 +4950,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular propsInterface 1`] = `
+exports[`Angular > propsInterface 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 interface Person {
@@ -4970,7 +4970,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular propsInterface 2`] = `
+exports[`Angular > propsInterface 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -4994,7 +4994,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular propsType 1`] = `
+exports[`Angular > propsType 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 type Person = {
@@ -5014,7 +5014,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular propsType 2`] = `
+exports[`Angular > propsType 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -5038,7 +5038,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Angular rootShow 1`] = `
+exports[`Angular > rootShow 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 export interface RenderStylesProps {
@@ -5059,7 +5059,7 @@ export default class RenderStyles {
 "
 `;
 
-exports[`Angular rootShow 2`] = `
+exports[`Angular > rootShow 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -5084,7 +5084,7 @@ export default class RenderStyles {
 "
 `;
 
-exports[`Angular self-referencing component 1`] = `
+exports[`Angular > self-referencing component 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 @Component({
@@ -5105,7 +5105,7 @@ export default class MyComponent {
 "
 `;
 
-exports[`Angular self-referencing component 2`] = `
+exports[`Angular > self-referencing component 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -5130,7 +5130,7 @@ export default class MyComponent {
 "
 `;
 
-exports[`Angular self-referencing component with children 1`] = `
+exports[`Angular > self-referencing component with children 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 @Component({
@@ -5155,7 +5155,7 @@ export default class MyComponent {
 "
 `;
 
-exports[`Angular self-referencing component with children 2`] = `
+exports[`Angular > self-referencing component with children 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -5184,7 +5184,7 @@ export default class MyComponent {
 "
 `;
 
-exports[`Angular showWithFor 1`] = `
+exports[`Angular > showWithFor 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 interface Props {
@@ -5209,7 +5209,7 @@ export default class NestedShow {
 "
 `;
 
-exports[`Angular showWithFor 2`] = `
+exports[`Angular > showWithFor 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -5238,7 +5238,7 @@ export default class NestedShow {
 "
 `;
 
-exports[`Angular subComponent 1`] = `
+exports[`Angular > subComponent 1`] = `
 "import { Component } from \\"@angular/core\\";
 
 @Component({
@@ -5251,7 +5251,7 @@ export default class SubComponent {}
 "
 `;
 
-exports[`Angular subComponent 2`] = `
+exports[`Angular > subComponent 2`] = `
 "import { Component } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 
@@ -5270,7 +5270,7 @@ export default class SubComponent {}
 "
 `;
 
-exports[`Angular typeDependency 1`] = `
+exports[`Angular > typeDependency 1`] = `
 "import { Component, Input } from \\"@angular/core\\";
 
 import type { Foo } from \\"./foo-type\\";
@@ -5292,7 +5292,7 @@ export default class TypeDependency {
 "
 `;
 
-exports[`Angular typeDependency 2`] = `
+exports[`Angular > typeDependency 2`] = `
 "import { Component, Input } from \\"@angular/core\\";
 import { CommonModule } from \\"@angular/common\\";
 

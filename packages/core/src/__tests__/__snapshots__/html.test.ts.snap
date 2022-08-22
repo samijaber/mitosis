@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Html AdvancedRef 1`] = `
+exports[`Html > AdvancedRef 1`] = `
 "<div>
   <template data-el=\\"show\\">
     <input
@@ -142,7 +142,7 @@ exports[`Html AdvancedRef 1`] = `
 "
 `;
 
-exports[`Html Basic 1`] = `
+exports[`Html > Basic 1`] = `
 "<div class=\\"test div\\">
   <input data-el=\\"input-1\\" data-dom-state=\\"input-2\\" />
 
@@ -206,7 +206,7 @@ exports[`Html Basic 1`] = `
 "
 `;
 
-exports[`Html Basic 2`] = `
+exports[`Html > Basic 2`] = `
 "<div>
   <template data-el=\\"for\\">
     <template data-el=\\"show\\">
@@ -371,7 +371,7 @@ exports[`Html Basic 2`] = `
 "
 `;
 
-exports[`Html Basic Context 1`] = `
+exports[`Html > Basic Context 1`] = `
 "<div>
   <template data-el=\\"div-1\\">
     <!-- myService.method('hello') + state.name -->
@@ -460,7 +460,7 @@ exports[`Html Basic Context 1`] = `
 "
 `;
 
-exports[`Html Basic OnMount Update 1`] = `
+exports[`Html > Basic OnMount Update 1`] = `
 "<div>
   Hello
   <template data-el=\\"div-1\\"><!-- state.name --></template>
@@ -528,7 +528,7 @@ exports[`Html Basic OnMount Update 1`] = `
 "
 `;
 
-exports[`Html Basic Outputs 1`] = `
+exports[`Html > Basic Outputs 1`] = `
 "<div></div>
 <script>
   (() => {
@@ -552,7 +552,7 @@ exports[`Html Basic Outputs 1`] = `
 "
 `;
 
-exports[`Html Basic Outputs Meta 1`] = `
+exports[`Html > Basic Outputs Meta 1`] = `
 "<div></div>
 <script>
   (() => {
@@ -576,7 +576,7 @@ exports[`Html Basic Outputs Meta 1`] = `
 "
 `;
 
-exports[`Html BasicChildComponent 1`] = `
+exports[`Html > BasicChildComponent 1`] = `
 "<div>
   <MyBasicComponent data-el=\\"my-basic-component\\"></MyBasicComponent>
 
@@ -635,7 +635,7 @@ exports[`Html BasicChildComponent 1`] = `
 "
 `;
 
-exports[`Html BasicFor 1`] = `
+exports[`Html > BasicFor 1`] = `
 "<div>
   <template data-el=\\"for\\">
     <input data-el=\\"input-1\\" data-dom-state=\\"input-2\\" />
@@ -773,7 +773,7 @@ exports[`Html BasicFor 1`] = `
 "
 `;
 
-exports[`Html BasicRef 1`] = `
+exports[`Html > BasicRef 1`] = `
 "<div>
   <template data-el=\\"show\\">
     <input
@@ -913,7 +913,7 @@ exports[`Html BasicRef 1`] = `
 "
 `;
 
-exports[`Html BasicRefAssignment 1`] = `
+exports[`Html > BasicRefAssignment 1`] = `
 "<div>
   <button data-el=\\"button-1\\">Click</button>
 </div>
@@ -968,7 +968,7 @@ exports[`Html BasicRefAssignment 1`] = `
 "
 `;
 
-exports[`Html BasicRefPrevious 1`] = `
+exports[`Html > BasicRefPrevious 1`] = `
 "<div>
   <h1>
     Now:
@@ -1048,7 +1048,7 @@ exports[`Html BasicRefPrevious 1`] = `
 "
 `;
 
-exports[`Html Button 1`] = `
+exports[`Html > Button 1`] = `
 "<template data-el=\\"show\\">
   <a data-el=\\"a-1\\">
     <template data-el=\\"div-1\\"><!-- props.text --></template>
@@ -1160,7 +1160,7 @@ exports[`Html Button 1`] = `
 "
 `;
 
-exports[`Html Columns 1`] = `
+exports[`Html > Columns 1`] = `
 "<div class=\\"builder-columns div\\">
   <template data-el=\\"for\\">
     <div class=\\"builder-column div-2\\">
@@ -1324,7 +1324,7 @@ exports[`Html Columns 1`] = `
 "
 `;
 
-exports[`Html ContentSlotHtml 1`] = `
+exports[`Html > ContentSlotHtml 1`] = `
 "<div>
   <slot data-el=\\"slot\\"></slot>
 
@@ -1375,7 +1375,7 @@ exports[`Html ContentSlotHtml 1`] = `
 "
 `;
 
-exports[`Html ContentSlotJSX 1`] = `
+exports[`Html > ContentSlotJSX 1`] = `
 "<div>
   <template data-el=\\"div-1\\"><!-- props.slotTesting --></template>
 
@@ -1437,7 +1437,7 @@ exports[`Html ContentSlotJSX 1`] = `
 "
 `;
 
-exports[`Html CustomCode 1`] = `
+exports[`Html > CustomCode 1`] = `
 "<div data-el=\\"div-1\\" data-ref=\\"undefined-elem\\"></div>
 <script>
   (() => {
@@ -1528,7 +1528,7 @@ exports[`Html CustomCode 1`] = `
 "
 `;
 
-exports[`Html Embed 1`] = `
+exports[`Html > Embed 1`] = `
 "<div data-el=\\"div-1\\" data-ref=\\"undefined-elem\\"></div>
 <script>
   (() => {
@@ -1619,7 +1619,7 @@ exports[`Html Embed 1`] = `
 "
 `;
 
-exports[`Html Image 1`] = `
+exports[`Html > Image 1`] = `
 "<picture data-el=\\"picture-1\\" data-ref=\\"undefined-pictureRef\\">
   <template data-el=\\"show\\">
     <img data-el=\\"img-1\\" />
@@ -1774,7 +1774,7 @@ exports[`Html Image 1`] = `
 "
 `;
 
-exports[`Html Image State 1`] = `
+exports[`Html > Image State 1`] = `
 "<div>
   <template data-el=\\"for\\">
     <img class=\\"custom-class\\" data-el=\\"img-1\\" />
@@ -1881,7 +1881,7 @@ exports[`Html Image State 1`] = `
 "
 `;
 
-exports[`Html Img 1`] = `
+exports[`Html > Img 1`] = `
 "<img data-el=\\"img-1\\" />
 <script>
   (() => {
@@ -1931,7 +1931,7 @@ exports[`Html Img 1`] = `
 "
 `;
 
-exports[`Html Input 1`] = `
+exports[`Html > Input 1`] = `
 "<input data-el=\\"input-1\\" data-dom-state=\\"input-2\\" />
 <script>
   (() => {
@@ -1987,7 +1987,7 @@ exports[`Html Input 1`] = `
 "
 `;
 
-exports[`Html RawText 1`] = `
+exports[`Html > RawText 1`] = `
 "<span data-el=\\"span-1\\"></span>
 <script>
   (() => {
@@ -2030,7 +2030,7 @@ exports[`Html RawText 1`] = `
 "
 `;
 
-exports[`Html Remove Internal mitosis package 1`] = `
+exports[`Html > Remove Internal mitosis package 1`] = `
 "<div>
   Hello
   <template data-el=\\"div-1\\"><!-- state.name --></template>
@@ -2088,7 +2088,7 @@ exports[`Html Remove Internal mitosis package 1`] = `
 "
 `;
 
-exports[`Html Section 1`] = `
+exports[`Html > Section 1`] = `
 "<section data-el=\\"section-1\\">
   <slot></slot>
 </section>
@@ -2138,7 +2138,7 @@ exports[`Html Section 1`] = `
 "
 `;
 
-exports[`Html Section 2`] = `
+exports[`Html > Section 2`] = `
 "<template data-el=\\"show\\">
   <template data-el=\\"for\\">
     <section data-el=\\"section-1\\">
@@ -2272,7 +2272,7 @@ exports[`Html Section 2`] = `
 "
 `;
 
-exports[`Html Select 1`] = `
+exports[`Html > Select 1`] = `
 "<select data-el=\\"select-1\\" data-dom-state=\\"select-2\\">
   <template data-el=\\"for\\">
     <option data-el=\\"option-1\\">
@@ -2412,7 +2412,7 @@ exports[`Html Select 1`] = `
 "
 `;
 
-exports[`Html SlotHtml 1`] = `
+exports[`Html > SlotHtml 1`] = `
 "<div>
   <ContentSlotCode>
     <slot data-el=\\"slot\\"></slot>
@@ -2457,7 +2457,7 @@ exports[`Html SlotHtml 1`] = `
 "
 `;
 
-exports[`Html SlotJsx 1`] = `
+exports[`Html > SlotJsx 1`] = `
 "<div>
   <ContentSlotCode data-el=\\"content-slot-code\\"></ContentSlotCode>
 </div>
@@ -2502,7 +2502,7 @@ exports[`Html SlotJsx 1`] = `
 "
 `;
 
-exports[`Html Stamped.io 1`] = `
+exports[`Html > Stamped.io 1`] = `
 "<div data-el=\\"div-1\\">
   <button data-el=\\"button-1\\">Write a review</button>
 
@@ -2777,7 +2777,7 @@ exports[`Html Stamped.io 1`] = `
 "
 `;
 
-exports[`Html Submit 1`] = `
+exports[`Html > Submit 1`] = `
 "<button type=\\"submit\\" data-el=\\"button-1\\">
   <template data-el=\\"div-1\\"><!-- props.text --></template>
 </button>
@@ -2833,7 +2833,7 @@ exports[`Html Submit 1`] = `
 "
 `;
 
-exports[`Html Text 1`] = `
+exports[`Html > Text 1`] = `
 "<div data-el=\\"div-1\\"></div>
 <script>
   (() => {
@@ -2884,7 +2884,7 @@ exports[`Html Text 1`] = `
 "
 `;
 
-exports[`Html Textarea 1`] = `
+exports[`Html > Textarea 1`] = `
 "<textarea data-el=\\"textarea-1\\" data-dom-state=\\"textarea-2\\"></textarea>
 <script>
   (() => {
@@ -2931,7 +2931,7 @@ exports[`Html Textarea 1`] = `
 "
 `;
 
-exports[`Html Video 1`] = `
+exports[`Html > Video 1`] = `
 "<video preload=\\"none\\" data-el=\\"video-1\\"></video>
 <script>
   (() => {
@@ -2993,7 +2993,7 @@ exports[`Html Video 1`] = `
 "
 `;
 
-exports[`Html basicForwardRef 1`] = `
+exports[`Html > basicForwardRef 1`] = `
 "<div>
   <input
     class=\\"input\\"
@@ -3055,7 +3055,7 @@ exports[`Html basicForwardRef 1`] = `
 "
 `;
 
-exports[`Html basicForwardRefMetadata 1`] = `
+exports[`Html > basicForwardRefMetadata 1`] = `
 "<div>
   <input
     class=\\"input\\"
@@ -3117,7 +3117,7 @@ exports[`Html basicForwardRefMetadata 1`] = `
 "
 `;
 
-exports[`Html basicOnUpdateReturn 1`] = `
+exports[`Html > basicOnUpdateReturn 1`] = `
 "<div>
   Hello!
   <template data-el=\\"div-1\\"><!-- state.name --></template>
@@ -3190,7 +3190,7 @@ exports[`Html basicOnUpdateReturn 1`] = `
 "
 `;
 
-exports[`Html class + ClassName + css 1`] = `
+exports[`Html > class + ClassName + css 1`] = `
 "<div class=\\"test2 test div\\">
   Hello! I can run in React, Vue, Solid, or Liquid!
 </div>
@@ -3202,7 +3202,7 @@ exports[`Html class + ClassName + css 1`] = `
 "
 `;
 
-exports[`Html class + css 1`] = `
+exports[`Html > class + css 1`] = `
 "<div class=\\"test div\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 <style>
   .div {
@@ -3212,7 +3212,7 @@ exports[`Html class + css 1`] = `
 "
 `;
 
-exports[`Html className + css 1`] = `
+exports[`Html > className + css 1`] = `
 "<div class=\\"test div\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 <style>
   .div {
@@ -3222,7 +3222,7 @@ exports[`Html className + css 1`] = `
 "
 `;
 
-exports[`Html className 1`] = `
+exports[`Html > className 1`] = `
 "<div>
   <div class=\\"no binding\\">Without Binding</div>
 
@@ -3267,7 +3267,7 @@ exports[`Html className 1`] = `
 "
 `;
 
-exports[`Html classState 1`] = `
+exports[`Html > classState 1`] = `
 "<div data-el=\\"div-1\\">Hello! I can run in React, Vue, Solid, or Liquid!</div>
 <style>
   .div {
@@ -3320,7 +3320,7 @@ exports[`Html classState 1`] = `
 "
 `;
 
-exports[`Html defaultProps 1`] = `
+exports[`Html > defaultProps 1`] = `
 "<template data-el=\\"show\\">
   <a data-el=\\"a-1\\">
     <template data-el=\\"div-1\\"><!-- props.text --></template>
@@ -3432,7 +3432,7 @@ exports[`Html defaultProps 1`] = `
 "
 `;
 
-exports[`Html defaultValsWithTypes 1`] = `
+exports[`Html > defaultValsWithTypes 1`] = `
 "<div>
   Hello
   <template data-el=\\"div-1\\">
@@ -3491,17 +3491,17 @@ exports[`Html defaultValsWithTypes 1`] = `
 "
 `;
 
-exports[`Html multipleOnUpdate 1`] = `
+exports[`Html > multipleOnUpdate 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Html multipleOnUpdateWithDeps 1`] = `
+exports[`Html > multipleOnUpdateWithDeps 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Html nestedShow 1`] = `
+exports[`Html > nestedShow 1`] = `
 "<template data-el=\\"show\\">
   <template data-el=\\"show-2\\">
     <div>if condition A and condition B</div>
@@ -3576,7 +3576,7 @@ exports[`Html nestedShow 1`] = `
 "
 `;
 
-exports[`Html nestedStyles 1`] = `
+exports[`Html > nestedStyles 1`] = `
 "<div class=\\"div\\">Hello world</div>
 <style>
   .div {
@@ -3598,7 +3598,7 @@ exports[`Html nestedStyles 1`] = `
 "
 `;
 
-exports[`Html onInit & onMount 1`] = `
+exports[`Html > onInit & onMount 1`] = `
 "<div></div>
 <script>
   (() => {
@@ -3627,7 +3627,7 @@ exports[`Html onInit & onMount 1`] = `
 "
 `;
 
-exports[`Html onInit 1`] = `
+exports[`Html > onInit 1`] = `
 "<div>
   Default name defined by parent
   <template data-el=\\"div-1\\"><!-- state.name --></template>
@@ -3692,7 +3692,7 @@ exports[`Html onInit 1`] = `
 "
 `;
 
-exports[`Html onMount 1`] = `
+exports[`Html > onMount 1`] = `
 "<div></div>
 <script>
   (() => {
@@ -3715,22 +3715,22 @@ exports[`Html onMount 1`] = `
 "
 `;
 
-exports[`Html onUpdate 1`] = `
+exports[`Html > onUpdate 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Html onUpdateWithDeps 1`] = `
+exports[`Html > onUpdateWithDeps 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Html preserveExportOrLocalStatement 1`] = `
+exports[`Html > preserveExportOrLocalStatement 1`] = `
 "<div></div>
 "
 `;
 
-exports[`Html preserveTyping 1`] = `
+exports[`Html > preserveTyping 1`] = `
 "<div>
   Hello! I can run in React, Vue, Solid, or Liquid!
   <template data-el=\\"div-1\\"><!-- props.name --></template>
@@ -3787,7 +3787,7 @@ exports[`Html preserveTyping 1`] = `
 "
 `;
 
-exports[`Html propsDestructure 1`] = `
+exports[`Html > propsDestructure 1`] = `
 "<div>
   <slot></slot>
 
@@ -3847,7 +3847,7 @@ exports[`Html propsDestructure 1`] = `
 "
 `;
 
-exports[`Html propsInterface 1`] = `
+exports[`Html > propsInterface 1`] = `
 "<div>
   Hello! I can run in React, Vue, Solid, or Liquid!
   <template data-el=\\"div-1\\"><!-- props.name --></template>
@@ -3904,7 +3904,7 @@ exports[`Html propsInterface 1`] = `
 "
 `;
 
-exports[`Html propsType 1`] = `
+exports[`Html > propsType 1`] = `
 "<div>
   Hello! I can run in React, Vue, Solid, or Liquid!
   <template data-el=\\"div-1\\"><!-- props.name --></template>
@@ -3961,7 +3961,7 @@ exports[`Html propsType 1`] = `
 "
 `;
 
-exports[`Html rootShow 1`] = `
+exports[`Html > rootShow 1`] = `
 "<template data-el=\\"show\\">
   <div>Bar</div>
 </template>
@@ -4027,7 +4027,7 @@ exports[`Html rootShow 1`] = `
 "
 `;
 
-exports[`Html self-referencing component 1`] = `
+exports[`Html > self-referencing component 1`] = `
 "<div>
   <template data-el=\\"div-1\\"><!-- props.name --></template>
 
@@ -4114,7 +4114,7 @@ exports[`Html self-referencing component 1`] = `
 "
 `;
 
-exports[`Html self-referencing component with children 1`] = `
+exports[`Html > self-referencing component with children 1`] = `
 "<div>
   <template data-el=\\"div-1\\"><!-- props.name --></template>
 
@@ -4205,7 +4205,7 @@ exports[`Html self-referencing component with children 1`] = `
 "
 `;
 
-exports[`Html showWithFor 1`] = `
+exports[`Html > showWithFor 1`] = `
 "<template data-el=\\"show\\">
   <template data-el=\\"for\\">
     <div data-el=\\"div-1\\">
@@ -4356,12 +4356,12 @@ exports[`Html showWithFor 1`] = `
 "
 `;
 
-exports[`Html subComponent 1`] = `
+exports[`Html > subComponent 1`] = `
 "<Foo></Foo>
 "
 `;
 
-exports[`Html typeDependency 1`] = `
+exports[`Html > typeDependency 1`] = `
 "<div>
   <template data-el=\\"div-1\\"><!-- props.foo --></template>
 </div>

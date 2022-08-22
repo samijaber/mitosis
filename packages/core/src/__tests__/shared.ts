@@ -2,69 +2,75 @@ import { Transpiler } from '../types/transpiler';
 import { Target } from '../types/config';
 import { parseJsx } from '../parsers/jsx';
 
-const basicForShow = require('./data/basic-for-show.raw');
-const basicOnMountUpdate = require('./data/basic-onMount-update.raw');
-const basicContext = require('./data/basic-context.raw');
-const basicOutputsMeta = require('./data/basic-outputs-meta.raw');
-const basicOutputs = require('./data/basic-outputs.raw');
-const subComponent = require('./data/sub-component.lite.jsx');
+import defaultValsWithTypes from './data/types/component-with-default-values-types.raw?raw';
+import rootShow from './data/blocks/rootShow.raw?raw';
+import nestedShow from './data/show/nested-show.raw?raw';
+import showWithFor from './data/show/show-with-for.raw?raw';
+import AdvancedRef from './data/advanced-ref.raw?raw';
+import basicOnUpdateReturn from './data/basic-onUpdate-return.raw?raw';
+import basicForShow from './data/basic-for-show.raw?raw';
+import basicOnMountUpdate from './data/basic-onMount-update.raw?raw';
+import basicContext from './data/basic-context.raw?raw';
+import basicOutputsMeta from './data/basic-outputs-meta.raw?raw';
+import basicOutputs from './data/basic-outputs.raw?raw';
+import subComponent from './data/sub-component.lite.jsx?raw';
 
-const basic = require('./data/basic.raw');
-const basicMitosis = require('./data/basic-custom-mitosis-package.raw');
-const basicChildComponent = require('./data/basic-child-component.raw');
-const basicFor = require('./data/basic-for.raw');
-const basicRef = require('./data/basic-ref.raw');
-const basicForwardRef = require('./data/basic-forwardRef.raw');
-const basicForwardRefMetadata = require('./data/basic-forwardRef-metadata.raw');
-const basicRefPrevious = require('./data/basic-ref-usePrevious.raw');
-const basicRefAssignment = require('./data/basic-ref-assignment.raw');
-const propsDestructure = require('./data/basic-props-destructure.raw');
-const nestedStyles = require('./data/nested-styles.lite');
-const preserveExportOrLocalStatement = require('./data/basic-preserve-export-or-local-statement.raw');
+import basic from './data/basic.raw?raw';
+import basicMitosis from './data/basic-custom-mitosis-package.raw?raw';
+import basicChildComponent from './data/basic-child-component.raw?raw';
+import basicFor from './data/basic-for.raw?raw';
+import basicRef from './data/basic-ref.raw?raw';
+import basicForwardRef from './data/basic-forwardRef.raw?raw';
+import basicForwardRefMetadata from './data/basic-forwardRef-metadata.raw?raw';
+import basicRefPrevious from './data/basic-ref-usePrevious.raw?raw';
+import basicRefAssignment from './data/basic-ref-assignment.raw?raw';
+import propsDestructure from './data/basic-props-destructure.raw?raw';
+import nestedStyles from './data/nested-styles.lite?raw';
+import preserveExportOrLocalStatement from './data/basic-preserve-export-or-local-statement.raw?raw';
 
-const propsType = require('./data/types/component-props-type.raw');
-const propsInterface = require('./data/types/component-props-interface.raw');
-const preserveTyping = require('./data/types/preserve-typing.raw');
-const typeDependency = require('./data/types/type-dependency.raw');
+import propsType from './data/types/component-props-type.raw?raw';
+import propsInterface from './data/types/component-props-interface.raw?raw';
+import preserveTyping from './data/types/preserve-typing.raw?raw';
+import typeDependency from './data/types/type-dependency.raw?raw';
 
-const defaultProps = require('./data/default-props/default-props.raw');
+import defaultProps from './data/default-props/default-props.raw?raw';
 
-const classRaw = require('./data/styles/class.raw');
-const className = require('./data/styles/className.raw');
-const classAndClassName = require('./data/styles/class-and-className.raw');
-const classState = require('./data/styles/classState.raw');
+import classRaw from './data/styles/class.raw?raw';
+import className from './data/styles/className.raw?raw';
+import classAndClassName from './data/styles/class-and-className.raw?raw';
+import classState from './data/styles/classState.raw?raw';
 
-const button = require('./data/blocks/button.raw');
-const classNameJsx = require('./data/blocks/classname-jsx.raw');
-const columns = require('./data/blocks/columns.raw');
-const contentSlotHtml = require('./data/blocks/content-slot-html.raw');
-const contentSlotJsx = require('./data/blocks/content-slot-jsx.raw');
-const customCode = require('./data/blocks/custom-code.raw');
-const formBlock = require('./data/blocks/form.raw');
-const image = require('./data/blocks/image.raw');
-const imageState = require('./data/blocks/img-state.raw');
-const img = require('./data/blocks/img.raw');
-const inputBlock = require('./data/blocks/input.raw');
-const multipleOnUpdate = require('./data/blocks/multiple-onUpdate.raw');
-const multipleOnUpdateWithDeps = require('./data/blocks/multiple-onUpdateWithDeps.raw');
-const onInit = require('./data/blocks/onInit.raw');
-const onInitonMount = require('./data/blocks/onInit-onMount.raw');
-const onMount = require('./data/blocks/onMount.raw');
-const onUpdate = require('./data/blocks/onUpdate.raw');
-const onUpdateWithDeps = require('./data/blocks/onUpdateWithDeps.raw');
-const rawText = require('./data/blocks/raw-text.raw');
-const section = require('./data/blocks/section.raw');
-const sectionState = require('./data/blocks/section-state.raw');
-const selectBlock = require('./data/blocks/select.raw');
-const selfRefCompWChildren = require('./data/blocks/self-referencing-component-with-children.raw');
-const selfRefComp = require('./data/blocks/self-referencing-component.raw');
-const slotHtml = require('./data/blocks/slot-html.raw');
-const slotJsx = require('./data/blocks/slot-jsx.raw');
-const stamped = require('./data/blocks/stamped-io.raw');
-const submitButtonBlock = require('./data/blocks/submit-button.raw');
-const text = require('./data/blocks/text.raw');
-const textarea = require('./data/blocks/textarea.raw');
-const video = require('./data/blocks/video.raw');
+import button from './data/blocks/button.raw?raw';
+import classNameJsx from './data/blocks/classname-jsx.raw?raw';
+import columns from './data/blocks/columns.raw?raw';
+import contentSlotHtml from './data/blocks/content-slot-html.raw?raw';
+import contentSlotJsx from './data/blocks/content-slot-jsx.raw?raw';
+import customCode from './data/blocks/custom-code.raw?raw';
+import formBlock from './data/blocks/form.raw?raw';
+import image from './data/blocks/image.raw?raw';
+import imageState from './data/blocks/img-state.raw?raw';
+import img from './data/blocks/img.raw?raw';
+import inputBlock from './data/blocks/input.raw?raw';
+import multipleOnUpdate from './data/blocks/multiple-onUpdate.raw?raw';
+import multipleOnUpdateWithDeps from './data/blocks/multiple-onUpdateWithDeps.raw?raw';
+import onInit from './data/blocks/onInit.raw?raw';
+import onInitonMount from './data/blocks/onInit-onMount.raw?raw';
+import onMount from './data/blocks/onMount.raw?raw';
+import onUpdate from './data/blocks/onUpdate.raw?raw';
+import onUpdateWithDeps from './data/blocks/onUpdateWithDeps.raw?raw';
+import rawText from './data/blocks/raw-text.raw?raw';
+import section from './data/blocks/section.raw?raw';
+import sectionState from './data/blocks/section-state.raw?raw';
+import selectBlock from './data/blocks/select.raw?raw';
+import selfRefCompWChildren from './data/blocks/self-referencing-component-with-children.raw?raw';
+import selfRefComp from './data/blocks/self-referencing-component.raw?raw';
+import slotHtml from './data/blocks/slot-html.raw?raw';
+import slotJsx from './data/blocks/slot-jsx.raw?raw';
+import stamped from './data/blocks/stamped-io.raw?raw';
+import submitButtonBlock from './data/blocks/submit-button.raw?raw';
+import text from './data/blocks/text.raw?raw';
+import textarea from './data/blocks/textarea.raw?raw';
+import video from './data/blocks/video.raw?raw';
 
 const path = 'test-path';
 
@@ -101,7 +107,7 @@ const BASIC_TESTS = {
   defaultProps: defaultProps,
   preserveTyping: preserveTyping,
   typeDependency,
-  defaultValsWithTypes: require('./data/types/component-with-default-values-types.raw'),
+  defaultValsWithTypes,
   subComponent,
   nestedStyles,
   propsDestructure: propsDestructure,
@@ -148,17 +154,17 @@ const FORWARD_REF_TESTS: Tests = {
 };
 
 const SHOW_TESTS: Tests = {
-  rootShow: require('./data/blocks/rootShow.raw'),
-  nestedShow: require('./data/show/nested-show.raw'),
-  showWithFor: require('./data/show/show-with-for.raw'),
+  rootShow,
+  nestedShow,
+  showWithFor,
 };
 
 const ADVANCED_REF: Tests = {
-  AdvancedRef: require('./data/advanced-ref.raw'),
+  AdvancedRef,
 };
 
 const ON_UPDATE_RETURN: Tests = {
-  basicOnUpdateReturn: require('./data/basic-onUpdate-return.raw'),
+  basicOnUpdateReturn,
 };
 
 const TESTS_FOR_TARGET: Partial<Record<Target, Tests[]>> = {

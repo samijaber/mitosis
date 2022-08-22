@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`webcomponent AdvancedRef 1`] = `
+exports[`webcomponent > AdvancedRef 1`] = `
 "export interface Props {
   showInput: boolean;
 }
@@ -274,7 +274,7 @@ customElements.define(\\"my-basic-ref-component\\", MyBasicRefComponent);
 "
 `;
 
-exports[`webcomponent Basic 1`] = `
+exports[`webcomponent > Basic 1`] = `
 "export interface MyBasicComponentProps {
   id: string;
 }
@@ -439,7 +439,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent Basic 2`] = `
+exports[`webcomponent > Basic 2`] = `
 "/**
  * Usage:
  *
@@ -696,7 +696,7 @@ customElements.define(\\"my-basic-for-show-component\\", MyBasicForShowComponent
 "
 `;
 
-exports[`webcomponent Basic Context 1`] = `
+exports[`webcomponent > Basic Context 1`] = `
 "import { Injector, createInjector, MyService } from \\"@dummy/injection-js\\";
 
 /**
@@ -893,7 +893,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent Basic OnMount Update 1`] = `
+exports[`webcomponent > Basic OnMount Update 1`] = `
 "export interface Props {
   hi: string;
   bye: string;
@@ -1029,7 +1029,7 @@ customElements.define(
 "
 `;
 
-exports[`webcomponent Basic Outputs 1`] = `
+exports[`webcomponent > Basic Outputs 1`] = `
 "/**
  * Usage:
  *
@@ -1136,7 +1136,7 @@ customElements.define(\\"my-basic-outputs-component\\", MyBasicOutputsComponent)
 "
 `;
 
-exports[`webcomponent Basic Outputs Meta 1`] = `
+exports[`webcomponent > Basic Outputs Meta 1`] = `
 "/**
  * Usage:
  *
@@ -1243,7 +1243,7 @@ customElements.define(\\"my-basic-outputs-component\\", MyBasicOutputsComponent)
 "
 `;
 
-exports[`webcomponent BasicChildComponent 1`] = `
+exports[`webcomponent > BasicChildComponent 1`] = `
 "import MyBasicComponent from \\"./basic.raw\\";
 import MyBasicOnMountUpdateComponent from \\"./basic-onMount-update.raw\\";
 
@@ -1384,7 +1384,7 @@ customElements.define(\\"my-basic-child-component\\", MyBasicChildComponent);
 "
 `;
 
-exports[`webcomponent BasicFor 1`] = `
+exports[`webcomponent > BasicFor 1`] = `
 "/**
  * Usage:
  *
@@ -1607,7 +1607,7 @@ customElements.define(\\"my-basic-for-component\\", MyBasicForComponent);
 "
 `;
 
-exports[`webcomponent BasicRef 1`] = `
+exports[`webcomponent > BasicRef 1`] = `
 "export interface Props {
   showInput: boolean;
 }
@@ -1869,7 +1869,7 @@ customElements.define(\\"my-basic-ref-component\\", MyBasicRefComponent);
 "
 `;
 
-exports[`webcomponent BasicRefAssignment 1`] = `
+exports[`webcomponent > BasicRefAssignment 1`] = `
 "export interface Props {
   showInput: boolean;
 }
@@ -1994,7 +1994,7 @@ customElements.define(
 "
 `;
 
-exports[`webcomponent BasicRefPrevious 1`] = `
+exports[`webcomponent > BasicRefPrevious 1`] = `
 "export interface Props {
   showInput: boolean;
 }
@@ -2151,7 +2151,7 @@ customElements.define(\\"my-previous-component\\", MyPreviousComponent);
 "
 `;
 
-exports[`webcomponent Button 1`] = `
+exports[`webcomponent > Button 1`] = `
 "export interface ButtonProps {
   attributes?: any;
   text?: string;
@@ -2322,7 +2322,7 @@ customElements.define(\\"button\\", Button);
 "
 `;
 
-exports[`webcomponent Columns 1`] = `
+exports[`webcomponent > Columns 1`] = `
 "type Column = {
   content: any; // TODO: Implement this when support for dynamic CSS lands
 
@@ -2557,7 +2557,7 @@ customElements.define(\\"column\\", Column);
 "
 `;
 
-exports[`webcomponent ContentSlotHtml 1`] = `
+exports[`webcomponent > ContentSlotHtml 1`] = `
 "type Props = {
   [key: string]: string | JSX.Element;
   slotTesting: JSX.Element;
@@ -2681,7 +2681,7 @@ customElements.define(\\"content-slot-code\\", ContentSlotCode);
 "
 `;
 
-exports[`webcomponent ContentSlotJSX 1`] = `
+exports[`webcomponent > ContentSlotJSX 1`] = `
 "type Props = {
   [key: string]: string | JSX.Element;
 };
@@ -2804,7 +2804,7 @@ customElements.define(\\"content-slot-jsx-code\\", ContentSlotJsxCode);
 "
 `;
 
-exports[`webcomponent CustomCode 1`] = `
+exports[`webcomponent > CustomCode 1`] = `
 "export interface CustomCodeProps {
   code: string;
   replaceNodes?: boolean;
@@ -2973,7 +2973,7 @@ customElements.define(\\"custom-code\\", CustomCode);
 "
 `;
 
-exports[`webcomponent Embed 1`] = `
+exports[`webcomponent > Embed 1`] = `
 "export interface CustomCodeProps {
   code: string;
   replaceNodes?: boolean;
@@ -3142,7 +3142,7 @@ customElements.define(\\"custom-code\\", CustomCode);
 "
 `;
 
-exports[`webcomponent Image 1`] = `
+exports[`webcomponent > Image 1`] = `
 "// TODO: AMP Support?
 export interface ImageProps {
   _class?: string;
@@ -3405,7 +3405,7 @@ customElements.define(\\"image\\", Image);
 "
 `;
 
-exports[`webcomponent Image State 1`] = `
+exports[`webcomponent > Image State 1`] = `
 "/**
  * Usage:
  *
@@ -3568,7 +3568,7 @@ customElements.define(\\"img-state-component\\", ImgStateComponent);
 "
 `;
 
-exports[`webcomponent Img 1`] = `
+exports[`webcomponent > Img 1`] = `
 "export interface ImgProps {
   attributes?: any;
   imgSrc?: string;
@@ -3711,7 +3711,7 @@ customElements.define(\\"img-component\\", ImgComponent);
 "
 `;
 
-exports[`webcomponent Input 1`] = `
+exports[`webcomponent > Input 1`] = `
 "export interface FormInputProps {
   type?: string;
   attributes?: any;
@@ -3895,7 +3895,7 @@ customElements.define(\\"form-input-component\\", FormInputComponent);
 "
 `;
 
-exports[`webcomponent RawText 1`] = `
+exports[`webcomponent > RawText 1`] = `
 "export interface RawTextProps {
   attributes?: any;
   text?: string; // builderBlock?: any;
@@ -4010,7 +4010,7 @@ customElements.define(\\"raw-text\\", RawText);
 "
 `;
 
-exports[`webcomponent Remove Internal mitosis package 1`] = `
+exports[`webcomponent > Remove Internal mitosis package 1`] = `
 "/**
  * Usage:
  *
@@ -4108,7 +4108,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent Section 1`] = `
+exports[`webcomponent > Section 1`] = `
 "export interface SectionProps {
   maxWidth?: number;
   attributes?: any;
@@ -4232,7 +4232,7 @@ customElements.define(\\"section-component\\", SectionComponent);
 "
 `;
 
-exports[`webcomponent Section 2`] = `
+exports[`webcomponent > Section 2`] = `
 "export interface SectionProps {
   maxWidth?: number;
   attributes?: any;
@@ -4445,7 +4445,7 @@ customElements.define(\\"section-state-component\\", SectionStateComponent);
 "
 `;
 
-exports[`webcomponent Select 1`] = `
+exports[`webcomponent > Select 1`] = `
 "export interface FormSelectProps {
   options?: {
     name?: string;
@@ -4708,7 +4708,7 @@ customElements.define(\\"select-component\\", SelectComponent);
 "
 `;
 
-exports[`webcomponent Shadow DOM 1`] = `
+exports[`webcomponent > Shadow DOM 1`] = `
 "type SmileReviewsProps = {
   productId: string;
   apiKey: string;
@@ -5103,7 +5103,7 @@ customElements.define(\\"smile-reviews\\", SmileReviews);
 "
 `;
 
-exports[`webcomponent SlotHtml 1`] = `
+exports[`webcomponent > SlotHtml 1`] = `
 "type Props = {
   [key: string]: string;
 };
@@ -5205,7 +5205,7 @@ customElements.define(\\"slot-code\\", SlotCode);
 "
 `;
 
-exports[`webcomponent SlotJsx 1`] = `
+exports[`webcomponent > SlotJsx 1`] = `
 "type Props = {
   [key: string]: string;
 };
@@ -5318,7 +5318,7 @@ customElements.define(\\"slot-code\\", SlotCode);
 "
 `;
 
-exports[`webcomponent Stamped.io 1`] = `
+exports[`webcomponent > Stamped.io 1`] = `
 "type SmileReviewsProps = {
   productId: string;
   apiKey: string;
@@ -5727,7 +5727,7 @@ customElements.define(\\"smile-reviews\\", SmileReviews);
 "
 `;
 
-exports[`webcomponent Submit 1`] = `
+exports[`webcomponent > Submit 1`] = `
 "export interface ButtonProps {
   attributes?: any;
   text?: string;
@@ -5843,7 +5843,7 @@ customElements.define(\\"submit-button\\", SubmitButton);
 "
 `;
 
-exports[`webcomponent Text 1`] = `
+exports[`webcomponent > Text 1`] = `
 "export interface TextProps {
   attributes?: any;
   rtlMode: boolean;
@@ -5970,7 +5970,7 @@ customElements.define(\\"text\\", Text);
 "
 `;
 
-exports[`webcomponent Textarea 1`] = `
+exports[`webcomponent > Textarea 1`] = `
 "export interface TextareaProps {
   attributes?: any;
   name?: string;
@@ -6139,7 +6139,7 @@ customElements.define(\\"textarea\\", Textarea);
 "
 `;
 
-exports[`webcomponent Video 1`] = `
+exports[`webcomponent > Video 1`] = `
 "export interface VideoProps {
   attributes?: any;
   video?: string;
@@ -6303,7 +6303,7 @@ customElements.define(\\"video\\", Video);
 "
 `;
 
-exports[`webcomponent basicForwardRef 1`] = `
+exports[`webcomponent > basicForwardRef 1`] = `
 "export interface Props {
   showInput: boolean;
   inputRef: HTMLInputElement;
@@ -6468,7 +6468,7 @@ customElements.define(
 "
 `;
 
-exports[`webcomponent basicForwardRefMetadata 1`] = `
+exports[`webcomponent > basicForwardRefMetadata 1`] = `
 "export interface Props {
   showInput: boolean;
   inputRef: HTMLInputElement;
@@ -6633,7 +6633,7 @@ customElements.define(
 "
 `;
 
-exports[`webcomponent basicOnUpdateReturn 1`] = `
+exports[`webcomponent > basicOnUpdateReturn 1`] = `
 "/**
  * Usage:
  *
@@ -6760,7 +6760,7 @@ customElements.define(
 "
 `;
 
-exports[`webcomponent class + ClassName + css 1`] = `
+exports[`webcomponent > class + ClassName + css 1`] = `
 "/**
  * Usage:
  *
@@ -6855,7 +6855,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent class + css 1`] = `
+exports[`webcomponent > class + css 1`] = `
 "/**
  * Usage:
  *
@@ -6948,7 +6948,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent className + css 1`] = `
+exports[`webcomponent > className + css 1`] = `
 "/**
  * Usage:
  *
@@ -7041,7 +7041,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent className 1`] = `
+exports[`webcomponent > className 1`] = `
 "type Props = {
   [key: string]: string | JSX.Element;
   slotTesting: JSX.Element;
@@ -7144,7 +7144,7 @@ customElements.define(\\"class-name-code\\", ClassNameCode);
 "
 `;
 
-exports[`webcomponent classState 1`] = `
+exports[`webcomponent > classState 1`] = `
 "/**
  * Usage:
  *
@@ -7252,7 +7252,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent defaultProps 1`] = `
+exports[`webcomponent > defaultProps 1`] = `
 "export interface ButtonProps {
   attributes?: any;
   text?: string;
@@ -7423,7 +7423,7 @@ customElements.define(\\"button\\", Button);
 "
 `;
 
-exports[`webcomponent defaultValsWithTypes 1`] = `
+exports[`webcomponent > defaultValsWithTypes 1`] = `
 "type Props = {
   name: string;
 };
@@ -7545,7 +7545,7 @@ customElements.define(\\"component-with-types\\", ComponentWithTypes);
 "
 `;
 
-exports[`webcomponent multipleOnUpdate 1`] = `
+exports[`webcomponent > multipleOnUpdate 1`] = `
 "/**
  * Usage:
  *
@@ -7641,7 +7641,7 @@ customElements.define(\\"multiple-on-update\\", MultipleOnUpdate);
 "
 `;
 
-exports[`webcomponent multipleOnUpdateWithDeps 1`] = `
+exports[`webcomponent > multipleOnUpdateWithDeps 1`] = `
 "/**
  * Usage:
  *
@@ -7760,7 +7760,7 @@ customElements.define(\\"multiple-on-update-with-deps\\", MultipleOnUpdateWithDe
 "
 `;
 
-exports[`webcomponent nestedShow 1`] = `
+exports[`webcomponent > nestedShow 1`] = `
 "interface Props {
   conditionA: boolean;
   conditionB: boolean;
@@ -7910,7 +7910,7 @@ customElements.define(\\"nested-show\\", NestedShow);
 "
 `;
 
-exports[`webcomponent nestedStyles 1`] = `
+exports[`webcomponent > nestedStyles 1`] = `
 "/**
  * Usage:
  *
@@ -8015,7 +8015,7 @@ customElements.define(\\"nested-styles\\", NestedStyles);
 "
 `;
 
-exports[`webcomponent onInit & onMount 1`] = `
+exports[`webcomponent > onInit & onMount 1`] = `
 "/**
  * Usage:
  *
@@ -8115,7 +8115,7 @@ customElements.define(\\"on-init\\", OnInit);
 "
 `;
 
-exports[`webcomponent onInit 1`] = `
+exports[`webcomponent > onInit 1`] = `
 "type Props = {
   name: string;
 };
@@ -8244,7 +8244,7 @@ customElements.define(\\"on-init\\", OnInit);
 "
 `;
 
-exports[`webcomponent onMount 1`] = `
+exports[`webcomponent > onMount 1`] = `
 "/**
  * Usage:
  *
@@ -8341,7 +8341,7 @@ customElements.define(\\"comp\\", Comp);
 "
 `;
 
-exports[`webcomponent onUpdate 1`] = `
+exports[`webcomponent > onUpdate 1`] = `
 "/**
  * Usage:
  *
@@ -8435,7 +8435,7 @@ customElements.define(\\"on-update\\", OnUpdate);
 "
 `;
 
-exports[`webcomponent onUpdateWithDeps 1`] = `
+exports[`webcomponent > onUpdateWithDeps 1`] = `
 "/**
  * Usage:
  *
@@ -8535,7 +8535,7 @@ customElements.define(\\"on-update-with-deps\\", OnUpdateWithDeps);
 "
 `;
 
-exports[`webcomponent preserveExportOrLocalStatement 1`] = `
+exports[`webcomponent > preserveExportOrLocalStatement 1`] = `
 "type Types = {
   s: any[];
 };
@@ -8639,7 +8639,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent preserveTyping 1`] = `
+exports[`webcomponent > preserveTyping 1`] = `
 "export type A = \\"test\\";
 export interface C {
   n: \\"test\\";
@@ -8764,7 +8764,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent propsDestructure 1`] = `
+exports[`webcomponent > propsDestructure 1`] = `
 "type Props = {
   children: any;
   type: string;
@@ -8884,7 +8884,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent propsInterface 1`] = `
+exports[`webcomponent > propsInterface 1`] = `
 "interface Person {
   name: string;
   age?: number;
@@ -9001,7 +9001,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent propsType 1`] = `
+exports[`webcomponent > propsType 1`] = `
 "type Person = {
   name: string;
   age?: number;
@@ -9118,7 +9118,7 @@ customElements.define(\\"my-basic-component\\", MyBasicComponent);
 "
 `;
 
-exports[`webcomponent rootShow 1`] = `
+exports[`webcomponent > rootShow 1`] = `
 "export interface RenderStylesProps {
   foo: string;
 }
@@ -9256,7 +9256,7 @@ customElements.define(\\"render-styles\\", RenderStyles);
 "
 `;
 
-exports[`webcomponent self-referencing component 1`] = `
+exports[`webcomponent > self-referencing component 1`] = `
 "/**
  * Usage:
  *
@@ -9400,7 +9400,7 @@ customElements.define(\\"my-component\\", MyComponent);
 "
 `;
 
-exports[`webcomponent self-referencing component with children 1`] = `
+exports[`webcomponent > self-referencing component with children 1`] = `
 "/**
  * Usage:
  *
@@ -9548,7 +9548,7 @@ customElements.define(\\"my-component\\", MyComponent);
 "
 `;
 
-exports[`webcomponent showWithFor 1`] = `
+exports[`webcomponent > showWithFor 1`] = `
 "interface Props {
   conditionA: boolean;
   items: string[];
@@ -9764,7 +9764,7 @@ customElements.define(\\"nested-show\\", NestedShow);
 "
 `;
 
-exports[`webcomponent subComponent 1`] = `
+exports[`webcomponent > subComponent 1`] = `
 "import Foo from \\"./foo-sub-component.lite\\";
 
 /**
@@ -9854,7 +9854,7 @@ customElements.define(\\"sub-component\\", SubComponent);
 "
 `;
 
-exports[`webcomponent typeDependency 1`] = `
+exports[`webcomponent > typeDependency 1`] = `
 "import type { Foo } from \\"./foo-type\\";
 import type { Foo as Foo2 } from \\"./type-export\\";
 export type TypeDependencyProps = {

@@ -6,7 +6,7 @@ describe('Preact', () => {
   runTestsForTarget('react', componentToReact({ preact: true }));
 });
 
-const stamped = require('./data/blocks/stamped-io.raw');
+import stamped from './data/blocks/stamped-io.raw?raw';
 describe('React', () => {
   runTestsForTarget('react', componentToReact());
   test('stamped', () => {

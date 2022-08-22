@@ -1,64 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[` 1`] = `
-"
-    <div>
-      <if _=\\"input.foo === 'bar'\\">
-        Hello
-      </if>
-      <for |items| of=\\"(some.long ? expression : yo)\\">
-        World
-      </for>
-      <input 
-        placeholder=\\"Hello world...\\"
-        value=\\"(this.state.name)\\" 
-        on-click=\\"(event => {&#10;          console.log('hello', &quot;world&quot;)&#10;        })\\"
-        on-input=\\"(event => this.state.name = event.target.value)\\" /> 
-        
-        Hello! I can run in React, Vue, Solid, or Liquid!
-    </div>"
-`;
-
-exports[` 2`] = `
-"
-    <div>
-      <if(input.foo === 'bar')>
-        Hello
-      </if>
-      <for|items| of=(some.long ? expression : yo)>
-        World
-      </for>
-      <input 
-        placeholder=\\"Hello world...\\"
-        value=(this.state.name) 
-        on-click=(event => {
-          console.log('hello', \\"world\\")
-        })
-        on-input=(event => this.state.name = event.target.value) /> 
-        
-        Hello! I can run in React, Vue, Solid, or Liquid!
-    </div>"
-`;
-
-exports[` 3`] = `
-"<div>
-  <if(input.foo === 'bar')> Hello </if>
-  <for|items| of=(some.long ? expression : yo)> World </for>
-  <input
-    placeholder=\\"Hello world...\\"
-    value=(this.state.name)
-    on-click=(event => {
-          console.log('hello', \\"world\\")
-        })
-    on-input=(event => this.state.name = event.target.value)
-  />
-
-  Hello! I can run in React, Vue, Solid, or Liquid!
-</div>
-"
-`;
-
-exports[`Marko AdvancedRef 1`] = `
+exports[`Marko > AdvancedRef 1`] = `
 "class {
   onBlur = function onBlur() {
     // Maintain focus
@@ -113,7 +55,7 @@ style {
 </div>"
 `;
 
-exports[`Marko Basic 1`] = `
+exports[`Marko > Basic 1`] = `
 "export const DEFAULT_VALUES = {
   name: \\"Steve\\",
 };
@@ -143,7 +85,7 @@ style {
 </div>"
 `;
 
-exports[`Marko Basic 2`] = `
+exports[`Marko > Basic 2`] = `
 "class {
   onCreate() {
     this.state = { name: \\"PatrickJS\\", names: [\\"Steve\\", \\"PatrickJS\\"] };
@@ -167,7 +109,7 @@ exports[`Marko Basic 2`] = `
 </div>"
 `;
 
-exports[`Marko Basic Context 1`] = `
+exports[`Marko > Basic Context 1`] = `
 "import { Injector, createInjector, MyService } from \\"@dummy/injection-js\\";
 
 class {
@@ -194,7 +136,7 @@ class {
 </div>"
 `;
 
-exports[`Marko Basic OnMount Update 1`] = `
+exports[`Marko > Basic OnMount Update 1`] = `
 "class {
   onCreate(input) {
     this.state = { name: \\"PatrickJS\\", names: [\\"Steve\\", \\"PatrickJS\\"] };
@@ -208,7 +150,7 @@ exports[`Marko Basic OnMount Update 1`] = `
 <div>Hello \${state.name}</div>"
 `;
 
-exports[`Marko Basic Outputs 1`] = `
+exports[`Marko > Basic Outputs 1`] = `
 "class {
   onCreate(input) {
     this.state = { name: \\"PatrickJS\\" };
@@ -223,7 +165,7 @@ exports[`Marko Basic Outputs 1`] = `
 <div></div>"
 `;
 
-exports[`Marko Basic Outputs Meta 1`] = `
+exports[`Marko > Basic Outputs Meta 1`] = `
 "class {
   onCreate(input) {
     this.state = { name: \\"PatrickJS\\" };
@@ -238,7 +180,7 @@ exports[`Marko Basic Outputs Meta 1`] = `
 <div></div>"
 `;
 
-exports[`Marko BasicChildComponent 1`] = `
+exports[`Marko > BasicChildComponent 1`] = `
 "import MyBasicComponent from \\"./basic.raw\\";
 import MyBasicOnMountUpdateComponent from \\"./basic-onMount-update.raw\\";
 
@@ -260,7 +202,7 @@ class {
 </div>"
 `;
 
-exports[`Marko BasicFor 1`] = `
+exports[`Marko > BasicFor 1`] = `
 "class {
   onCreate() {
     this.state = { name: \\"PatrickJS\\", names: [\\"Steve\\", \\"PatrickJS\\"] };
@@ -286,7 +228,7 @@ exports[`Marko BasicFor 1`] = `
 </div>"
 `;
 
-exports[`Marko BasicRef 1`] = `
+exports[`Marko > BasicRef 1`] = `
 "class {
   onBlur = function onBlur() {
     // Maintain focus
@@ -337,7 +279,7 @@ style {
 </div>"
 `;
 
-exports[`Marko BasicRefAssignment 1`] = `
+exports[`Marko > BasicRefAssignment 1`] = `
 "class {
   handlerClick = function handlerClick(event) {
     event.preventDefault();
@@ -351,7 +293,7 @@ exports[`Marko BasicRefAssignment 1`] = `
 </div>"
 `;
 
-exports[`Marko BasicRefPrevious 1`] = `
+exports[`Marko > BasicRefPrevious 1`] = `
 "export function usePrevious<T>(value: T) {
   // The ref object is a generic container whose current property is mutable ...
   // ... and can hold any value, similar to an instance property on a class
@@ -382,7 +324,7 @@ class {
 </div>"
 `;
 
-exports[`Marko Button 1`] = `
+exports[`Marko > Button 1`] = `
 "class {}
 
 <if(input.link)>
@@ -398,7 +340,7 @@ exports[`Marko Button 1`] = `
   <button ...(props.attributes) type=\\"button\\">\${input.text}</button></if>"
 `;
 
-exports[`Marko Columns 1`] = `
+exports[`Marko > Columns 1`] = `
 "class {
   getColumns() {
     return this.input.columns || [];
@@ -446,7 +388,7 @@ style {
 </div>"
 `;
 
-exports[`Marko ContentSlotHtml 1`] = `
+exports[`Marko > ContentSlotHtml 1`] = `
 "class {}
 
 <div>
@@ -462,7 +404,7 @@ exports[`Marko ContentSlotHtml 1`] = `
 </div>"
 `;
 
-exports[`Marko ContentSlotJSX 1`] = `
+exports[`Marko > ContentSlotJSX 1`] = `
 "class {}
 
 <div>
@@ -476,7 +418,7 @@ exports[`Marko ContentSlotJSX 1`] = `
 </div>"
 `;
 
-exports[`Marko CustomCode 1`] = `
+exports[`Marko > CustomCode 1`] = `
 "class {
   findAndRunScripts() {
     // TODO: Move this function to standalone one in '@builder.io/utils'
@@ -541,7 +483,7 @@ exports[`Marko CustomCode 1`] = `
 </div>"
 `;
 
-exports[`Marko Embed 1`] = `
+exports[`Marko > Embed 1`] = `
 "class {
   findAndRunScripts() {
     // TODO: Move this function to standalone one in '@builder.io/utils'
@@ -606,7 +548,7 @@ exports[`Marko Embed 1`] = `
 </div>"
 `;
 
-exports[`Marko Form 1`] = `
+exports[`Marko > Form 1`] = `
 "import { BuilderBlock as BuilderBlockComponent } from \\"@fake\\";
 import { Builder, builder } from \\"@builder.io/sdk\\";
 import { BuilderBlocks } from \\"@fake\\";
@@ -899,7 +841,7 @@ style {
 </form>"
 `;
 
-exports[`Marko Image 1`] = `
+exports[`Marko > Image 1`] = `
 "class {
   setLoaded() {
     this.state.imageLoaded = true;
@@ -979,7 +921,7 @@ style {
 \${input.children}"
 `;
 
-exports[`Marko Image State 1`] = `
+exports[`Marko > Image State 1`] = `
 "class {
   onCreate() {
     this.state = { canShow: true, images: [\\"http://example.com/qwik.png\\"] };
@@ -993,7 +935,7 @@ exports[`Marko Image State 1`] = `
 </div>"
 `;
 
-exports[`Marko Img 1`] = `
+exports[`Marko > Img 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 class {}
@@ -1010,7 +952,7 @@ class {}
 />"
 `;
 
-exports[`Marko Input 1`] = `
+exports[`Marko > Input 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 class {}
@@ -1027,14 +969,14 @@ class {}
 />"
 `;
 
-exports[`Marko RawText 1`] = `
+exports[`Marko > RawText 1`] = `
 "class {}
 
 <span class=(input.attributes?.class || input.attributes?.className)
   >$!{input.text || ''}</span>"
 `;
 
-exports[`Marko Remove Internal mitosis package 1`] = `
+exports[`Marko > Remove Internal mitosis package 1`] = `
 "class {
   onCreate() {
     this.state = { name: \\"PatrickJS\\" };
@@ -1046,7 +988,7 @@ exports[`Marko Remove Internal mitosis package 1`] = `
 </div>"
 `;
 
-exports[`Marko Section 1`] = `
+exports[`Marko > Section 1`] = `
 "class {}
 
 <section
@@ -1059,7 +1001,7 @@ exports[`Marko Section 1`] = `
 </section>"
 `;
 
-exports[`Marko Section 2`] = `
+exports[`Marko > Section 2`] = `
 "class {
   onCreate(input) {
     this.state = { max: 42, items: [42] };
@@ -1079,7 +1021,7 @@ exports[`Marko Section 2`] = `
   </for></if>"
 `;
 
-exports[`Marko Select 1`] = `
+exports[`Marko > Select 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 class {}
@@ -1099,7 +1041,7 @@ class {}
 </select>"
 `;
 
-exports[`Marko SlotHtml 1`] = `
+exports[`Marko > SlotHtml 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 class {}
@@ -1111,7 +1053,7 @@ class {}
 </div>"
 `;
 
-exports[`Marko SlotJsx 1`] = `
+exports[`Marko > SlotJsx 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 class {}
@@ -1121,7 +1063,7 @@ class {}
 </div>"
 `;
 
-exports[`Marko Stamped.io 1`] = `
+exports[`Marko > Stamped.io 1`] = `
 "import { kebabCase } from \\"lodash\\";
 import { snakeCase } from \\"lodash\\";
 
@@ -1212,13 +1154,13 @@ style {
 </div>"
 `;
 
-exports[`Marko Submit 1`] = `
+exports[`Marko > Submit 1`] = `
 "class {}
 
 <button ...(props.attributes) type=\\"submit\\">\${input.text}</button>"
 `;
 
-exports[`Marko Text 1`] = `
+exports[`Marko > Text 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 class {
@@ -1239,7 +1181,7 @@ class {
 </div>"
 `;
 
-exports[`Marko Textarea 1`] = `
+exports[`Marko > Textarea 1`] = `
 "class {}
 
 <textarea
@@ -1251,7 +1193,7 @@ exports[`Marko Textarea 1`] = `
 ></textarea>"
 `;
 
-exports[`Marko Video 1`] = `
+exports[`Marko > Video 1`] = `
 "class {}
 
 <video
@@ -1276,7 +1218,7 @@ exports[`Marko Video 1`] = `
 ></video>"
 `;
 
-exports[`Marko basicForwardRef 1`] = `
+exports[`Marko > basicForwardRef 1`] = `
 "class {
   onCreate(input) {
     this.state = { name: \\"PatrickJS\\" };
@@ -1302,7 +1244,7 @@ style {
 </div>"
 `;
 
-exports[`Marko basicForwardRefMetadata 1`] = `
+exports[`Marko > basicForwardRefMetadata 1`] = `
 "class {
   onCreate(input) {
     this.state = { name: \\"PatrickJS\\" };
@@ -1328,7 +1270,7 @@ style {
 </div>"
 `;
 
-exports[`Marko basicOnUpdateReturn 1`] = `
+exports[`Marko > basicOnUpdateReturn 1`] = `
 "class {
   onCreate() {
     this.state = { name: \\"PatrickJS\\" };
@@ -1355,7 +1297,7 @@ exports[`Marko basicOnUpdateReturn 1`] = `
 <div>Hello! \${state.name}</div>"
 `;
 
-exports[`Marko class + ClassName + css 1`] = `
+exports[`Marko > class + ClassName + css 1`] = `
 "class {}
 
 style { 
@@ -1368,7 +1310,7 @@ style {
 </div>"
 `;
 
-exports[`Marko class + css 1`] = `
+exports[`Marko > class + css 1`] = `
 "class {}
 
 style { 
@@ -1381,7 +1323,7 @@ style {
 </div>"
 `;
 
-exports[`Marko className + css 1`] = `
+exports[`Marko > className + css 1`] = `
 "class {}
 
 style { 
@@ -1394,7 +1336,7 @@ style {
 </div>"
 `;
 
-exports[`Marko className 1`] = `
+exports[`Marko > className 1`] = `
 "class {
   onCreate() {
     this.state = { bindings: \\"a binding\\" };
@@ -1408,7 +1350,7 @@ exports[`Marko className 1`] = `
 </div>"
 `;
 
-exports[`Marko classState 1`] = `
+exports[`Marko > classState 1`] = `
 "class {
   onCreate() {
     this.state = { classState: \\"testClassName\\", styleState: { color: \\"red\\" } };
@@ -1425,7 +1367,7 @@ style {
 </div>"
 `;
 
-exports[`Marko defaultProps 1`] = `
+exports[`Marko > defaultProps 1`] = `
 "class {}
 
 <if(input.link)>
@@ -1441,7 +1383,7 @@ exports[`Marko defaultProps 1`] = `
   <button ...(props.attributes) type=\\"button\\">\${input.text}</button></if>"
 `;
 
-exports[`Marko defaultValsWithTypes 1`] = `
+exports[`Marko > defaultValsWithTypes 1`] = `
 "const DEFAULT_VALUES: Props = {
   name: \\"Sami\\",
 };
@@ -1451,7 +1393,65 @@ class {}
 <div>Hello \${input.name || DEFAULT_VALUES.name}</div>"
 `;
 
-exports[`Marko multipleOnUpdate 1`] = `
+exports[`Marko > format 1`] = `
+"
+      <div>
+        <if _=\\"input.foo === 'bar'\\">
+          Hello
+        </if>
+        <for |items| of=\\"(some.long ? expression : yo)\\">
+          World
+        </for>
+        <input 
+          placeholder=\\"Hello world...\\"
+          value=\\"(this.state.name)\\" 
+          on-click=\\"(event => {&#10;            console.log('hello', &quot;world&quot;)&#10;          })\\"
+          on-input=\\"(event => this.state.name = event.target.value)\\" /> 
+          
+          Hello! I can run in React, Vue, Solid, or Liquid!
+      </div>"
+`;
+
+exports[`Marko > format 2`] = `
+"
+      <div>
+        <if(input.foo === 'bar')>
+          Hello
+        </if>
+        <for|items| of=(some.long ? expression : yo)>
+          World
+        </for>
+        <input 
+          placeholder=\\"Hello world...\\"
+          value=(this.state.name) 
+          on-click=(event => {
+            console.log('hello', \\"world\\")
+          })
+          on-input=(event => this.state.name = event.target.value) /> 
+          
+          Hello! I can run in React, Vue, Solid, or Liquid!
+      </div>"
+`;
+
+exports[`Marko > format 3`] = `
+"<div>
+  <if(input.foo === 'bar')> Hello </if>
+  <for|items| of=(some.long ? expression : yo)> World </for>
+  <input
+    placeholder=\\"Hello world...\\"
+    value=(this.state.name)
+    on-click=(event => {
+            console.log('hello', \\"world\\")
+          })
+    on-input=(event => this.state.name = event.target.value)
+  />
+
+  Hello! I can run in React, Vue, Solid, or Liquid!
+</div>
+"
+`;
+
+exports[`Marko > multipleOnUpdate 1`] = `
 "class {
   onRender() {
     console.log(\\"Runs on every update/rerender\\");
@@ -1463,7 +1463,7 @@ exports[`Marko multipleOnUpdate 1`] = `
 <div></div>"
 `;
 
-exports[`Marko multipleOnUpdateWithDeps 1`] = `
+exports[`Marko > multipleOnUpdateWithDeps 1`] = `
 "class {
   onCreate() {
     this.state = { a: \\"a\\", b: \\"b\\", c: \\"c\\", d: \\"d\\" };
@@ -1487,7 +1487,7 @@ exports[`Marko multipleOnUpdateWithDeps 1`] = `
 <div></div>"
 `;
 
-exports[`Marko nestedShow 1`] = `
+exports[`Marko > nestedShow 1`] = `
 "class {}
 
 <if(input.conditionA)>
@@ -1496,7 +1496,7 @@ exports[`Marko nestedShow 1`] = `
 <else><div>else-condition-A</div></else>"
 `;
 
-exports[`Marko nestedStyles 1`] = `
+exports[`Marko > nestedStyles 1`] = `
 "class {}
 
 style { 
@@ -1519,7 +1519,7 @@ style {
 <div class=\\"div-92502f5c\\">Hello world</div>"
 `;
 
-exports[`Marko onInit & onMount 1`] = `
+exports[`Marko > onInit & onMount 1`] = `
 "class {
   onMount() {
     console.log(\\"onMount\\");
@@ -1529,7 +1529,7 @@ exports[`Marko onInit & onMount 1`] = `
 <div></div>"
 `;
 
-exports[`Marko onInit 1`] = `
+exports[`Marko > onInit 1`] = `
 "export const defaultValues = {
   name: \\"PatrickJS\\",
 };
@@ -1543,7 +1543,7 @@ class {
 <div>Default name defined by parent \${state.name}</div>"
 `;
 
-exports[`Marko onMount 1`] = `
+exports[`Marko > onMount 1`] = `
 "class {
   onMount() {
     console.log(\\"Runs on mount\\");
@@ -1556,7 +1556,7 @@ exports[`Marko onMount 1`] = `
 <div></div>"
 `;
 
-exports[`Marko onUpdate 1`] = `
+exports[`Marko > onUpdate 1`] = `
 "class {
   onRender() {
     console.log(\\"Runs on every update/rerender\\");
@@ -1566,7 +1566,7 @@ exports[`Marko onUpdate 1`] = `
 <div></div>"
 `;
 
-exports[`Marko onUpdateWithDeps 1`] = `
+exports[`Marko > onUpdateWithDeps 1`] = `
 "class {
   onCreate() {
     this.state = { a: \\"a\\", b: \\"b\\" };
@@ -1580,7 +1580,7 @@ exports[`Marko onUpdateWithDeps 1`] = `
 <div></div>"
 `;
 
-exports[`Marko preserveExportOrLocalStatement 1`] = `
+exports[`Marko > preserveExportOrLocalStatement 1`] = `
 "const b = 3;
 const foo = () => {};
 export const a = 3;
@@ -1592,13 +1592,13 @@ class {}
 <div></div>"
 `;
 
-exports[`Marko preserveTyping 1`] = `
+exports[`Marko > preserveTyping 1`] = `
 "class {}
 
 <div>Hello! I can run in React, Vue, Solid, or Liquid! \${input.name}</div>"
 `;
 
-exports[`Marko propsDestructure 1`] = `
+exports[`Marko > propsDestructure 1`] = `
 "class {
   onCreate(input) {
     this.state = { name: \\"Decadef20\\" };
@@ -1611,25 +1611,25 @@ exports[`Marko propsDestructure 1`] = `
 </div>"
 `;
 
-exports[`Marko propsInterface 1`] = `
+exports[`Marko > propsInterface 1`] = `
 "class {}
 
 <div>Hello! I can run in React, Vue, Solid, or Liquid! \${input.name}</div>"
 `;
 
-exports[`Marko propsType 1`] = `
+exports[`Marko > propsType 1`] = `
 "class {}
 
 <div>Hello! I can run in React, Vue, Solid, or Liquid! \${input.name}</div>"
 `;
 
-exports[`Marko rootShow 1`] = `
+exports[`Marko > rootShow 1`] = `
 "class {}
 
 <if(input.foo === 'bar')> <div>Bar</div></if> <else><div>Foo</div></else>"
 `;
 
-exports[`Marko self-referencing component 1`] = `
+exports[`Marko > self-referencing component 1`] = `
 "class {}
 
 <div>
@@ -1640,7 +1640,7 @@ exports[`Marko self-referencing component 1`] = `
 </div>"
 `;
 
-exports[`Marko self-referencing component with children 1`] = `
+exports[`Marko > self-referencing component with children 1`] = `
 "class {}
 
 <div>
@@ -1653,7 +1653,7 @@ exports[`Marko self-referencing component with children 1`] = `
 </div>"
 `;
 
-exports[`Marko showWithFor 1`] = `
+exports[`Marko > showWithFor 1`] = `
 "class {}
 
 <if(input.conditionA)>
@@ -1663,7 +1663,7 @@ exports[`Marko showWithFor 1`] = `
 <else><div>else-condition-A</div></else>"
 `;
 
-exports[`Marko subComponent 1`] = `
+exports[`Marko > subComponent 1`] = `
 "import Foo from \\"./foo-sub-component.marko\\";
 
 class {}
@@ -1671,7 +1671,7 @@ class {}
 <Foo></Foo>"
 `;
 
-exports[`Marko typeDependency 1`] = `
+exports[`Marko > typeDependency 1`] = `
 "class {}
 
 <div>\${input.foo}</div>"

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`React Native AdvancedRef 1`] = `
+exports[`React Native > AdvancedRef 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef, useEffect } from \\"react\\";
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({ view1: { color: \\"red\\" } });
 "
 `;
 
-exports[`React Native Basic 1`] = `
+exports[`React Native > Basic 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({ view1: { padding: 10 } });
 "
 `;
 
-exports[`React Native Basic Context 1`] = `
+exports[`React Native > Basic Context 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useContext, useEffect } from \\"react\\";
@@ -137,7 +137,7 @@ export default function MyBasicComponent(props: any) {
 "
 `;
 
-exports[`React Native Basic OnMount Update 1`] = `
+exports[`React Native > Basic OnMount Update 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -170,7 +170,7 @@ export default function MyBasicOnMountUpdateComponent(props: Props) {
 "
 `;
 
-exports[`React Native Basic Outputs 1`] = `
+exports[`React Native > Basic Outputs 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -188,7 +188,7 @@ export default function MyBasicOutputsComponent(props: any) {
 "
 `;
 
-exports[`React Native Basic Outputs Meta 1`] = `
+exports[`React Native > Basic Outputs Meta 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -206,7 +206,7 @@ export default function MyBasicOutputsComponent(props: any) {
 "
 `;
 
-exports[`React Native BasicChildComponent 1`] = `
+exports[`React Native > BasicChildComponent 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -231,7 +231,7 @@ export default function MyBasicChildComponent(props: any) {
 "
 `;
 
-exports[`React Native BasicFor 1`] = `
+exports[`React Native > BasicFor 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -268,7 +268,7 @@ export default function MyBasicForComponent(props: any) {
 "
 `;
 
-exports[`React Native BasicRef 1`] = `
+exports[`React Native > BasicRef 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef } from \\"react\\";
@@ -329,7 +329,7 @@ const styles = StyleSheet.create({ view1: { color: \\"red\\" } });
 "
 `;
 
-exports[`React Native BasicRefAssignment 1`] = `
+exports[`React Native > BasicRefAssignment 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useRef } from \\"react\\";
@@ -357,7 +357,7 @@ export default function MyBasicRefAssignmentComponent(props: Props) {
 "
 `;
 
-exports[`React Native BasicRefPrevious 1`] = `
+exports[`React Native > BasicRefPrevious 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef, useEffect } from \\"react\\";
@@ -406,7 +406,7 @@ export default function MyPreviousComponent(props: Props) {
 "
 `;
 
-exports[`React Native Button 1`] = `
+exports[`React Native > Button 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -445,7 +445,7 @@ export default function Button(props: ButtonProps) {
 "
 `;
 
-exports[`React Native Columns 1`] = `
+exports[`React Native > Columns 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -505,7 +505,7 @@ const styles = StyleSheet.create({
 "
 `;
 
-exports[`React Native ContentSlotHtml 1`] = `
+exports[`React Native > ContentSlotHtml 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -530,7 +530,7 @@ export default function ContentSlotCode(props: Props) {
 "
 `;
 
-exports[`React Native ContentSlotJSX 1`] = `
+exports[`React Native > ContentSlotJSX 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -556,7 +556,7 @@ export default function ContentSlotJsxCode(props: Props) {
 "
 `;
 
-exports[`React Native CustomCode 1`] = `
+exports[`React Native > CustomCode 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef, useEffect } from \\"react\\";
@@ -623,7 +623,7 @@ export default function CustomCode(props: CustomCodeProps) {
 "
 `;
 
-exports[`React Native Embed 1`] = `
+exports[`React Native > Embed 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef, useEffect } from \\"react\\";
@@ -690,7 +690,7 @@ export default function CustomCode(props: CustomCodeProps) {
 "
 `;
 
-exports[`React Native Form 1`] = `
+exports[`React Native > Form 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef } from \\"react\\";
@@ -975,7 +975,7 @@ const styles = StyleSheet.create({
 "
 `;
 
-exports[`React Native Image 1`] = `
+exports[`React Native > Image 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useRef, useEffect } from \\"react\\";
@@ -1091,7 +1091,7 @@ const styles = StyleSheet.create({
 "
 `;
 
-exports[`React Native Image State 1`] = `
+exports[`React Native > Image State 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -1114,7 +1114,7 @@ export default function ImgStateComponent(props: any) {
 "
 `;
 
-exports[`React Native Img 1`] = `
+exports[`React Native > Img 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1154,7 +1154,7 @@ export default function ImgComponent(props: ImgProps) {
 "
 `;
 
-exports[`React Native Input 1`] = `
+exports[`React Native > Input 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1191,7 +1191,7 @@ export default function FormInputComponent(props: FormInputProps) {
 "
 `;
 
-exports[`React Native RawText 1`] = `
+exports[`React Native > RawText 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1206,7 +1206,7 @@ export default function RawText(props: RawTextProps) {
 "
 `;
 
-exports[`React Native Remove Internal mitosis package 1`] = `
+exports[`React Native > Remove Internal mitosis package 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -1225,7 +1225,7 @@ export default function MyBasicComponent(props: any) {
 "
 `;
 
-exports[`React Native Section 1`] = `
+exports[`React Native > Section 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1254,7 +1254,7 @@ export default function SectionComponent(props: SectionProps) {
 "
 `;
 
-exports[`React Native Select 1`] = `
+exports[`React Native > Select 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1295,7 +1295,7 @@ export default function SelectComponent(props: FormSelectProps) {
 "
 `;
 
-exports[`React Native SlotHtml 1`] = `
+exports[`React Native > SlotHtml 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1314,7 +1314,7 @@ export default function SlotCode(props: Props) {
 "
 `;
 
-exports[`React Native SlotJsx 1`] = `
+exports[`React Native > SlotJsx 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1333,7 +1333,7 @@ export default function SlotCode(props: Props) {
 "
 `;
 
-exports[`React Native Stamped.io 1`] = `
+exports[`React Native > Stamped.io 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -1436,7 +1436,7 @@ const styles = StyleSheet.create({
 "
 `;
 
-exports[`React Native Submit 1`] = `
+exports[`React Native > Submit 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1455,7 +1455,7 @@ export default function SubmitButton(props: ButtonProps) {
 "
 `;
 
-exports[`React Native Text 1`] = `
+exports[`React Native > Text 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -1492,7 +1492,7 @@ export default function Text(props: TextProps) {
 "
 `;
 
-exports[`React Native Textarea 1`] = `
+exports[`React Native > Textarea 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1518,7 +1518,7 @@ export default function Textarea(props: TextareaProps) {
 "
 `;
 
-exports[`React Native Video 1`] = `
+exports[`React Native > Video 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1575,7 +1575,7 @@ export default function Video(props: VideoProps) {
 "
 `;
 
-exports[`React Native basicForwardRef 1`] = `
+exports[`React Native > basicForwardRef 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, forwardRef } from \\"react\\";
@@ -1606,7 +1606,7 @@ const styles = StyleSheet.create({ view1: { color: \\"red\\" } });
 "
 `;
 
-exports[`React Native basicForwardRefMetadata 1`] = `
+exports[`React Native > basicForwardRefMetadata 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, forwardRef } from \\"react\\";
@@ -1637,7 +1637,7 @@ const styles = StyleSheet.create({ view1: { color: \\"red\\" } });
 "
 `;
 
-exports[`React Native basicOnUpdateReturn 1`] = `
+exports[`React Native > basicOnUpdateReturn 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -1672,7 +1672,7 @@ export default function MyBasicOnUpdateReturnComponent(props: any) {
 "
 `;
 
-exports[`React Native class + ClassName + css 1`] = `
+exports[`React Native > class + ClassName + css 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1688,7 +1688,7 @@ const styles = StyleSheet.create({ view1: { padding: 10 } });
 "
 `;
 
-exports[`React Native class + css 1`] = `
+exports[`React Native > class + css 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1704,7 +1704,7 @@ const styles = StyleSheet.create({ view1: { padding: 10 } });
 "
 `;
 
-exports[`React Native className + css 1`] = `
+exports[`React Native > className + css 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1720,7 +1720,7 @@ const styles = StyleSheet.create({ view1: { padding: 10 } });
 "
 `;
 
-exports[`React Native className 1`] = `
+exports[`React Native > className 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -1748,7 +1748,7 @@ export default function ClassNameCode(props: Props) {
 "
 `;
 
-exports[`React Native classState 1`] = `
+exports[`React Native > classState 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -1771,7 +1771,7 @@ const styles = StyleSheet.create({ view1: { padding: 10 } });
 "
 `;
 
-exports[`React Native defaultProps 1`] = `
+exports[`React Native > defaultProps 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1816,7 +1816,7 @@ Button.defaultProps = {
 "
 `;
 
-exports[`React Native defaultValsWithTypes 1`] = `
+exports[`React Native > defaultValsWithTypes 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1839,7 +1839,7 @@ export default function ComponentWithTypes(props: Props) {
 "
 `;
 
-exports[`React Native multipleOnUpdate 1`] = `
+exports[`React Native > multipleOnUpdate 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useEffect } from \\"react\\";
@@ -1857,7 +1857,7 @@ export default function MultipleOnUpdate(props: any) {
 "
 `;
 
-exports[`React Native multipleOnUpdateWithDeps 1`] = `
+exports[`React Native > multipleOnUpdateWithDeps 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -1891,7 +1891,7 @@ export default function MultipleOnUpdateWithDeps(props: any) {
 "
 `;
 
-exports[`React Native nestedShow 1`] = `
+exports[`React Native > nestedShow 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1928,7 +1928,7 @@ export default function NestedShow(props: Props) {
 "
 `;
 
-exports[`React Native nestedStyles 1`] = `
+exports[`React Native > nestedStyles 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -1951,7 +1951,7 @@ const styles = StyleSheet.create({
 "
 `;
 
-exports[`React Native onInit & onMount 1`] = `
+exports[`React Native > onInit & onMount 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useEffect } from \\"react\\";
@@ -1970,7 +1970,7 @@ export default function OnInit(props: any) {
 "
 `;
 
-exports[`React Native onInit 1`] = `
+exports[`React Native > onInit 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -2001,7 +2001,7 @@ export default function OnInit(props: Props) {
 "
 `;
 
-exports[`React Native onMount 1`] = `
+exports[`React Native > onMount 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useEffect } from \\"react\\";
@@ -2022,7 +2022,7 @@ export default function Comp(props: any) {
 "
 `;
 
-exports[`React Native onUpdate 1`] = `
+exports[`React Native > onUpdate 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useEffect } from \\"react\\";
@@ -2037,7 +2037,7 @@ export default function OnUpdate(props: any) {
 "
 `;
 
-exports[`React Native onUpdateWithDeps 1`] = `
+exports[`React Native > onUpdateWithDeps 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState, useEffect } from \\"react\\";
@@ -2056,7 +2056,7 @@ export default function OnUpdateWithDeps(props: any) {
 "
 `;
 
-exports[`React Native preserveExportOrLocalStatement 1`] = `
+exports[`React Native > preserveExportOrLocalStatement 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2082,7 +2082,7 @@ export default function MyBasicComponent(props: MyBasicComponentProps) {
 "
 `;
 
-exports[`React Native preserveTyping 1`] = `
+exports[`React Native > preserveTyping 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2110,7 +2110,7 @@ export default function MyBasicComponent(props: MyBasicComponentProps) {
 "
 `;
 
-exports[`React Native propsDestructure 1`] = `
+exports[`React Native > propsDestructure 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import { useState } from \\"react\\";
@@ -2135,7 +2135,7 @@ export default function MyBasicComponent(props: Props) {
 "
 `;
 
-exports[`React Native propsInterface 1`] = `
+exports[`React Native > propsInterface 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2155,7 +2155,7 @@ export default function MyBasicComponent(props: Person | never) {
 "
 `;
 
-exports[`React Native propsType 1`] = `
+exports[`React Native > propsType 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2175,7 +2175,7 @@ export default function MyBasicComponent(props: Person) {
 "
 `;
 
-exports[`React Native rootShow 1`] = `
+exports[`React Native > rootShow 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2203,7 +2203,7 @@ export default function RenderStyles(props: RenderStylesProps) {
 "
 `;
 
-exports[`React Native self-referencing component 1`] = `
+exports[`React Native > self-referencing component 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2223,7 +2223,7 @@ export default function MyComponent(props: any) {
 "
 `;
 
-exports[`React Native self-referencing component with children 1`] = `
+exports[`React Native > self-referencing component with children 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2249,7 +2249,7 @@ export default function MyComponent(props: any) {
 "
 `;
 
-exports[`React Native showWithFor 1`] = `
+exports[`React Native > showWithFor 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 
@@ -2280,7 +2280,7 @@ export default function NestedShow(props: Props) {
 "
 `;
 
-exports[`React Native subComponent 1`] = `
+exports[`React Native > subComponent 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import Foo from \\"./foo-sub-component.lite\\";
@@ -2291,7 +2291,7 @@ export default function SubComponent(props: any) {
 "
 `;
 
-exports[`React Native typeDependency 1`] = `
+exports[`React Native > typeDependency 1`] = `
 "import * as React from \\"react\\";
 import { View, StyleSheet, Image, Text } from \\"react-native\\";
 import type { Foo } from \\"./foo-type\\";

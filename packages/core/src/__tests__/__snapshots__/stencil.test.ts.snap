@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Stencil AdvancedRef 1`] = `
+exports[`Stencil > AdvancedRef 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -61,7 +61,7 @@ export default class MyBasicRefComponent {
 "
 `;
 
-exports[`Stencil Basic 1`] = `
+exports[`Stencil > Basic 1`] = `
 "export const DEFAULT_VALUES = {
   name: \\"Steve\\",
 };
@@ -98,7 +98,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil Basic Context 1`] = `
+exports[`Stencil > Basic Context 1`] = `
 "import { Injector, createInjector, MyService } from \\"@dummy/injection-js\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -132,7 +132,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil Basic OnMount Update 1`] = `
+exports[`Stencil > Basic OnMount Update 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -161,7 +161,7 @@ export default class MyBasicOnMountUpdateComponent {
 "
 `;
 
-exports[`Stencil Basic Outputs 1`] = `
+exports[`Stencil > Basic Outputs 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -186,7 +186,7 @@ export default class MyBasicOutputsComponent {
 "
 `;
 
-exports[`Stencil Basic Outputs Meta 1`] = `
+exports[`Stencil > Basic Outputs Meta 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -211,7 +211,7 @@ export default class MyBasicOutputsComponent {
 "
 `;
 
-exports[`Stencil BasicChildComponent 1`] = `
+exports[`Stencil > BasicChildComponent 1`] = `
 "import MyBasicComponent from \\"./basic.raw\\";
 import MyBasicOnMountUpdateComponent from \\"./basic-onMount-update.raw\\";
 
@@ -242,7 +242,7 @@ export default class MyBasicChildComponent {
 "
 `;
 
-exports[`Stencil BasicFor 1`] = `
+exports[`Stencil > BasicFor 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -279,7 +279,7 @@ export default class MyBasicForComponent {
 "
 `;
 
-exports[`Stencil BasicRef 1`] = `
+exports[`Stencil > BasicRef 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -336,7 +336,7 @@ export default class MyBasicRefComponent {
 "
 `;
 
-exports[`Stencil BasicRefAssignment 1`] = `
+exports[`Stencil > BasicRefAssignment 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -360,7 +360,7 @@ export default class MyBasicRefAssignmentComponent {
 "
 `;
 
-exports[`Stencil BasicRefPrevious 1`] = `
+exports[`Stencil > BasicRefPrevious 1`] = `
 "export function usePrevious<T>(value: T) {
   // The ref object is a generic container whose current property is mutable ...
   // ... and can hold any value, similar to an instance property on a class
@@ -403,7 +403,7 @@ export default class MyPreviousComponent {
 "
 `;
 
-exports[`Stencil Button 1`] = `
+exports[`Stencil > Button 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -444,7 +444,7 @@ export default class Button {
 "
 `;
 
-exports[`Stencil Columns 1`] = `
+exports[`Stencil > Columns 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -509,7 +509,7 @@ export default class Column {
 "
 `;
 
-exports[`Stencil ContentSlotHtml 1`] = `
+exports[`Stencil > ContentSlotHtml 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -537,7 +537,7 @@ export default class ContentSlotCode {
 "
 `;
 
-exports[`Stencil ContentSlotJSX 1`] = `
+exports[`Stencil > ContentSlotJSX 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -564,7 +564,7 @@ export default class ContentSlotJsxCode {
 "
 `;
 
-exports[`Stencil CustomCode 1`] = `
+exports[`Stencil > CustomCode 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -638,7 +638,7 @@ export default class CustomCode {
 "
 `;
 
-exports[`Stencil Embed 1`] = `
+exports[`Stencil > Embed 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -712,7 +712,7 @@ export default class CustomCode {
 "
 `;
 
-exports[`Stencil Form 1`] = `
+exports[`Stencil > Form 1`] = `
 "import { BuilderBlock as BuilderBlockComponent } from \\"@fake\\";
 import { Builder, builder } from \\"@builder.io/sdk\\";
 import { BuilderBlocks } from \\"@fake\\";
@@ -1041,7 +1041,7 @@ export default class FormComponent {
 "
 `;
 
-exports[`Stencil Image 1`] = `
+exports[`Stencil > Image 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1144,7 +1144,7 @@ export default class Image {
 "
 `;
 
-exports[`Stencil Image State 1`] = `
+exports[`Stencil > Image State 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1169,7 +1169,7 @@ export default class ImgStateComponent {
 "
 `;
 
-exports[`Stencil Img 1`] = `
+exports[`Stencil > Img 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -1202,7 +1202,7 @@ export default class ImgComponent {
 "
 `;
 
-exports[`Stencil Input 1`] = `
+exports[`Stencil > Input 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -1241,7 +1241,7 @@ export default class FormInputComponent {
 "
 `;
 
-exports[`Stencil RawText 1`] = `
+exports[`Stencil > RawText 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1263,7 +1263,7 @@ export default class RawText {
 "
 `;
 
-exports[`Stencil Remove Internal mitosis package 1`] = `
+exports[`Stencil > Remove Internal mitosis package 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1284,7 +1284,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil Section 1`] = `
+exports[`Stencil > Section 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1315,7 +1315,7 @@ export default class SectionComponent {
 "
 `;
 
-exports[`Stencil Select 1`] = `
+exports[`Stencil > Select 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -1355,7 +1355,7 @@ export default class SelectComponent {
 "
 `;
 
-exports[`Stencil SlotHtml 1`] = `
+exports[`Stencil > SlotHtml 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -1377,7 +1377,7 @@ export default class SlotCode {
 "
 `;
 
-exports[`Stencil SlotJsx 1`] = `
+exports[`Stencil > SlotJsx 1`] = `
 "import ContentSlotCode from \\"./content-slot-jsx.raw\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -1397,7 +1397,7 @@ export default class SlotCode {
 "
 `;
 
-exports[`Stencil Stamped.io 1`] = `
+exports[`Stencil > Stamped.io 1`] = `
 "import { kebabCase } from \\"lodash\\";
 import { snakeCase } from \\"lodash\\";
 
@@ -1503,7 +1503,7 @@ export default class SmileReviews {
 "
 `;
 
-exports[`Stencil Submit 1`] = `
+exports[`Stencil > Submit 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1524,7 +1524,7 @@ export default class SubmitButton {
 "
 `;
 
-exports[`Stencil Text 1`] = `
+exports[`Stencil > Text 1`] = `
 "import { Builder } from \\"@builder.io/sdk\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -1558,7 +1558,7 @@ export default class Text {
 "
 `;
 
-exports[`Stencil Textarea 1`] = `
+exports[`Stencil > Textarea 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1586,7 +1586,7 @@ export default class Textarea {
 "
 `;
 
-exports[`Stencil Video 1`] = `
+exports[`Stencil > Video 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1631,7 +1631,7 @@ export default class Video {
 "
 `;
 
-exports[`Stencil basicForwardRef 1`] = `
+exports[`Stencil > basicForwardRef 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1662,7 +1662,7 @@ export default class MyBasicForwardRefComponent {
 "
 `;
 
-exports[`Stencil basicForwardRefMetadata 1`] = `
+exports[`Stencil > basicForwardRefMetadata 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1693,7 +1693,7 @@ export default class MyBasicForwardRefComponent {
 "
 `;
 
-exports[`Stencil basicOnUpdateReturn 1`] = `
+exports[`Stencil > basicOnUpdateReturn 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1731,7 +1731,7 @@ export default class MyBasicOnUpdateReturnComponent {
 "
 `;
 
-exports[`Stencil class + ClassName + css 1`] = `
+exports[`Stencil > class + ClassName + css 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1750,7 +1750,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil class + css 1`] = `
+exports[`Stencil > class + css 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1769,7 +1769,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil className + css 1`] = `
+exports[`Stencil > className + css 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1788,7 +1788,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil className 1`] = `
+exports[`Stencil > className 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1810,7 +1810,7 @@ export default class ClassNameCode {
 "
 `;
 
-exports[`Stencil classState 1`] = `
+exports[`Stencil > classState 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1836,7 +1836,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil defaultProps 1`] = `
+exports[`Stencil > defaultProps 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1877,7 +1877,7 @@ export default class Button {
 "
 `;
 
-exports[`Stencil defaultValsWithTypes 1`] = `
+exports[`Stencil > defaultValsWithTypes 1`] = `
 "const DEFAULT_VALUES: Props = {
   name: \\"Sami\\",
 };
@@ -1903,7 +1903,7 @@ export default class ComponentWithTypes {
 "
 `;
 
-exports[`Stencil nestedStyles 1`] = `
+exports[`Stencil > nestedStyles 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1934,7 +1934,7 @@ export default class NestedStyles {
 "
 `;
 
-exports[`Stencil onInit & onMount 1`] = `
+exports[`Stencil > onInit & onMount 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -1952,7 +1952,7 @@ export default class OnInit {
 "
 `;
 
-exports[`Stencil onInit 1`] = `
+exports[`Stencil > onInit 1`] = `
 "export const defaultValues = {
   name: \\"PatrickJS\\",
 };
@@ -1979,7 +1979,7 @@ export default class OnInit {
 "
 `;
 
-exports[`Stencil onMount 1`] = `
+exports[`Stencil > onMount 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2000,7 +2000,7 @@ export default class Comp {
 "
 `;
 
-exports[`Stencil onUpdate 1`] = `
+exports[`Stencil > onUpdate 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2018,7 +2018,7 @@ export default class OnUpdate {
 "
 `;
 
-exports[`Stencil onUpdateWithDeps 1`] = `
+exports[`Stencil > onUpdateWithDeps 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2039,7 +2039,7 @@ export default class OnUpdateWithDeps {
 "
 `;
 
-exports[`Stencil preserveExportOrLocalStatement 1`] = `
+exports[`Stencil > preserveExportOrLocalStatement 1`] = `
 "const b = 3;
 const foo = () => {};
 export const a = 3;
@@ -2059,7 +2059,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil preserveTyping 1`] = `
+exports[`Stencil > preserveTyping 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2080,7 +2080,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil propsDestructure 1`] = `
+exports[`Stencil > propsDestructure 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2105,7 +2105,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil propsInterface 1`] = `
+exports[`Stencil > propsInterface 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2126,7 +2126,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil propsType 1`] = `
+exports[`Stencil > propsType 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2147,7 +2147,7 @@ export default class MyBasicComponent {
 "
 `;
 
-exports[`Stencil self-referencing component 1`] = `
+exports[`Stencil > self-referencing component 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2173,7 +2173,7 @@ export default class MyComponent {
 "
 `;
 
-exports[`Stencil self-referencing component with children 1`] = `
+exports[`Stencil > self-referencing component with children 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
@@ -2204,7 +2204,7 @@ export default class MyComponent {
 "
 `;
 
-exports[`Stencil subComponent 1`] = `
+exports[`Stencil > subComponent 1`] = `
 "import Foo from \\"./foo-sub-component.lite\\";
 
 import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
@@ -2220,7 +2220,7 @@ export default class SubComponent {
 "
 `;
 
-exports[`Stencil typeDependency 1`] = `
+exports[`Stencil > typeDependency 1`] = `
 "import { Component, Prop, h, State, Fragment } from \\"@stencil/core\\";
 
 @Component({
