@@ -500,7 +500,7 @@ import { getBlockActions } from \\"../functions/get-block-actions\\";
 import { getProcessedBlock } from \\"../functions/get-processed-block\\";
 import BlockStyles from \\"./block-styles.lite\\";
 
-export default function RenderBlock(props: RenderBlockProps) {
+function RenderBlock(props: RenderBlockProps) {
   function component() {
     const componentName = useBlock().component?.name;
 
@@ -590,6 +590,8 @@ export default function RenderBlock(props: RenderBlockProps) {
     </>
   );
 }
+
+export default RenderBlock;
 "
 `;
 
@@ -731,7 +733,7 @@ export interface ComponentWithContextProps {
 import Context1 from \\"@dummy/1\\";
 import Context2 from \\"@dummy/2\\";
 
-export default function ComponentWithContext(props: ComponentWithContextProps) {
+function ComponentWithContext(props: ComponentWithContextProps) {
   const foo = useContext(Context1);
 
   return (
@@ -754,6 +756,8 @@ export default function ComponentWithContext(props: ComponentWithContextProps) {
     </Context2.Provider>
   );
 }
+
+export default ComponentWithContext;
 "
 `;
 
@@ -769,7 +773,7 @@ export interface ComponentWithContextProps {
 import Context1 from \\"@dummy/1\\";
 import Context2 from \\"@dummy/2\\";
 
-export default function ComponentWithContext(props: ComponentWithContextProps) {
+function ComponentWithContext(props: ComponentWithContextProps) {
   const foo = useContext(Context1);
 
   return (
@@ -794,5 +798,7 @@ export default function ComponentWithContext(props: ComponentWithContextProps) {
     </Context2.Provider>
   );
 }
+
+export default ComponentWithContext;
 "
 `;

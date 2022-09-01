@@ -580,18 +580,18 @@ const _componentToReact = (
   );
   `;
 
-  const wrapInForwardRef = (str: string) => {
+  const wrapInForwardRef = (bodyContent: string) => {
     if (isForwardRef) {
       const forwardRefTypeStr = forwardRefType ? `<${forwardRefType}>` : '';
       return `
-      forwardRef${forwardRefTypeStr}(function ${componentName}(${propsArgs}, ${options.forwardRef}) {
-        ${str}
+      const ${componentName} = forwardRef${forwardRefTypeStr}(function ${componentName}(${propsArgs}, ${options.forwardRef}) {
+        ${bodyContent}
       })
       `;
     } else {
       return `
       function ${componentName}(${propsArgs}) {
-        ${str}
+        ${bodyContent}
       }
       `;
     }
@@ -601,13 +601,15 @@ const _componentToReact = (
     ${imports}
     ${json.types ? json.types.join('\n') : ''}
     ${renderPreComponent({ component: json, target: 'react' })}
-    ${isSubComponent ? '' : 'export default '}${wrapInForwardRef(componentBody)}
+    ${wrapInForwardRef(componentBody)}
 
     ${
       !json.defaultProps
         ? ''
         : `${componentName}.defaultProps = ${json5.stringify(json.defaultProps)};`
     }
+
+    ${isSubComponent ? '' : `export default ${componentName};`}
 
     ${
       !nativeStyles

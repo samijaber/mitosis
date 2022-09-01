@@ -855,7 +855,7 @@ exports[`Builder Regenerate Image 1`] = `
 import { useState } from \\"react\\";
 import { Image } from \\"@components\\";
 
-export default function MyComponent(props: any) {
+function MyComponent(props: any) {
   const [people, setPeople] = useState(() => [\\"Steve\\", \\"Sewell\\"]);
 
   return (
@@ -886,6 +886,8 @@ export default function MyComponent(props: any) {
     </>
   );
 }
+
+export default MyComponent;
 "
 `;
 
