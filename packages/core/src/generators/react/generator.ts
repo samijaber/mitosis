@@ -586,7 +586,7 @@ const _componentToReact = (
       return `
       forwardRef${forwardRefTypeStr}(function ${componentName}(${propsArgs}, ${options.forwardRef}) {
         ${str}
-      }
+      })
       `;
     } else {
       return `
