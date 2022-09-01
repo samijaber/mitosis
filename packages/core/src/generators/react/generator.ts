@@ -462,7 +462,7 @@ const _componentToReact = (
 
   const propsArgs = `props: ${json.propsTypeRef || 'any'}`;
 
-  let str = dedent`
+  const imports = `
   ${
     options.preact
       ? `
@@ -497,98 +497,116 @@ const _componentToReact = (
         ? `import { useLocalObservable } from 'mobx-react-lite';`
         : ''
     }
+  `;
+
+  const componentName = json.name || 'MyComponent';
+  const componentBody = dedent`
+  ${hasStateArgument ? '' : refsString}
+  ${
+    hasState
+      ? stateType === 'mobx'
+        ? `const state = useLocalObservable(() => (${getStateObjectStringFromComponent(json)}));`
+        : stateType === 'useState'
+        ? useStateCode
+        : stateType === 'solid'
+        ? `const state = useMutable(${getStateObjectStringFromComponent(json)});`
+        : stateType === 'builder'
+        ? `var state = useBuilderState(${getStateObjectStringFromComponent(json)});`
+        : `const state = useLocalProxy(${getStateObjectStringFromComponent(json)});`
+      : ''
+  }
+  ${hasStateArgument ? refsString : ''}
+  ${getContextString(json, options)}
+  ${getInitCode(json, options)}
+
+  ${
+    json.hooks.onInit?.code
+      ? `
+      useEffect(() => {
+        ${processHookCode({
+          str: json.hooks.onInit.code,
+          options,
+        })}
+      })
+      `
+      : ''
+  }
+  ${
+    json.hooks.onMount?.code
+      ? `useEffect(() => {
+        ${processHookCode({
+          str: json.hooks.onMount.code,
+          options,
+        })}
+      }, [])`
+      : ''
+  }
+
+  ${
+    json.hooks.onUpdate
+      ?.map(
+        (hook) => `useEffect(() => {
+        ${processHookCode({ str: hook.code, options })}
+      }, 
+      ${hook.deps ? processHookCode({ str: hook.deps, options }) : ''})`,
+      )
+      .join(';') ?? ''
+  }
+
+  ${
+    json.hooks.onUnMount?.code
+      ? `useEffect(() => {
+        return () => {
+          ${processHookCode({
+            str: json.hooks.onUnMount.code,
+            options,
+          })}
+        }
+      }, [])`
+      : ''
+  }
+
+  return (
+    ${wrap ? openFrag(options) : ''}
+    ${json.children.map((item) => blockToReact(item, options)).join('\n')}
+    ${
+      componentHasStyles && stylesType === 'styled-jsx'
+        ? `<style jsx>{\`${css}\`}</style>`
+        : componentHasStyles && stylesType === 'style-tag'
+        ? `<style>{\`${css}\`}</style>`
+        : ''
+    }
+    ${wrap ? closeFrag(options) : ''}
+  );
+  `;
+
+  const wrapInForwardRef = (str: string) => {
+    if (isForwardRef) {
+      const forwardRefTypeStr = forwardRefType ? `<${forwardRefType}>` : '';
+      return `
+      forwardRef${forwardRefTypeStr}(function ${componentName}(${propsArgs}, ${options.forwardRef}) {
+        ${str}
+      }
+      `;
+    } else {
+      return `
+      function ${componentName}(${propsArgs}) {
+        ${str}
+      }
+      `;
+    }
+  };
+
+  let str = dedent`
+    ${imports}
     ${json.types ? json.types.join('\n') : ''}
     ${renderPreComponent({ component: json, target: 'react' })}
-    ${isSubComponent ? '' : 'export default '}${
-    isForwardRef ? `forwardRef${forwardRefType ? `<${forwardRefType}>` : ''}(` : ''
-  }function ${json.name || 'MyComponent'}(${propsArgs}${
-    isForwardRef ? `, ${options.forwardRef}` : ''
-  }) {
-    ${hasStateArgument ? '' : refsString}
-      ${
-        hasState
-          ? stateType === 'mobx'
-            ? `const state = useLocalObservable(() => (${getStateObjectStringFromComponent(
-                json,
-              )}));`
-            : stateType === 'useState'
-            ? useStateCode
-            : stateType === 'solid'
-            ? `const state = useMutable(${getStateObjectStringFromComponent(json)});`
-            : stateType === 'builder'
-            ? `var state = useBuilderState(${getStateObjectStringFromComponent(json)});`
-            : `const state = useLocalProxy(${getStateObjectStringFromComponent(json)});`
-          : ''
-      }
-      ${hasStateArgument ? refsString : ''}
-      ${getContextString(json, options)}
-      ${getInitCode(json, options)}
-
-      ${
-        json.hooks.onInit?.code
-          ? `
-          useEffect(() => {
-            ${processHookCode({
-              str: json.hooks.onInit.code,
-              options,
-            })}
-          })
-          `
-          : ''
-      }
-      ${
-        json.hooks.onMount?.code
-          ? `useEffect(() => {
-            ${processHookCode({
-              str: json.hooks.onMount.code,
-              options,
-            })}
-          }, [])`
-          : ''
-      }
-
-      ${
-        json.hooks.onUpdate
-          ?.map(
-            (hook) => `useEffect(() => {
-            ${processHookCode({ str: hook.code, options })}
-          }, 
-          ${hook.deps ? processHookCode({ str: hook.deps, options }) : ''})`,
-          )
-          .join(';') ?? ''
-      }
-
-      ${
-        json.hooks.onUnMount?.code
-          ? `useEffect(() => {
-            return () => {
-              ${processHookCode({
-                str: json.hooks.onUnMount.code,
-                options,
-              })}
-            }
-          }, [])`
-          : ''
-      }
-
-      return (
-        ${wrap ? openFrag(options) : ''}
-        ${json.children.map((item) => blockToReact(item, options)).join('\n')}
-        ${
-          componentHasStyles && stylesType === 'styled-jsx'
-            ? `<style jsx>{\`${css}\`}</style>`
-            : componentHasStyles && stylesType === 'style-tag'
-            ? `<style>{\`${css}\`}</style>`
-            : ''
-        }
-        ${wrap ? closeFrag(options) : ''}
-      );
-    }${isForwardRef ? ')' : ''}
+    ${isSubComponent ? '' : 'export default '}${wrapInForwardRef(componentBody)}
 
     ${
       !json.defaultProps
         ? ''
-        : `${json.name || 'MyComponent'}.defaultProps = ${json5.stringify(json.defaultProps)};`
+        : `${componentName}.defaultProps = ${json5.stringify(json.defaultProps)};`
     }
 
     ${
