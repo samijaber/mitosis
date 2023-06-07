@@ -13,6 +13,7 @@ import { Dictionary } from '../../helpers/typescript';
 import { MitosisComponent } from '../../types/mitosis-component';
 import { BaseTranspilerOptions, TranspilerGenerator } from '../../types/transpiler';
 import { componentToReact } from '../react';
+import { sanitizeEventHandlers } from './sanitize-event-handlers';
 import { sanitizeReactNativeBlockStyles } from './sanitize-react-native-block-styles';
 
 export interface ToReactNativeOptions extends BaseTranspilerOptions {
@@ -124,6 +125,8 @@ const PROCESS_REACT_NATIVE_PLUGIN: Plugin = () => ({
           if (node.bindings.className) {
             delete node.bindings.className;
           }
+
+          sanitizeEventHandlers(node);
         }
       });
     },
